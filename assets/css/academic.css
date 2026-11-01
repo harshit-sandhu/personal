@@ -109,3 +109,23 @@ footer.sticky-bottom {
   .trek .t-b { grid-column: 1; grid-row: 2; aspect-ratio: 3 / 4; }
   .trek .t-c { grid-column: 2; grid-row: 2; aspect-ratio: 3 / 4; }
 }
+
+/* Five-photo trek set */
+.trek.five .trek-grid { grid-template-columns: 1fr 1fr 1fr; grid-template-rows: auto auto; }
+.trek.five .k-a { grid-column: 1 / span 2; grid-row: 1; aspect-ratio: 16 / 9; }
+.trek.five .k-e { grid-column: 3; grid-row: 1; }
+.trek.five .k-e { position: relative; }
+.trek.five .k-e img { position: absolute; inset: 0; object-position: 50% 35%; }
+.trek.five .k-c { grid-column: 1; grid-row: 2; aspect-ratio: 4 / 3; }
+.trek.five .k-d { grid-column: 2; grid-row: 2; aspect-ratio: 4 / 3; }
+.trek.five .k-b { grid-column: 3; grid-row: 2; aspect-ratio: 4 / 3; }
+.trek.five .k-b img { object-position: 50% 72%; }
+@media (max-width: 700px) {
+  .trek.five .trek-grid { grid-template-columns: 1fr 1fr; }
+  .trek.five .k-a { grid-column: 1 / span 2; grid-row: 1; }
+  .trek.five .k-e { grid-column: 1; grid-row: 2; aspect-ratio: 3 / 4; }
+  .trek.five .k-b img { object-position: 50% 58%; }
+  .trek.five .k-b { grid-column: 2; grid-row: 2; aspect-ratio: 3 / 4; }
+  .trek.five .k-c { grid-column: 1; grid-row: 3; }
+  .trek.five .k-d { grid-column: 2; grid-row: 3; }
+}

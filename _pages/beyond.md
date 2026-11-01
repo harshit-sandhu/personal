@@ -23,6 +23,17 @@ nav_order: 5
   <figcaption><b>Kolukkumalai, Munnar, Kerala</b> · 4 May 2024. A sunrise trek on Munnar's best-known jeep-safari route.</figcaption>
 </figure>
 
+<figure class="trek five">
+  <div class="trek-grid">
+    <a class="k-a" href="{{ '/assets/img/beyond/kabbalu-view.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-view.jpg' | relative_url }}" alt="View from the top of Kabbalu Betta over farmland and distant hills" loading="lazy" width="1280" height="720"></a>
+    <a class="k-e" href="{{ '/assets/img/beyond/kabbalu-steps.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-steps.jpg' | relative_url }}" alt="Group selfie with friends on the rock-cut steps up the hill" loading="lazy" width="1050" height="1400"></a>
+    <a class="k-c" href="{{ '/assets/img/beyond/kabbalu-rest.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-rest.jpg' | relative_url }}" alt="Resting with friends near the top" loading="lazy" width="480" height="360"></a>
+    <a class="k-d" href="{{ '/assets/img/beyond/kabbalu-summit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-summit.jpg' | relative_url }}" alt="At the top, with the plains below" loading="lazy" width="480" height="360"></a>
+    <a class="k-b" href="{{ '/assets/img/beyond/kabbalu-ride.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-ride.jpg' | relative_url }}" alt="On the motorcycle ride, a country road lined with palms" loading="lazy" width="720" height="1280"></a>
+  </div>
+  <figcaption><b>Kabbalu Betta, Karnataka</b> · 4 May 2025. A day hike with friends, up the rock-cut steps to the top.</figcaption>
+</figure>
+
 ## Music, books and food
 
 <div class="bx">
