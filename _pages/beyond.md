@@ -47,7 +47,6 @@ nav_order: 5
     <a href="{{ '/assets/img/beyond/ams-cafe-table.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-cafe-table.jpg' | relative_url }}" alt="A quiet café table by the window" loading="lazy" width="360" height="480"></a>
     <a href="{{ '/assets/img/beyond/ams-snack.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-snack.jpg' | relative_url }}" alt="A Dutch sausage roll, working between sessions" loading="lazy" width="360" height="638"></a>
     <a href="{{ '/assets/img/beyond/ams-canal.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-canal.jpg' | relative_url }}" alt="A canal and arched bridge in the city centre" loading="lazy" width="360" height="480"></a>
-    <a href="{{ '/assets/img/beyond/ams-building.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-building.jpg' | relative_url }}" alt="A classical canal-side building" loading="lazy" width="360" height="480"></a>
   </div>
   <figcaption><b>Metamaterials 2025, Amsterdam</b> · 1–6 September 2025. The 19th International Congress on Artificial Materials for Novel Wave Phenomena, where I presented a poster, <i>Wave Propagation in an Elastic Lattice with Nonreciprocal Stiffness and Engineered Damping</i> (with S. Dutta and R. Chaunsali), and attended the EUPROMETA Doctoral School. Between sessions: canals, cafés and the city.</figcaption>
 </figure>
