@@ -72,55 +72,67 @@ ul,ol{margin:0;padding:0}
 .portrait img{display:block;width:210px;height:262px;object-fit:cover;object-position:50% 30%;border-radius:6px;box-shadow:0 0 0 1px var(--rule),0 12px 28px -14px rgba(15,23,42,.35)}
 
 
-/* ---------- career: coupled-mass chain on a time axis ---------- */
+/* ---------- career: a wave packet travelling along a timeline ---------- */
 .career{margin:46px 0 0;padding:22px 0 20px;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.career-head{display:flex;justify-content:space-between;align-items:baseline;gap:8px 20px;flex-wrap:wrap}
-.career-head h2{font-size:.78rem;font-family:var(--sans);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
-.career-note{margin:0;font-size:.84rem;color:var(--muted)}
+.career-head{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:baseline;gap:6px 20px}
+.career-head h2{font-size:.78rem;font-family:var(--sans);font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);white-space:nowrap}
+.career-note{margin:0;font-size:.84rem;color:var(--muted);text-align:right}
 .career-note .sw{display:none}
-#cv-chain{display:block;width:100%;height:auto;margin:6px 0 4px;overflow:visible;-webkit-tap-highlight-color:transparent}
-#cv-chain text{font-family:var(--sans);font-size:12.5px;fill:var(--muted)}
-#cv-chain .nm{font-family:var(--serif);font-weight:600;font-size:16px;fill:var(--ink);transition:fill .2s}
-#cv-chain .sm-only{display:none}
-#cv-chain .m{cursor:pointer;outline:none}
-#cv-chain .hit{fill:transparent}
-#cv-chain .mb{fill:#fff;stroke:var(--ink);stroke-width:1.5;transition:fill .2s,stroke .2s}
-#cv-chain .m.cur .mb{stroke:var(--accent)}
-#cv-chain .m.nx .mb{stroke:#94a3b8;stroke-dasharray:4 3}
-#cv-chain .m.nx .nm{fill:var(--muted)}
-#cv-chain .m:hover .mb{stroke-width:2.4}
-#cv-chain .m:focus-visible .mb{stroke-width:3}
-#cv-chain .m.on .mb{fill:var(--accent);stroke:var(--accent)}
-#cv-chain .m.on .nm{fill:var(--accent)}
-#cv-chain .sp{fill:none;stroke:#64748b;stroke-width:1.2;stroke-linejoin:round}
-#cv-chain .sp.dash{stroke:#94a3b8;stroke-dasharray:3 3}
-#cv-chain .bar{stroke:#cbd5e1;stroke-width:3;stroke-linecap:round;transition:stroke .2s}
-#cv-chain .bar.ex{stroke-dasharray:1 5;stroke-width:2.6}
-#cv-chain .bar.on{stroke:var(--accent)}
-#cv-chain .axis line{stroke:#94a3b8;stroke-width:1}
-#cv-chain .axis .now{stroke:var(--red);stroke-dasharray:2 3}
-#cv-chain .nowt{fill:var(--red);font-size:11.5px;letter-spacing:.04em}
+.cv-btn{font:inherit;font-size:.8rem;color:var(--ink-2);background:#fff;border:1px solid var(--rule);border-radius:999px;padding:2px 12px;cursor:pointer}
+.cv-btn:hover{border-color:#94a3b8}
+#cv-wave{display:block;width:100%;height:auto;margin:4px 0 2px;overflow:visible;-webkit-tap-highlight-color:transparent}
+#cv-wave text{font-family:var(--sans);font-size:12.5px;fill:var(--muted)}
+#cv-wave .nm{font-family:var(--serif);font-weight:600;font-size:16px;fill:var(--ink);transition:fill .35s}
+#cv-wave .sm-only{display:none}
+#cv-wave .str{fill:none;stroke:url(#cv-age);stroke-width:1.3;stroke-linecap:round}
+#cv-wave .str.fut{stroke:#94a3b8;stroke-dasharray:2 5}
+#cv-wave .pk{fill:none;stroke:var(--accent);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+#cv-wave .glow{fill:none;stroke:var(--accent);stroke-width:6;stroke-opacity:.22}
+#cv-wave .env{fill:none;stroke:var(--accent);stroke-width:.9;stroke-opacity:.45;stroke-dasharray:2 3}
+#cv-pk,#cv-glow,#cv-env{stroke:url(#cv-pg)!important}
+#cv-pk2,#cv-glow2,#cv-env2{stroke:url(#cv-pg2)!important}
+#cv-wave .m{cursor:pointer;outline:none}
+#cv-wave .hit{fill:transparent}
+#cv-wave .bd{fill:#fff;stroke:var(--ink);stroke-width:1.6;transition:fill .35s,stroke .35s}
+#cv-wave .m.cur .bd{stroke:var(--accent)}
+#cv-wave .m.nx .bd{stroke:#94a3b8;stroke-dasharray:2.5 2}
+#cv-wave .m.nx .nm{fill:var(--muted)}
+#cv-wave .halo{fill:var(--accent);opacity:0;transition:opacity .35s}
+#cv-wave .rip{fill:none;stroke:var(--accent);stroke-width:1.2;opacity:0}
+#cv-wave .m:hover .bd,#cv-wave .m:focus-visible .bd{stroke-width:2.6}
+#cv-wave .m.on .bd{fill:var(--accent);stroke:var(--accent)}
+#cv-wave .m.on .halo{opacity:.13}
+#cv-wave .m.on .nm{fill:var(--accent)}
+#cv-wave .bar{stroke:#e2e8f0;stroke-width:3;stroke-linecap:round;transition:stroke .35s}
+#cv-wave .bar.ex{stroke-dasharray:1 5;stroke-width:2.6;stroke:#cbd5e1}
+#cv-wave .bar.on{stroke:var(--accent)}
+#cv-wave .axis line{stroke:#94a3b8;stroke-width:1}
+#cv-wave .axis .now{stroke:var(--red);stroke-dasharray:2 3}
+#cv-wave .nowt{fill:var(--red);font-size:11.5px;letter-spacing:.04em}
 .stage{display:grid;grid-template-columns:180px minmax(0,1fr);gap:2px 24px;padding:12px 0 2px;border-top:1px solid var(--rule)}
 .stage[hidden]{display:none}
 .stage .when{margin:2px 0 0;font-size:.88rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .stage h3{font-size:1.05rem;margin:0 0 2px}
 .stage p{margin:0;font-size:.95rem;color:var(--ink-2)}
-.js .stage{border-top:0;padding-top:4px;min-height:84px}
+.js .stage{border-top:0;padding-top:4px;min-height:84px;animation:stIn .5s ease both}
+@keyframes stIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.js .stage{animation:none}.cv-btn{display:none}}
 @media (max-width:640px){
+  .career-head{grid-template-columns:1fr auto}
+  .career-note{grid-column:1/-1;grid-row:2;text-align:left}
+  .career-note .sw{display:inline}
   .cv-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -18px;padding:0 18px;scrollbar-width:none}
   .cv-scroll::-webkit-scrollbar{display:none}
-  #cv-chain{width:580px;max-width:none}
-  .career-note .sw{display:inline}
-  #cv-chain .lg-only,#cv-chain .yr{display:none}
-  #cv-chain .sm-only{display:inline}
-  #cv-chain .nm{font-size:22px}
-  #cv-chain text.tk,#cv-chain .nowt{font-size:17px}
-  #cv-chain .mb{stroke-width:2}
-  #cv-chain .sp{stroke-width:1.6}
+  #cv-wave{width:600px;max-width:none}
+  #cv-wave .lg-only,#cv-wave .yr{display:none}
+  #cv-wave .sm-only{display:inline}
+  #cv-wave .nm{font-size:22px}
+  #cv-wave text.tk,#cv-wave .nowt{font-size:17px}
+  #cv-wave .str{stroke-width:1.8}
+  #cv-wave .pk{stroke-width:2.6}
   .stage{grid-template-columns:1fr}
   .js .stage{min-height:118px}
 }
-
 /* ---------- hero figure ---------- */
 .hero-fig{margin:52px 0 0;padding:18px 18px 12px;border:1px solid var(--rule);border-radius:6px;background:#fff}
 .hero-fig svg{display:block;width:100%;height:auto}
@@ -258,83 +270,118 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
 
   <div class="wrap">
     <section class="career" aria-labelledby="cv-h">
-      <div class="career-head"><h2 id="cv-h">Path so far</h2><p class="career-note">Each stage is a mass on a time axis, coupled to the next. Select one<span class="sw">; swipe for the earlier stages</span>.</p></div>
+      <div class="career-head">
+        <h2 id="cv-h">Path so far</h2>
+        <p class="career-note">A wave packet runs along the timeline and each stage lights up as it passes. Select a stage to start from there<span class="sw">; swipe for earlier years</span>.</p>
+        <button type="button" class="cv-btn" id="cv-play" aria-pressed="false">Pause</button>
+      </div>
       <div class="cv-scroll">
-      <svg id="cv-chain" viewBox="0 0 960 262" role="group" aria-label="Career stages drawn as a chain of coupled masses on a time axis">
-        <g id="cv-springs"></g>
-        <g class="m " data-s="gec" tabindex="0" role="button" aria-label="GEC Raipur, 2012 – 2016">
-          <text class="nm lg-only" x="65.9" y="42" text-anchor="middle">GEC Raipur</text>
-          <text class="nm sm-only" x="65.9" y="58" text-anchor="middle">GEC</text>
-          <text class="yr" x="65.9" y="61" text-anchor="middle">2012 – 2016</text>
-          <rect class="mb" x="52.900000000000006" y="91" width="26" height="26" rx="3"/>
-          <rect class="hit" x="21.900000000000006" y="20" width="88" height="100"/>
-        </g>
-        <g class="m " data-s="gate" tabindex="0" role="button" aria-label="GATE Academy, 2018 – 2019">
-          <text class="nm lg-only" x="390.5" y="42" text-anchor="end">GATE Academy</text>
-          <text class="nm sm-only" x="376.5" y="58" text-anchor="middle">GATE</text>
-          <text class="yr" x="390.5" y="61" text-anchor="end">2018 – 2019</text>
-          <rect class="mb" x="363.5" y="91" width="26" height="26" rx="3"/>
-          <rect class="hit" x="332.5" y="20" width="88" height="100"/>
-        </g>
-        <g class="m cur" data-s="iisc" tabindex="0" role="button" aria-label="IISc Bengaluru, 2020 – 2027">
-          <text class="nm lg-only" x="466.0" y="42" text-anchor="start">IISc Bengaluru</text>
-          <text class="nm sm-only" x="480.0" y="58" text-anchor="middle">IISc</text>
-          <text class="yr" x="466.0" y="61" text-anchor="start">2020 – 2027</text>
-          <rect class="mb" x="467.0" y="91" width="26" height="26" rx="3"/>
-          <rect class="hit" x="436.0" y="20" width="88" height="100"/>
-        </g>
-        <g class="m nx" data-s="next" tabindex="0" role="button" aria-label="Next, 2027 –">
-          <text class="nm lg-only" x="873.4" y="42" text-anchor="middle">Next</text>
-          <text class="nm sm-only" x="873.4" y="58" text-anchor="middle">Next</text>
-          <text class="yr" x="873.4" y="61" text-anchor="middle">2027 –</text>
-          <rect class="mb" x="860.4" y="91" width="26" height="26" rx="3"/>
-          <rect class="hit" x="829.4" y="20" width="88" height="100"/>
-        </g>
-        <g class="m cur" data-s="lems" tabindex="0" role="button" aria-label="LEMS Lab, since 2026">
-          <text class="nm lg-only" x="832.7" y="166">LEMS Lab</text>
-          <text class="nm sm-only" x="834.7" y="178">LEMS</text>
-          <text class="yr" x="832.7" y="183">since 2026</text>
-          <rect class="mb" x="795.7" y="155" width="26" height="26" rx="3"/>
-          <rect class="hit" x="764.7" y="144" width="88" height="48"/>
-        </g>
-        <line class="bar" data-s="gec" x1="91.8" y1="206" x2="293.6" y2="206"/>
-        <line class="bar" data-s="gate" x1="386.8" y1="206" x2="454.1" y2="206"/>
-        <line class="bar" data-s="iisc" x1="511.1" y1="206" x2="834.6" y2="206"/>
-        <line class="bar ex" data-s="iisc" x1="834.6" y1="206" x2="863.1" y2="206"/>
-        <line class="bar" data-s="lems" x1="808.7" y1="216" x2="834.6" y2="216"/>
-        <line class="bar ex" data-s="lems" x1="834.6" y1="216" x2="863.1" y2="216"/>
-        <g class="axis">
-          <line x1="40.0" y1="230" x2="920.0" y2="230"/>
-          <line x1="65.9" y1="230" x2="65.9" y2="236"/>
-          <text class="tk" x="65.9" y="254" text-anchor="middle">2012</text>
-          <line x1="117.6" y1="230" x2="117.6" y2="233"/>
-          <line x1="169.4" y1="230" x2="169.4" y2="233"/>
-          <text class="tk tk2" x="169.4" y="254" text-anchor="middle">2014</text>
-          <line x1="221.2" y1="230" x2="221.2" y2="233"/>
-          <line x1="272.9" y1="230" x2="272.9" y2="236"/>
-          <text class="tk" x="272.9" y="254" text-anchor="middle">2016</text>
-          <line x1="324.7" y1="230" x2="324.7" y2="233"/>
-          <line x1="376.5" y1="230" x2="376.5" y2="233"/>
-          <text class="tk tk2" x="376.5" y="254" text-anchor="middle">2018</text>
-          <line x1="428.2" y1="230" x2="428.2" y2="233"/>
-          <line x1="480.0" y1="230" x2="480.0" y2="236"/>
-          <text class="tk" x="480.0" y="254" text-anchor="middle">2020</text>
-          <line x1="531.8" y1="230" x2="531.8" y2="233"/>
-          <line x1="583.5" y1="230" x2="583.5" y2="233"/>
-          <text class="tk tk2" x="583.5" y="254" text-anchor="middle">2022</text>
-          <line x1="635.3" y1="230" x2="635.3" y2="233"/>
-          <line x1="687.1" y1="230" x2="687.1" y2="236"/>
-          <text class="tk" x="687.1" y="254" text-anchor="middle">2024</text>
-          <line x1="738.8" y1="230" x2="738.8" y2="233"/>
-          <line x1="790.6" y1="230" x2="790.6" y2="233"/>
-          <text class="tk tk2" x="790.6" y="254" text-anchor="middle">2026</text>
-          <line x1="842.4" y1="230" x2="842.4" y2="233"/>
-          <line x1="894.1" y1="230" x2="894.1" y2="236"/>
-          <text class="tk" x="894.1" y="254" text-anchor="middle">2028</text>
-          <line class="now" x1="834.1" y1="196" x2="834.1" y2="230"/>
-          <text class="nowt" x="834.1" y="254" text-anchor="middle">now</text>
-        </g>
-      </svg>
+        <svg id="cv-wave" viewBox="0 0 960 292" role="group" aria-label="Career stages on a time axis. A wave packet travels along the timeline and each stage lights up as it passes.">
+          <defs>
+    <linearGradient id="cv-age" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="834.1" y2="0">
+      <stop offset="0" stop-color="#cbd5e1"/><stop offset="1" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="cv-pg" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4ed8" stop-opacity="0"/><stop offset=".28" stop-color="#1d4ed8"/><stop offset=".72" stop-color="#1d4ed8"/><stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/></linearGradient>
+    <linearGradient id="cv-pg2" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1d4ed8" stop-opacity="0"/><stop offset=".28" stop-color="#1d4ed8"/><stop offset=".72" stop-color="#1d4ed8"/><stop offset="1" stop-color="#1d4ed8" stop-opacity="0"/></linearGradient>
+    <filter id="cv-glow" x="-20%" y="-60%" width="140%" height="220%"><feGaussianBlur stdDeviation="3.2"/></filter>
+  </defs>
+          <g class="strings">
+            <path id="cv-main" class="str" d="M40 122 L834.1 122"/>
+            <path id="cv-mainf" class="str fut" d="M834.1 122 L909.6 122"/>
+            <path id="cv-br" class="str br"/>
+            <path id="cv-brf" class="str fut"/>
+          </g>
+          <g class="packet" aria-hidden="true">
+            <path id="cv-glow" class="glow" filter="url(#cv-glow)"/>
+            <path id="cv-env" class="env"/>
+            <path id="cv-pk" class="pk"/>
+            <path id="cv-glow2" class="glow" filter="url(#cv-glow)"/>
+            <path id="cv-env2" class="env"/>
+            <path id="cv-pk2" class="pk"/>
+          </g>
+          <g class="m " data-s="gec" data-x="65.9" data-y="122" data-lane="0" tabindex="0" role="button" aria-label="GEC Raipur, 2012 – 2016">
+            <text class="nm lg-only" x="65.9" y="50" text-anchor="middle">GEC Raipur</text>
+            <text class="nm sm-only" x="65.9" y="68" text-anchor="middle">GEC</text>
+            <text class="yr" x="65.9" y="69" text-anchor="middle">2012 – 2016</text>
+            <rect class="hit" x="25.900000000000006" y="26" width="80" height="116"/>
+            <circle class="rip" cx="65.9" cy="122" r="7"/>
+            <circle class="halo" cx="65.9" cy="122" r="13"/>
+            <circle class="bd" cx="65.9" cy="122" r="6.5"/>
+          </g>
+          <g class="m " data-s="gate" data-x="376.5" data-y="122" data-lane="0" tabindex="0" role="button" aria-label="GATE Academy, 2018 – 2019">
+            <text class="nm lg-only" x="386.5" y="50" text-anchor="end">GATE Academy</text>
+            <text class="nm sm-only" x="376.5" y="68" text-anchor="middle">GATE</text>
+            <text class="yr" x="386.5" y="69" text-anchor="end">2018 – 2019</text>
+            <rect class="hit" x="336.5" y="26" width="80" height="116"/>
+            <circle class="rip" cx="376.5" cy="122" r="7"/>
+            <circle class="halo" cx="376.5" cy="122" r="13"/>
+            <circle class="bd" cx="376.5" cy="122" r="6.5"/>
+          </g>
+          <g class="m cur" data-s="iisc" data-x="480.0" data-y="122" data-lane="0" tabindex="0" role="button" aria-label="IISc Bengaluru, 2020 – 2027">
+            <text class="nm lg-only" x="470.0" y="50" text-anchor="start">IISc Bengaluru</text>
+            <text class="nm sm-only" x="480.0" y="68" text-anchor="middle">IISc</text>
+            <text class="yr" x="470.0" y="69" text-anchor="start">2020 – 2027</text>
+            <rect class="hit" x="440.0" y="26" width="80" height="116"/>
+            <circle class="rip" cx="480.0" cy="122" r="7"/>
+            <circle class="halo" cx="480.0" cy="122" r="13"/>
+            <circle class="bd" cx="480.0" cy="122" r="6.5"/>
+          </g>
+          <g class="m cur" data-s="lems" data-x="811.3" data-y="176" data-lane="1" tabindex="0" role="button" aria-label="LEMS Lab, since 2026">
+            <text class="nm lg-only" x="811.3" y="206" text-anchor="middle">LEMS Lab</text>
+            <text class="nm sm-only" x="811.3" y="212" text-anchor="middle">LEMS</text>
+            <text class="yr" x="855.3" y="206">since 2026</text>
+            <rect class="hit" x="771.3" y="154" width="80" height="54"/>
+            <circle class="rip" cx="811.3" cy="176" r="7"/>
+            <circle class="halo" cx="811.3" cy="176" r="13"/>
+            <circle class="bd" cx="811.3" cy="176" r="6.5"/>
+          </g>
+          <g class="m nx" data-s="next" data-x="876.0" data-y="122" data-lane="0" tabindex="0" role="button" aria-label="Next, 2027 –">
+            <text class="nm lg-only" x="876.0" y="50" text-anchor="middle">Next</text>
+            <text class="nm sm-only" x="876.0" y="68" text-anchor="middle">Next</text>
+            <text class="yr" x="876.0" y="69" text-anchor="middle">2027 –</text>
+            <rect class="hit" x="836.0" y="26" width="80" height="116"/>
+            <circle class="rip" cx="876.0" cy="122" r="7"/>
+            <circle class="halo" cx="876.0" cy="122" r="13"/>
+            <circle class="bd" cx="876.0" cy="122" r="6.5"/>
+          </g>
+          <line class="bar" data-s="gec" x1="91.8" y1="230" x2="293.6" y2="230"/>
+          <line class="bar" data-s="gate" x1="386.8" y1="230" x2="454.1" y2="230"/>
+          <line class="bar" data-s="iisc" x1="511.1" y1="230" x2="834.1" y2="230"/>
+          <line class="bar ex" data-s="iisc" x1="834.1" y1="230" x2="863.1" y2="230"/>
+          <line class="bar" data-s="lems" x1="808.7" y1="240" x2="834.1" y2="240"/>
+          <line class="bar ex" data-s="lems" x1="834.1" y1="240" x2="863.1" y2="240"/>
+          <g class="axis">
+            <line x1="40" y1="254" x2="920" y2="254"/>
+            <line x1="65.9" y1="254" x2="65.9" y2="260"/>
+            <text class="tk" x="65.9" y="278" text-anchor="middle">2012</text>
+            <line x1="117.6" y1="254" x2="117.6" y2="257"/>
+            <line x1="169.4" y1="254" x2="169.4" y2="257"/>
+            <text class="tk tk2" x="169.4" y="278" text-anchor="middle">2014</text>
+            <line x1="221.2" y1="254" x2="221.2" y2="257"/>
+            <line x1="272.9" y1="254" x2="272.9" y2="260"/>
+            <text class="tk" x="272.9" y="278" text-anchor="middle">2016</text>
+            <line x1="324.7" y1="254" x2="324.7" y2="257"/>
+            <line x1="376.5" y1="254" x2="376.5" y2="257"/>
+            <text class="tk tk2" x="376.5" y="278" text-anchor="middle">2018</text>
+            <line x1="428.2" y1="254" x2="428.2" y2="257"/>
+            <line x1="480.0" y1="254" x2="480.0" y2="260"/>
+            <text class="tk" x="480.0" y="278" text-anchor="middle">2020</text>
+            <line x1="531.8" y1="254" x2="531.8" y2="257"/>
+            <line x1="583.5" y1="254" x2="583.5" y2="257"/>
+            <text class="tk tk2" x="583.5" y="278" text-anchor="middle">2022</text>
+            <line x1="635.3" y1="254" x2="635.3" y2="257"/>
+            <line x1="687.1" y1="254" x2="687.1" y2="260"/>
+            <text class="tk" x="687.1" y="278" text-anchor="middle">2024</text>
+            <line x1="738.8" y1="254" x2="738.8" y2="257"/>
+            <line x1="790.6" y1="254" x2="790.6" y2="257"/>
+            <text class="tk tk2" x="790.6" y="278" text-anchor="middle">2026</text>
+            <line x1="842.4" y1="254" x2="842.4" y2="257"/>
+            <line x1="894.1" y1="254" x2="894.1" y2="260"/>
+            <text class="tk" x="894.1" y="278" text-anchor="middle">2028</text>
+            <line class="now" x1="834.1" y1="222" x2="834.1" y2="254"/>
+            <text class="nowt" x="834.1" y="278" text-anchor="middle">now</text>
+          </g>
+        </svg>
       </div>
       <div class="stages" id="cv-stages" aria-live="polite">
         <div class="stage" data-s="gec"><p class="when">2012 – 2016</p><div><h3>B.E., Mechanical Engineering</h3><p>Government Engineering College, Raipur.</p></div></div>
@@ -732,55 +779,101 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
   draw(0);requestAnimationFrame(loop);
 })();
 (function(){
-  /* Career chain: each stage is a mass; neighbours are coupled by springs.
-     Transverse displacement u obeys m u'' = sum k (u_j - u_i) - k0 u - c u'. */
-  var svg=document.getElementById('cv-chain');if(!svg)return;
+  /* Career timeline as a waveguide. A Gaussian wave packet, u = A e^{-(x-xc)^2/s^2} cos k(x-xc),
+     travels along the time axis; at 2026 the guide branches and the packet splits (energy shared
+     between the two arms). Each stage is a small resonator that rings when the packet reaches it. */
+  var svg=document.getElementById('cv-wave');if(!svg)return;
   document.documentElement.classList.add('js');
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var NS='http://www.w3.org/2000/svg',$=function(i){return document.getElementById(i);};
+  var Y0=122,YL=176,XNOW=834.1,XEND=909.6,JX=744.0,BX=803.5,BEND=863.1;
+  var A=15,SIG=30,KW=2*Math.PI/24,SPLIT_M=.74,SPLIT_B=.67;
   var ms=[].slice.call(svg.querySelectorAll('.m')),stages=[].slice.call(document.querySelectorAll('#cv-stages .stage'));
-  var bars=[].slice.call(svg.querySelectorAll('.bar')),sg=document.getElementById('cv-springs');
-  var id={},N=ms.length,u=[],v=[],x0=[],y0=[],box=[];
-  ms.forEach(function(m,i){var r=m.querySelector('.mb');box[i]=r;id[m.getAttribute('data-s')]=i;
-    x0[i]=+r.getAttribute('x')+13;y0[i]=+r.getAttribute('y')+13;u[i]=0;v[i]=0;});
-  var links=[['gec','gate'],['gate','iisc'],['iisc','next',1],['iisc','lems']].map(function(l){
-    var p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('class','sp'+(l[2]?' dash':''));sg.appendChild(p);
-    return [id[l[0]],id[l[1]],p];});
-  function zig(ax,ay,bx,by){
-    var dx=bx-ax,dy=by-ay,L=Math.sqrt(dx*dx+dy*dy),ux=dx/L,uy=dy/L,nx=-uy,ny=ux;
-    ax+=ux*13;ay+=uy*13;bx-=ux*13;by-=uy*13;L-=26;
-    var lead=Math.min(14,L*.15),n=Math.max(4,Math.round((L-2*lead)/11)),seg=(L-2*lead)/n,d='M'+ax.toFixed(1)+' '+ay.toFixed(1);
-    var px=ax+ux*lead,py=ay+uy*lead;d+='L'+px.toFixed(1)+' '+py.toFixed(1);
-    for(var k=0;k<n;k++){var s=(k%2?-1:1)*5,cx=px+ux*seg*(k+.5)+nx*s,cy=py+uy*seg*(k+.5)+ny*s;d+='L'+cx.toFixed(1)+' '+cy.toFixed(1);}
-    px+=ux*seg*n;py+=uy*seg*n;d+='L'+px.toFixed(1)+' '+py.toFixed(1)+'L'+bx.toFixed(1)+' '+by.toFixed(1);return d;}
-  function draw(){
-    for(var i=0;i<N;i++)box[i].setAttribute('y',(y0[i]-13+u[i]).toFixed(2));
-    links.forEach(function(l){l[2].setAttribute('d',zig(x0[l[0]],y0[l[0]]+u[l[0]],x0[l[1]],y0[l[1]]+u[l[1]]));});}
-  function select(sid){
-    ms.forEach(function(m){m.classList.toggle('on',m.getAttribute('data-s')===sid);m.setAttribute('aria-pressed',m.getAttribute('data-s')===sid);});
-    bars.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-s')===sid);});
-    stages.forEach(function(s){s.hidden=s.getAttribute('data-s')!==sid;});}
-  var K=.014,K0=.004,C=.018,cur=id.iisc,t=0,running=false,visible=true,quiet=0;
-  function step(){
-    var a=[];
-    for(var i=0;i<N;i++)a[i]=-K0*u[i]-C*v[i];
-    links.forEach(function(l){var f=K*(u[l[1]]-u[l[0]]);a[l[0]]+=f;a[l[1]]-=f;});
-    a[cur]+=.008*Math.sin(t*.045);t++;
-    var e=0;for(i=0;i<N;i++){v[i]+=a[i];u[i]+=v[i];e+=Math.abs(v[i]);}return e;}
-  function loop(){if(!visible){running=false;return;}step();draw();requestAnimationFrame(loop);}
-  function start(){if(!reduce&&!running){running=true;requestAnimationFrame(loop);}}
-  function kick(i){if(reduce)return;v[i]-=1.3;start();}
-  ms.forEach(function(m,i){
-    function go(){select(m.getAttribute('data-s'));kick(i);}
-    m.addEventListener('click',go);
-    m.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}
-      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var j=(i+(e.key==='ArrowRight'?1:N-1))%N;ms[j].focus();}});
-    m.addEventListener('mouseenter',function(){if(!reduce&&Math.abs(v[i])<.4){v[i]-=.5;start();}});
+  var gm=$('cv-pg'),gb=$('cv-pg2'),bars=[].slice.call(svg.querySelectorAll('.bar')),btn=$('cv-play'),sc=svg.parentNode;
+  /* branch geometry: cubic from (JX,Y0) to (BX,YL), then straight; sampled with arc length + normals */
+  var br=[],s0=0,px=JX,py=Y0;
+  function cub(t,a,b,c,d){var u=1-t;return u*u*u*a+3*u*u*t*b+3*u*t*t*c+t*t*t*d;}
+  for(var i=0;i<=40;i++){var t=i/40,x=cub(t,JX,JX+30,BX-30,BX),y=cub(t,Y0,Y0,YL,YL);s0+=Math.hypot(x-px,y-py);br.push([x,y,s0]);px=x;py=y;}
+  for(x=BX+3;x<=BEND;x+=3){s0+=3;br.push([x,YL,s0]);}
+  for(i=0;i<br.length;i++){var a=br[Math.max(0,i-1)],b=br[Math.min(br.length-1,i+1)],dx=b[0]-a[0],dy=b[1]-a[1],L=Math.hypot(dx,dy)||1;br[i].push(-dy/L,dx/L);}
+  function poly(pts){var d='';for(var i=0;i<pts.length;i++)d+=(i?'L':'M')+pts[i][0].toFixed(1)+' '+pts[i][1].toFixed(1);return d;}
+  function brPath(from,to){return poly(br.filter(function(p){return p[0]>=from-0.01&&p[0]<=to+0.01&&(p[0]>JX||p[1]>Y0-0.1);}));}
+  $('cv-br').setAttribute('d',brPath(JX,XNOW));$('cv-brf').setAttribute('d',brPath(XNOW,BEND));
+  var sNOWb=0;br.forEach(function(p){if(p[0]<=XNOW)sNOWb=p[2];});
+  /* stages */
+  var st=ms.map(function(m){var lane=+m.getAttribute('data-lane'),x=+m.getAttribute('data-x');
+    var pos=x;if(lane){for(var i=0;i<br.length;i++)if(br[i][0]>=x){pos=JX+br[i][2];break;}}
+    return {el:m,id:m.getAttribute('data-s'),x:x,y:+m.getAttribute('data-y'),lane:lane,pos:pos,
+      bd:m.querySelector('.bd'),halo:m.querySelector('.halo'),rip:m.querySelector('.rip'),ring:0,rt:-1};});
+  st.sort(function(a,b){return a.pos-b.pos;});
+  var mob=window.matchMedia('(max-width:640px)');
+  function rad(){var r=mob.matches?8.5:6.5;st.forEach(function(o){o.bd.setAttribute('r',r);o.halo.setAttribute('r',r*2);});}
+  rad();if(mob.addEventListener)mob.addEventListener('change',rad);
+  function select(id){
+    st.forEach(function(o){var on=o.id===id;o.el.classList.toggle('on',on);o.el.setAttribute('aria-pressed',on);});
+    bars.forEach(function(b){b.classList.toggle('on',b.getAttribute('data-s')===id);});
+    stages.forEach(function(s){s.hidden=s.getAttribute('data-s')!==id;});
+  }
+  function fade(x){return x<=XNOW?1:Math.max(0,1-(x-XNOW)/90);}
+  function ss(a,b,x){var t=Math.min(1,Math.max(0,(x-a)/(b-a)));return t*t*(3-2*t);}
+  function wave(dx){var e=Math.exp(-dx*dx/(SIG*SIG));return [e*Math.cos(KW*dx),e];}
+  /* draw one frame for packet centre xc (distance along the guide, in time-axis units) */
+  function frame(xc,tsec){
+    var lo=Math.max(40,xc-2.2*SIG),hi=Math.min(XEND,xc+2.2*SIG),pk='',up='',dn='';
+    if(hi>lo){for(var x=lo;x<=hi;x+=2){var w=wave(x-xc),m=A*(1-(1-SPLIT_M)*ss(JX-12,JX+12,x))*fade(x),u=m*w[0];
+      pk+=(pk?'L':'M')+x.toFixed(1)+' '+(Y0-u).toFixed(2);up+=(up?'L':'M')+x.toFixed(1)+' '+(Y0-m*w[1]).toFixed(2);dn+=(dn?'L':'M')+x.toFixed(1)+' '+(Y0+m*w[1]).toFixed(2);}}
+    gm.setAttribute('x1',xc-2.2*SIG);gm.setAttribute('x2',xc+2.2*SIG);
+    $('cv-pk').setAttribute('d',pk);$('cv-glow').setAttribute('d',pk);$('cv-env').setAttribute('d',up+dn);
+    var sc_=xc-JX,pb='',ub='',db='';
+    if(sc_>-3*SIG){for(var i=0;i<br.length;i++){var p=br[i],d=p[2]-sc_;if(d<-2.2*SIG||d>2.2*SIG)continue;
+      var w2=wave(d),mb=A*SPLIT_B*ss(0,24,p[2])*(p[0]<=XNOW?1:Math.max(0,1-(p[0]-XNOW)/90)),ub_=mb*w2[0];
+      pb+=(pb?'L':'M')+(p[0]-p[3]*ub_).toFixed(1)+' '+(p[1]-p[4]*ub_).toFixed(2);
+      ub+=(ub?'L':'M')+(p[0]-p[3]*mb*w2[1]).toFixed(1)+' '+(p[1]-p[4]*mb*w2[1]).toFixed(2);
+      db+=(db?'L':'M')+(p[0]+p[3]*mb*w2[1]).toFixed(1)+' '+(p[1]+p[4]*mb*w2[1]).toFixed(2);}}
+    var bxp=null;for(var j=0;j<br.length;j++)if(br[j][2]>=sc_){bxp=br[j][0];break;}if(bxp===null)bxp=br[br.length-1][0]+(sc_-br[br.length-1][2]);
+    gb.setAttribute('x1',bxp-2.2*SIG);gb.setAttribute('x2',bxp+2.2*SIG);
+    $('cv-pk2').setAttribute('d',pb);$('cv-glow2').setAttribute('d',pb);$('cv-env2').setAttribute('d',ub+db);
+    /* resonators: displaced with the guide, plus a damped ring after they are struck */
+    st.forEach(function(o){
+      var u=0;if(o.lane===0){var w=wave(o.x-xc);u=A*(1-(1-SPLIT_M)*ss(JX-12,JX+12,o.x))*fade(o.x)*w[0];}
+      else{var w3=wave(o.pos-xc);u=A*SPLIT_B*w3[0];}
+      if(o.rt>=0){var age=tsec-o.rt;o.ring=Math.exp(-age/1.1)*5*Math.sin(age*9);
+        var rr=6.5+age*30;o.rip.setAttribute('r',rr.toFixed(1));o.rip.style.opacity=Math.max(0,.55*(1-age/1.1)).toFixed(3);
+        if(age>2.5){o.rt=-1;o.ring=0;o.rip.style.opacity=0;}}
+      var cy=(o.y-u-o.ring).toFixed(2);o.bd.setAttribute('cy',cy);o.halo.setAttribute('cy',cy);
+    });
+  }
+  /* speed profile: the packet slows near each stage so the text below can be read */
+  function speed(xc){var v=118;st.forEach(function(o){var d=(xc-o.pos)/34;v*=1-.72*Math.exp(-d*d);});return v;}
+  var XSTART=40-2.4*SIG,XSTOP=Math.max(XEND,JX+br[br.length-1][2])+2.6*SIG,REST=3.2;
+  var xc=XSTART,last=null,playing=!reduce,visible=true,rest=0,touched=false,tnow=0,raf=0;
+  function strike(o){o.rt=tnow;select(o.id);}
+  function tick(ts){
+    raf=0;var dt=last===null?0:Math.min(.05,(ts-last)/1000);last=ts;tnow+=dt;
+    if(rest>0){rest-=dt;if(rest<=0){xc=XSTART;st.forEach(function(o){o.hit=false;});}}
+    else{var nx=xc+speed(xc)*dt;st.forEach(function(o){if(xc<o.pos&&nx>=o.pos)strike(o);});xc=nx;
+      if(xc>XSTOP){rest=REST;select('iisc');}}
+    frame(xc,tnow);
+    if(mob.matches&&!touched&&rest<=0&&sc.scrollWidth>sc.clientWidth){var k=svg.clientWidth/960;sc.scrollLeft=Math.max(0,Math.min(xc,XNOW)*k-sc.clientWidth*.45);}
+    if(playing&&visible)raf=requestAnimationFrame(tick);else last=null;
+  }
+  function run(){if(!raf&&playing&&visible)raf=requestAnimationFrame(tick);}
+  function setPlaying(p){playing=p;btn.textContent=p?'Pause':'Play';btn.setAttribute('aria-pressed',!p);if(p)run();}
+  btn.addEventListener('click',function(){setPlaying(!playing);});
+  ['touchstart','wheel','pointerdown'].forEach(function(e){sc.addEventListener(e,function(){touched=true;},{passive:true});});
+  st.forEach(function(o){
+    function go(){select(o.id);if(reduce)return;rest=0;xc=o.pos-.5;st.forEach(function(q){if(q!==o)q.rt=-1;});o.rt=tnow;if(!playing)setPlaying(true);run();}
+    o.el.addEventListener('click',go);
+    o.el.addEventListener('keydown',function(e){
+      if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}
+      if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();var j=st.indexOf(o)+(e.key==='ArrowRight'?1:-1);if(st[j])st[j].el.focus();}});
   });
-  select('iisc');draw();
-  var sc=svg.parentNode;if(sc.scrollWidth>sc.clientWidth)sc.scrollLeft=sc.scrollWidth;
-  if(reduce)return;
-  if('IntersectionObserver'in window){new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)start();}).observe(svg);}
-  start();setTimeout(function(){kick(id.gec);},700);
+  select('iisc');
+  if(reduce){frame(-1e4,0);return;}
+  frame(XSTART,0);
+  if('IntersectionObserver'in window)new IntersectionObserver(function(es){visible=es[0].isIntersecting;if(visible)run();}).observe(svg);
+  if(mob.matches)sc.scrollLeft=0;
+  run();
 })();
 </script>
 </body>
