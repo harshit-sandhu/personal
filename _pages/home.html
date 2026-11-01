@@ -1,0 +1,692 @@
+---
+layout: null
+permalink: /
+title: home
+# arXiv links: paste the URL between the quotes once a preprint is posted.
+# The "arXiv" button appears automatically on the paper when a link is set.
+arxiv:
+  temporal_band_topology: ""
+  temporal_interface_state: ""
+---
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harshit K. Sandhu · Wave Dynamics &amp; Mechanical Metamaterials</title>
+<meta name="description" content="Harshit K. Sandhu, PhD candidate in Aerospace Engineering at the Indian Institute of Science (IISc), Bengaluru. Research on phononic time crystals, temporal topology and non-reciprocal elastic lattices.">
+<meta name="author" content="Harshit Kumar Sandhu">
+<meta property="og:title" content="Harshit K. Sandhu · Wave Dynamics & Mechanical Metamaterials">
+<meta property="og:description" content="PhD candidate at IISc Bengaluru working on phononic time crystals, temporal topology and non-reciprocal lattices.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}/">
+<meta property="og:image" content="{{ site.url }}{{ site.baseurl }}/assets/img/profile-600.jpg">
+<link rel="canonical" href="{{ site.url }}{{ site.baseurl }}/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%231d4ed8'/><path d='M10 55 Q 22.5 25 35 55 T 60 55 T 85 55' stroke='white' stroke-width='8' fill='none' stroke-linecap='round'/></svg>">
+<style>
+:root{
+  --paper:#fbfbfd; --soft:#f8f9fa; --ink:#0f172a; --ink-2:#334155; --muted:#64748b;
+  --rule:#e2e8f0; --accent:#1d4ed8; --accent-soft:#dbe4fb;
+  --slate:#0b1220; --slate-2:#131c2e; --slate-rule:#24324a; --slate-ink:#e2e8f0; --slate-muted:#94a3b8;
+  --red:#b91c1c; --blue:#1d4ed8;
+  --serif: "Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;
+  --sans: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono: ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace;
+  --wrap: 1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;line-height:1.2;margin:0}
+p{margin:0 0 1em}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 24px}
+.mono{font-family:var(--mono);font-size:.8rem;letter-spacing:.02em}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:12px;display:block}
+section{padding:96px 0}
+.sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-bottom:44px;border-bottom:1px solid var(--rule);padding-bottom:18px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.4rem)}
+.sec-head .more{font-family:var(--mono);font-size:.8rem;white-space:nowrap}
+
+/* ---------- header ---------- */
+.site-header{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(251,251,253,.72);backdrop-filter:saturate(180%) blur(14px);-webkit-backdrop-filter:saturate(180%) blur(14px);border-bottom:1px solid rgba(226,232,240,.8)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-family:var(--serif);font-size:1.12rem;font-weight:600;color:var(--ink);letter-spacing:.01em}
+.logo:hover{text-decoration:none}
+.logo span{color:var(--accent)}
+.nav ul{list-style:none;display:flex;gap:4px;margin:0;padding:0;align-items:center}
+.nav ul a{display:block;padding:6px 11px;border-radius:6px;color:var(--ink-2);font-size:.88rem}
+.nav ul a:hover{background:rgba(29,78,216,.07);color:var(--accent);text-decoration:none}
+.nav ul a.cv{border:1px solid var(--accent);color:var(--accent);margin-left:6px;font-family:var(--mono);font-size:.76rem;letter-spacing:.06em}
+.nav ul a.cv:hover{background:var(--accent);color:#fff}
+.menu-btn{display:none;background:none;border:1px solid var(--rule);border-radius:6px;padding:7px 10px;cursor:pointer;color:var(--ink)}
+@media (max-width:900px){
+  .menu-btn{display:block}
+  .nav ul{position:absolute;top:60px;left:0;right:0;flex-direction:column;align-items:stretch;background:rgba(251,251,253,.97);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule);padding:8px 16px 16px;display:none}
+  .nav ul.open{display:flex}
+  .nav ul a{padding:10px 8px}
+  .nav ul a.cv{margin:6px 0 0;text-align:center}
+}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:150px 0 96px;border-bottom:1px solid var(--rule)}
+.hero-bg{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(29,78,216,.06) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(29,78,216,.06) 1px,transparent 1px),
+    linear-gradient(rgba(29,78,216,.028) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(29,78,216,.028) 1px,transparent 1px);
+  background-size:50px 50px,50px 50px,10px 10px,10px 10px;
+  -webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 30%,transparent 78%);mask-image:radial-gradient(ellipse at 60% 40%,#000 30%,transparent 78%)}
+.hero-bg svg{position:absolute;left:0;width:100%;height:340px;top:50%;transform:translateY(-45%)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:56px;align-items:center}
+.badge{display:inline-block;font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);border:1px solid rgba(29,78,216,.35);background:rgba(255,255,255,.7);padding:6px 12px;border-radius:999px;margin-bottom:26px}
+.hero h1{font-size:clamp(2.5rem,6vw,4.1rem);margin-bottom:22px;font-weight:600}
+.hero .lede{font-size:1.18rem;color:var(--ink-2);max-width:40em;margin-bottom:30px}
+.hero .lede em{font-family:var(--serif);font-size:1.06em;color:var(--ink)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;font-size:.92rem;font-weight:500;border:1px solid var(--rule);background:#fff;color:var(--ink)}
+.btn:hover{text-decoration:none;border-color:var(--accent);color:var(--accent)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{background:#1e40af;color:#fff}
+.id-box{background:#fff;border:1px solid var(--ink);border-radius:4px;padding:28px;box-shadow:8px 8px 0 var(--ink)}
+.id-top{display:flex;gap:18px;align-items:center;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--rule)}
+.id-top img{width:84px;height:84px;border-radius:50%;object-fit:cover;object-position:50% 22%;border:1px solid var(--rule);flex:none}
+.id-top strong{font-family:var(--serif);font-size:1.15rem;display:block;line-height:1.3}
+.id-top .mono{color:var(--muted)}
+.id-box dl{margin:0;display:grid;gap:14px}
+.id-box dt{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.id-box dd{margin:2px 0 0;font-size:.95rem;line-height:1.45}
+.socials{display:flex;gap:8px;margin-top:20px;padding-top:18px;border-top:1px solid var(--rule);flex-wrap:wrap}
+.socials a{font-family:var(--mono);font-size:.72rem;padding:5px 9px;border:1px solid var(--rule);border-radius:4px;color:var(--ink-2)}
+.socials a:hover{border-color:var(--accent);color:var(--accent);text-decoration:none}
+
+/* ---------- news ---------- */
+.news{padding:0;background:#fff;border-bottom:1px solid var(--rule)}
+.news .wrap{display:grid;grid-template-columns:140px 1fr;gap:24px;padding-top:26px;padding-bottom:26px}
+.news h2{font-family:var(--mono);font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding-top:3px}
+.news ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.news li{display:grid;grid-template-columns:92px 1fr;gap:12px;font-size:.95rem;color:var(--ink-2)}
+.news time{font-family:var(--mono);font-size:.78rem;color:var(--accent);padding-top:3px}
+.news .all{font-family:var(--mono);font-size:.76rem}
+
+/* ---------- research ---------- */
+.theme{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:center;padding:20px 0 56px}
+.theme + .theme{border-top:1px solid var(--rule);padding-top:56px}
+.theme:nth-of-type(even) figure{order:-1}
+.theme .num{font-family:var(--mono);font-size:.76rem;color:var(--muted);letter-spacing:.1em}
+.theme h3{font-size:clamp(1.45rem,2.6vw,1.85rem);margin:8px 0 18px}
+.theme p{color:var(--ink-2)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.tag{font-family:var(--mono);font-size:.72rem;padding:4px 9px;border-radius:4px;background:var(--accent-soft);color:#1e3a8a}
+figure{margin:0;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:20px}
+figure svg{display:block;width:100%;height:auto}
+figcaption{font-size:.84rem;color:var(--muted);margin-top:12px;line-height:1.5;border-top:1px solid var(--rule);padding-top:10px}
+figcaption b{font-family:var(--serif);color:var(--ink);font-weight:600}
+.also{margin-top:8px;padding:18px 22px;border-left:3px solid var(--accent);background:#fff;font-size:.95rem;color:var(--ink-2)}
+
+/* ---------- laboratory ---------- */
+.lab{background:radial-gradient(1200px 500px at 85% 0%,#16233d 0%,transparent 60%),var(--slate);color:var(--slate-ink)}
+.lab .sec-head{border-color:var(--slate-rule)}
+.lab .eyebrow{color:#7aa2ff}
+.lab .intro{color:var(--slate-muted);max-width:46em;margin:-18px 0 40px}
+.lab-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.lab-card{background:var(--slate-2);border:1px solid var(--slate-rule);border-radius:6px;padding:26px;position:relative;overflow:hidden}
+.lab-card::before{content:"";position:absolute;inset:0 0 auto 0;height:2px;background:linear-gradient(90deg,#ef4444,#7aa2ff)}
+.lab-card .mono{color:#7aa2ff}
+.lab-card h3{font-size:1.25rem;margin:10px 0 12px;color:#fff}
+.lab-card p{color:var(--slate-muted);font-size:.95rem;margin:0}
+.lab-card svg{display:block;width:44px;height:44px;margin-bottom:14px}
+.instruments{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px;align-items:center}
+.instruments .mono{color:var(--slate-muted);margin-right:6px}
+.instruments span.chip{font-family:var(--mono);font-size:.74rem;padding:5px 10px;border:1px solid var(--slate-rule);border-radius:4px;color:var(--slate-ink)}
+
+/* ---------- publications ---------- */
+.pubs{list-style:none;margin:0;padding:0}
+.pub{display:grid;grid-template-columns:110px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--rule)}
+.pub:first-child{padding-top:0}
+.pub .year{font-family:var(--mono);font-size:1.4rem;color:var(--ink);line-height:1}
+.pub .status{display:inline-block;margin-top:10px;font-family:var(--mono);font-size:.66rem;letter-spacing:.06em;text-transform:uppercase;padding:3px 7px;border-radius:3px;border:1px solid}
+.status.sub{color:#92400e;border-color:#f3c98b;background:#fffbeb}
+.status.peer{color:#065f46;border-color:#9ee0c3;background:#ecfdf5}
+.pub h3{font-size:1.25rem;line-height:1.35;margin-bottom:8px}
+.pub .authors{font-size:.95rem;color:var(--ink-2);margin:0 0 4px}
+.pub .authors b{color:var(--ink)}
+.pub .venue{font-family:var(--serif);font-style:italic;color:var(--muted);margin:0}
+.pub .links{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{font-family:var(--mono);font-size:.72rem;padding:5px 10px;border-radius:4px;border:1px solid var(--accent);color:var(--accent);background:#fff}
+.pill:hover{background:var(--accent);color:#fff;text-decoration:none}
+.pill.muted{border-color:var(--rule);color:var(--muted);cursor:default}
+.pill.muted:hover{background:#fff;color:var(--muted)}
+.note{font-size:.84rem;color:var(--muted);margin-top:8px}
+
+/* ---------- journey ---------- */
+.journey-grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:64px}
+.timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:1px;background:var(--rule)}
+.timeline li{position:relative;padding-bottom:30px}
+.timeline li::before{content:"";position:absolute;left:-28px;top:6px;width:11px;height:11px;border-radius:50%;background:var(--paper);border:2px solid var(--accent)}
+.timeline li.edu::before{background:var(--accent)}
+.timeline time{font-family:var(--mono);font-size:.76rem;color:var(--accent);letter-spacing:.04em}
+.timeline h3{font-size:1.12rem;margin:4px 0 4px}
+.timeline p{margin:0;color:var(--ink-2);font-size:.94rem}
+.side h3{font-family:var(--mono);font-size:.75rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+.side + .side{margin-top:40px}
+.mentees{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.mentees li{padding:14px 16px;background:#fff;border:1px solid var(--rule);border-radius:6px;font-size:.92rem;color:var(--ink-2);line-height:1.5}
+.mentees strong{color:var(--ink);display:block}
+.mentees .mono{color:var(--muted);font-size:.72rem}
+.awards{list-style:none;margin:0;padding:0}
+.awards li{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px dashed var(--rule);font-size:.93rem}
+.awards li span:last-child{font-family:var(--mono);font-size:.74rem;color:var(--muted);white-space:nowrap;padding-top:2px}
+
+/* ---------- beyond ---------- */
+.beyond{background:var(--soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.tablist{display:inline-flex;gap:4px;padding:4px;background:#fff;border:1px solid var(--rule);border-radius:8px;margin-bottom:32px}
+.tablist button{font:500 .88rem var(--sans);padding:9px 16px;border:0;background:none;border-radius:6px;color:var(--ink-2);cursor:pointer}
+.tablist button[aria-selected="true"]{background:var(--ink);color:#fff}
+.panel{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.panel[hidden]{display:none}
+.interest{background:#fff;border:1px solid var(--rule);border-radius:6px;padding:24px}
+.interest svg{width:40px;height:40px;color:var(--accent);margin-bottom:10px}
+.interest h3{font-size:1.15rem;margin-bottom:8px}
+.interest p{margin:0;font-size:.94rem;color:var(--ink-2)}
+
+/* ---------- notebook ---------- */
+.notes{list-style:none;margin:-20px 0 0;padding:0}
+.notes li{display:grid;grid-template-columns:120px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--rule)}
+.notes .idx{font-family:var(--mono);font-size:.78rem;color:var(--muted)}
+.notes h3{font-size:1.2rem;margin-bottom:4px}
+.notes p{margin:0;color:var(--muted);font-size:.92rem}
+.soon{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);border:1px dashed var(--muted);padding:3px 8px;border-radius:3px;white-space:nowrap}
+
+/* ---------- footer ---------- */
+footer{background:var(--slate);color:var(--slate-ink);padding:88px 0 36px}
+.cta{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:56px;padding-bottom:56px;border-bottom:1px solid var(--slate-rule)}
+footer .eyebrow{color:#7aa2ff}
+footer h2{font-size:clamp(1.9rem,3.6vw,2.6rem);color:#fff;margin-bottom:16px}
+footer p{color:var(--slate-muted)}
+.contact-list{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.contact-list a{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--slate-rule);color:var(--slate-ink);font-family:var(--mono);font-size:.84rem}
+.contact-list a span:first-child{color:var(--slate-muted);text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;padding-top:2px}
+.contact-list a:hover{color:#7aa2ff;text-decoration:none}
+.signoff{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:28px;font-size:.84rem;color:var(--slate-muted)}
+.signoff address{font-style:normal;line-height:1.6}
+.signoff nav a{color:var(--slate-muted);margin-left:16px;font-family:var(--mono);font-size:.76rem}
+.signoff nav a:first-child{margin-left:0}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:900px){
+  section{padding:72px 0}
+  .hero{padding:118px 0 72px}
+  .hero-grid,.theme,.journey-grid,.cta{grid-template-columns:minmax(0,1fr);gap:40px}
+  .theme:nth-of-type(even) figure{order:0}
+  .lab-grid{grid-template-columns:minmax(0,1fr)}
+  .id-box{box-shadow:5px 5px 0 var(--ink)}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 16px}
+  .sec-head{flex-direction:column;gap:6px;align-items:flex-start}
+  .news .wrap{grid-template-columns:minmax(0,1fr);gap:10px}
+  .news li{grid-template-columns:minmax(0,1fr);gap:0}
+  .pub{grid-template-columns:minmax(0,1fr);gap:10px}
+  .pub .year{display:flex;gap:12px;align-items:center;font-size:1.1rem}
+  .pub .status{margin-top:0}
+  .notes li{grid-template-columns:minmax(0,1fr);gap:6px}
+  .tablist{display:flex;width:100%}
+  .tablist button{flex:1;padding:9px 8px}
+  .signoff nav a{margin:0 14px 0 0}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="logo" href="#top">H.&thinsp;K. <span>Sandhu</span></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg width="18" height="14" viewBox="0 0 18 14" aria-hidden="true"><path d="M0 1h18M0 7h18M0 13h18" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+    <ul id="menu">
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#laboratory">Laboratory</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#beyond">Beyond Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a class="cv" href="{{ site.baseurl }}/cv/">CV</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <svg viewBox="0 0 1200 340" preserveAspectRatio="none">
+      <path id="w1" fill="none" stroke="#1d4ed8" stroke-opacity=".22" stroke-width="1.6"/>
+      <path id="w2" fill="none" stroke="#1d4ed8" stroke-opacity=".12" stroke-width="1.2"/>
+      <path id="w3" fill="none" stroke="#b91c1c" stroke-opacity=".10" stroke-width="1.2"/>
+    </svg>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="reveal">
+      <span class="badge">Ph.D. Candidate &amp; Postdoctoral Aspirant</span>
+      <h1>Harshit Kumar Sandhu</h1>
+      <p class="lede">I study how waves move through <em>engineered mechanical systems</em>, especially when their properties change in time or their couplings break reciprocity. My work connects the mathematics of Floquet and non-Hermitian systems with table-top experiments on oscillators and lattices.</p>
+      <div class="btns">
+        <a class="btn primary" href="#research">Explore research</a>
+        <a class="btn" href="{{ site.baseurl }}/assets/pdf/Harshit_Sandhu_CV.pdf">Download CV (PDF)</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <aside class="id-box reveal" aria-label="Affiliation">
+      <div class="id-top">
+        <img src="{{ site.baseurl }}/assets/img/profile-600.jpg" alt="Portrait of Harshit Kumar Sandhu" width="84" height="84">
+        <div>
+          <strong>Harshit K. Sandhu</strong>
+          <span class="mono">Ph.D. expected June 2027</span>
+        </div>
+      </div>
+      <dl>
+        <div><dt>Institution</dt><dd><a href="https://iisc.ac.in/">Indian Institute of Science (IISc)</a>, Bengaluru</dd></div>
+        <div><dt>Department</dt><dd><a href="https://aero.iisc.ac.in/">Aerospace Engineering</a></dd></div>
+        <div><dt>Laboratory</dt><dd>LEMS Lab · Project Associate</dd></div>
+        <div><dt>Advisor</dt><dd><a href="https://rajeshchaunsali.github.io/">Prof. Rajesh Chaunsali</a></dd></div>
+      </dl>
+      <div class="socials">
+        <a href="mailto:harshithk@iisc.ac.in">Email</a>
+        <a href="https://scholar.google.com/citations?user=ZChppDUAAAAJ">Scholar</a>
+        <a href="https://orcid.org/0009-0003-4816-3503">ORCID</a>
+        <a href="https://www.linkedin.com/in/harshit-kumar-sandhu-491700b9">LinkedIn</a>
+        <a href="https://github.com/harshit-sandhu">GitHub</a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= NEWS ================= -->
+<section class="news" aria-label="Recent news">
+  <div class="wrap">
+    <h2>Latest</h2>
+    <div>
+      <ul>
+        {% assign news = site.news | sort: 'date' | reverse %}
+        {% for item in news limit: 3 %}
+        <li><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+        {% endfor %}
+      </ul>
+      <a class="all" href="{{ site.baseurl }}/news/">All news →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">01 · Scientific Paradigms</span><h2>Research themes</h2></div>
+      <a class="more" href="{{ site.baseurl }}/research/">Detailed write-ups →</a>
+    </div>
+
+    <article class="theme reveal">
+      <div>
+        <span class="num">THEME I</span>
+        <h3>Phononic time crystals &amp; temporal topology</h3>
+        <p>When a medium's stiffness is modulated periodically in <em>time</em> rather than in space, the usual roles of frequency and wavenumber swap. The result is a phononic time crystal, which opens gaps in momentum instead of frequency.</p>
+        <p>I study the topology of these time-periodic bands using single-degree-of-freedom parametric oscillators as a minimal platform, and the temporal characteristic admittance that governs how waves scatter at temporal interfaces. This is the core of my thesis, <em>Dynamics of Elastic Time Crystals</em>, and includes the experimental observation of a temporal topological interface state in a parametric oscillator.</p>
+        <div class="tags"><span class="tag">Floquet theory</span><span class="tag">Zak phase</span><span class="tag">Mathieu equation</span><span class="tag">Dissipation</span></div>
+      </div>
+      <figure>
+        <svg viewBox="0 0 420 320" role="img" aria-labelledby="f1t">
+          <title id="f1t">Schematic Bloch sphere with two Floquet eigenvectors of different Zak phase joined by a dashed trajectory</title>
+          <defs>
+            <marker id="ah-r" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b91c1c"/></marker>
+            <marker id="ah-b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d4ed8"/></marker>
+            <marker id="ah-g" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker>
+            <radialGradient id="sph" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6ecfb"/></radialGradient>
+          </defs>
+          <circle cx="210" cy="160" r="120" fill="url(#sph)" stroke="#0f172a" stroke-width="1.2"/>
+          <ellipse cx="210" cy="160" rx="120" ry="34" fill="none" stroke="#94a3b8" stroke-width="1"/>
+          <path d="M90 160 A120 34 0 0 0 330 160" fill="none" stroke="#475569" stroke-width="1.1"/>
+          <ellipse cx="210" cy="160" rx="34" ry="120" fill="none" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 4"/>
+          <line x1="210" y1="160" x2="210" y2="22" stroke="#64748b" stroke-width="1" marker-end="url(#ah-g)"/>
+          <line x1="210" y1="160" x2="350" y2="160" stroke="#64748b" stroke-width="1" marker-end="url(#ah-g)"/>
+          <line x1="210" y1="160" x2="148" y2="214" stroke="#64748b" stroke-width="1" marker-end="url(#ah-g)"/>
+          <text x="216" y="20" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#475569">z</text>
+          <text x="354" y="164" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#475569">y</text>
+          <text x="134" y="228" font-family="ui-monospace,Menlo,monospace" font-size="12" fill="#475569">x</text>
+          <path d="M268 72 C 330 120, 318 220, 238 262" fill="none" stroke="#0f172a" stroke-width="1.4" stroke-dasharray="5 5"/>
+          <line x1="210" y1="160" x2="266" y2="74" stroke="#b91c1c" stroke-width="2.6" marker-end="url(#ah-r)"/>
+          <line x1="210" y1="160" x2="236" y2="258" stroke="#1d4ed8" stroke-width="2.6" marker-end="url(#ah-b)"/>
+          <circle cx="210" cy="160" r="3.2" fill="#0f172a"/>
+          <text x="276" y="62" font-family="Georgia,serif" font-style="italic" font-size="15" fill="#b91c1c">|ψ<tspan font-size="11" dy="4">A</tspan><tspan dy="-4">⟩ · Zak = 0</tspan></text>
+          <text x="248" y="292" font-family="Georgia,serif" font-style="italic" font-size="15" fill="#1d4ed8">|ψ<tspan font-size="11" dy="4">B</tspan><tspan dy="-4">⟩ · Zak = π</tspan></text>
+          <text x="336" y="126" font-family="ui-monospace,Menlo,monospace" font-size="10.5" fill="#0f172a">gap closing</text>
+        </svg>
+        <figcaption><b>Fig. 1 · Temporal mode swapping.</b> Schematic. Floquet eigenvectors of two time-crystal phases shown on the Bloch sphere. A distinct Zak phase (0 vs π) means a temporal interface between the phases hosts a topological state.</figcaption>
+      </figure>
+    </article>
+
+    <article class="theme reveal">
+      <div>
+        <span class="num">THEME II</span>
+        <h3>Non-reciprocal lattices &amp; metamaterials</h3>
+        <p>In passive elastic lattices, a wave travels the same way in both directions. Adding <em>non-reciprocal stiffness</em> (couplings that act differently forwards and backwards, realised with active feedback) together with engineered damping makes the lattice non-Hermitian and breaks this symmetry.</p>
+        <p>I study how non-reciprocity and dissipation together shape dispersion, directional amplification and localisation. This work appeared in a special issue of <em>JASA</em> on active and tunable acoustic metamaterials.</p>
+        <div class="tags"><span class="tag">Non-Hermitian mechanics</span><span class="tag">Active feedback</span><span class="tag">Directional amplification</span></div>
+      </div>
+      <figure>
+        <svg viewBox="0 0 440 230" role="img" aria-labelledby="f2t">
+          <title id="f2t">Schematic of a one-dimensional lattice of masses connected by springs, with dashpots to ground and asymmetric active feedback couplings</title>
+          <defs>
+            <marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d4ed8"/></marker>
+            <marker id="fb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b91c1c"/></marker>
+            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1.4"/></pattern>
+          </defs>
+          <rect x="10" y="196" width="420" height="10" fill="url(#hatch)"/>
+          <line x1="10" y1="196" x2="430" y2="196" stroke="#475569" stroke-width="1.2"/>
+          <!-- springs between masses -->
+          <g fill="none" stroke="#0f172a" stroke-width="1.4">
+            <path d="M10 122 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
+            <path d="M110 122 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
+            <path d="M210 122 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
+            <path d="M310 122 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
+          </g>
+          <!-- masses -->
+          <g fill="#ffffff" stroke="#0f172a" stroke-width="1.6">
+            <rect x="70" y="100" width="40" height="44" rx="3"/>
+            <rect x="170" y="100" width="40" height="44" rx="3"/>
+            <rect x="270" y="100" width="40" height="44" rx="3"/>
+            <rect x="370" y="100" width="40" height="44" rx="3" stroke-dasharray="3 3"/>
+          </g>
+          <g font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a" text-anchor="middle">
+            <text x="90" y="127">m</text><text x="190" y="127">m</text><text x="290" y="127">m</text><text x="390" y="127" fill="#64748b">…</text>
+          </g>
+          <!-- dashpots to ground -->
+          <g fill="none" stroke="#475569" stroke-width="1.3">
+            <path d="M90 144 v14 M80 158 h20 M82 158 v14 h16 v-14 M90 168 v28"/>
+            <path d="M190 144 v14 M180 158 h20 M182 158 v14 h16 v-14 M190 168 v28"/>
+            <path d="M290 144 v14 M280 158 h20 M282 158 v14 h16 v-14 M290 168 v28"/>
+          </g>
+          <text x="300" y="182" font-family="Georgia,serif" font-style="italic" font-size="13" fill="#475569">c</text>
+          <!-- non-reciprocal feedback arcs -->
+          <path d="M96 96 C 120 52, 160 52, 184 96" fill="none" stroke="#1d4ed8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#fa)"/>
+          <path d="M196 96 C 220 52, 260 52, 284 96" fill="none" stroke="#1d4ed8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#fa)"/>
+          <path d="M172 146 C 158 180, 122 180, 110 148" fill="none" stroke="#b91c1c" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#fb)"/>
+          <path d="M272 146 C 258 180, 222 180, 210 148" fill="none" stroke="#b91c1c" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#fb)"/>
+          <text x="140" y="46" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#1d4ed8" text-anchor="middle">k + κ</text>
+          <text x="140" y="190" font-family="Georgia,serif" font-style="italic" font-size="13" fill="#b91c1c" text-anchor="middle">k − κ</text>
+          <text x="220" y="20" font-family="ui-monospace,Menlo,monospace" font-size="10.5" fill="#475569" text-anchor="middle">forward ≠ backward coupling</text>
+        </svg>
+        <figcaption><b>Fig. 2 · Non-reciprocal active lattice.</b> Schematic. Masses <i>m</i> connected by springs <i>k</i>, damped to ground by dashpots <i>c</i>. Active feedback adds an asymmetric part <i>κ</i>, so coupling forwards (<i>k</i>+<i>κ</i>) differs from coupling backwards (<i>k</i>−<i>κ</i>).</figcaption>
+      </figure>
+    </article>
+
+    <p class="also reveal"><strong>Emerging direction:</strong> active mechanical oscillators as <em>physical reservoirs</em> and mechanical neural networks, explored through student projects I mentor in the LEMS lab. <a href="{{ site.baseurl }}/research/">Read more →</a></p>
+  </div>
+</section>
+
+<!-- ================= LABORATORY ================= -->
+<section id="laboratory" class="lab">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">02 · The Laboratory</span><h2 style="color:#fff">From equations to experiments</h2></div>
+    </div>
+    <p class="intro reveal">My theoretical work is tested on table-top hardware in the LEMS lab. These platforms turn Floquet and non-Hermitian models into vibrations that can be seen and measured.</p>
+    <div class="lab-grid">
+      <article class="lab-card reveal">
+        <svg viewBox="0 0 52 52" fill="none" stroke="#7aa2ff" stroke-width="1.6" aria-hidden="true"><circle cx="26" cy="26" r="9"/><path d="M26 6v8M26 38v8M6 26h8M38 26h8"/><path d="M14 14l4 4M34 34l4 4M38 14l-4 4M14 38l4-4" stroke="#ef4444"/></svg>
+        <span class="mono">PLATFORM 01</span>
+        <h3>Magneto-mechanical oscillators</h3>
+        <p>Motor-driven rotating magnet arrays modulate the effective stiffness of an oscillator in time. Its response is measured without contact using laser Doppler vibrometry (LDV).</p>
+      </article>
+      <article class="lab-card reveal">
+        <svg viewBox="0 0 52 52" fill="none" stroke="#7aa2ff" stroke-width="1.6" aria-hidden="true"><path d="M4 8h44"/><path d="M10 8l-2 26M20 8l1 26M30 8l2 26M40 8l-1 26"/><circle cx="8" cy="37" r="3.2"/><circle cx="21" cy="37" r="3.2"/><circle cx="32" cy="37" r="3.2"/><circle cx="39" cy="37" r="3.2"/><path d="M11 37h7M24 37h5M35 37h1" stroke="#ef4444"/></svg>
+        <span class="mono">PLATFORM 02</span>
+        <h3>Coupled pendulum lattices</h3>
+        <p>A five-degree-of-freedom chain of coupled pendula for studying discrete modal dynamics and wave transport in a controlled lattice.</p>
+      </article>
+      <article class="lab-card reveal">
+        <svg viewBox="0 0 52 52" fill="none" stroke="#7aa2ff" stroke-width="1.6" aria-hidden="true"><rect x="8" y="8" width="16" height="16"/><rect x="12" y="12" width="4" height="4" fill="#7aa2ff"/><rect x="18" y="16" width="3" height="4" fill="#7aa2ff"/><path d="M30 40c4-10 8-10 12-20" stroke="#ef4444"/><path d="M28 44h18M28 44V26"/></svg>
+        <span class="mono">PLATFORM 03</span>
+        <h3>Optical tracking &amp; system ID</h3>
+        <p>Camera-based tracking of ArUco markers captures full-field motion. Sparse Identification of Nonlinear Dynamics (SINDy) then recovers the governing equations directly from the data.</p>
+      </article>
+    </div>
+    <div class="instruments reveal">
+      <span class="mono">TOOLKIT</span>
+      <span class="chip">Laser Doppler Vibrometer</span><span class="chip">DAQ systems</span><span class="chip">3D printing</span><span class="chip">COMSOL Multiphysics</span><span class="chip">MATLAB · Python · C++</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PUBLICATIONS ================= -->
+<section id="publications">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">03 · Selected Publications</span><h2>Publications</h2></div>
+      <a class="more" href="{{ site.baseurl }}/publications/">Full list with BibTeX →</a>
+    </div>
+    <ol class="pubs">
+      <li class="pub reveal">
+        <div><div class="year">2026</div><span class="status sub">Submitted preprint</span></div>
+        <div>
+          <h3>Observation of a Temporal Topological Interface State in a Parametric Oscillator</h3>
+          <p class="authors"><b>H. K. Sandhu</b>, A. Umashankar &amp; R. Chaunsali</p>
+          <p class="venue">Under review · presented at APS Global Physics Summit 2026</p>
+          <div class="links">
+            {% if page.arxiv.temporal_interface_state != "" %}<a class="pill" href="{{ page.arxiv.temporal_interface_state }}">arXiv</a>{% else %}<span class="pill muted">arXiv · coming soon</span>{% endif %}
+          </div>
+        </div>
+      </li>
+      <li class="pub reveal">
+        <div><div class="year">2026</div><span class="status sub">Submitted preprint</span></div>
+        <div>
+          <h3>Temporal Band Topology in Dissipative Phononic Time Crystals</h3>
+          <p class="authors"><b>H. K. Sandhu</b> &amp; R. Chaunsali</p>
+          <p class="venue">Under review</p>
+          <div class="links">
+            {% if page.arxiv.temporal_band_topology != "" %}<a class="pill" href="{{ page.arxiv.temporal_band_topology }}">arXiv</a>{% else %}<span class="pill muted">arXiv · coming soon</span>{% endif %}
+          </div>
+        </div>
+      </li>
+      <li class="pub reveal">
+        <div><div class="year">2026</div><span class="status peer">Peer-reviewed journal</span></div>
+        <div>
+          <h3>Wave propagation in an elastic lattice with nonreciprocal stiffness and engineered damping</h3>
+          <p class="authors"><b>H. K. Sandhu</b>, S. Dutta &amp; R. Chaunsali</p>
+          <p class="venue">The Journal of the Acoustical Society of America 159(2), 978–993 · Special Issue: Active and Tunable Acoustic Metamaterials</p>
+          <div class="links">
+            <a class="pill" href="https://doi.org/10.1121/10.0042349">DOI 10.1121/10.0042349</a>
+          </div>
+        </div>
+      </li>
+    </ol>
+    <p class="note reveal">Talks and posters are listed on the <a href="{{ site.baseurl }}/talks/">talks page</a>.</p>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section id="journey" style="padding-top:24px">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">04 · Academic Journey</span><h2>Timeline</h2></div>
+      <a class="more" href="{{ site.baseurl }}/cv/">Full CV →</a>
+    </div>
+    <div class="journey-grid">
+      <ol class="timeline reveal">
+        <li><time>May 2026 – present</time><h3>Project Associate, LEMS Lab</h3><p>Department of Aerospace Engineering, IISc Bengaluru.</p></li>
+        <li><time>Sep 2025</time><h3>Metamaterials 2025, Amsterdam</h3><p>Poster presentation and EUPROMETA Doctoral School, supported by a conference travel grant and an IISc GARP Travel Fellowship.</p></li>
+        <li><time>Jan – May 2024</time><h3>Teaching Assistant, AE 264 Vibrations</h3><p>IISc Bengaluru. Also gave a guest lecture in AE 351A (Dec 2023).</p></li>
+        <li class="edu"><time>Jan 2020 – Jun 2027 (expected)</time><h3>M.Tech (Research) &amp; Ph.D., Aerospace Engineering</h3><p>Indian Institute of Science, Bengaluru. Thesis: <em>Dynamics of Elastic Time Crystals</em>. Advisor: Prof. Rajesh Chaunsali. Funded by a GATE Fellowship from the Ministry of Education.</p></li>
+        <li><time>Sep 2018 – Dec 2019</time><h3>Subject Matter Expert &amp; Faculty</h3><p>THE GATE ACADEMY Pvt. Ltd., Bengaluru.</p></li>
+        <li class="edu"><time>Aug 2012 – Jun 2016</time><h3>B.E., Mechanical Engineering</h3><p>Government Engineering College, Raipur, Chhattisgarh.</p></li>
+      </ol>
+      <div>
+        <div class="side reveal">
+          <h3>Mentoring</h3>
+          <ul class="mentees">
+            <li><strong>Jayalakshmi K</strong>Mechanical neural networks &amp; physical reservoir computing<br><span class="mono">M.TECH (RESEARCH), IISC · DEC 2025 – PRESENT</span></li>
+            <li><strong>Pranav M N</strong>Active mechanical oscillators for reservoir computing<br><span class="mono">SUMMER INTERN, IIT MADRAS · 2026</span></li>
+            <li><strong>Vaishnavi Devgire</strong>Wave propagation in a 1D chain with a local active site<br><span class="mono">SUMMER INTERN, IIEST SHIBPUR · 2025</span></li>
+            <li><strong>Avinash Umashankar</strong>Nonlinear vibrations in parametric systems<br><span class="mono">WINTER INTERN, SASTRA · 2024</span></li>
+          </ul>
+        </div>
+        <div class="side reveal">
+          <h3>Fellowships &amp; honours</h3>
+          <ul class="awards">
+            <li><span>Metamaterials 2025 Travel Grant (EUR 1080)</span><span>2025</span></li>
+            <li><span>IISc GARP Travel Fellowship</span><span>2025</span></li>
+            <li><span>Student Council Representative, Aerospace</span><span>2024–26</span></li>
+            <li><span>GATE Fellowship, MoE, Govt. of India</span><span>2020–25</span></li>
+            <li><span>GATE XE All-India Rank 53</span><span>2019</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEYOND ================= -->
+<section id="beyond" class="beyond">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">05 · Beyond the Laboratory</span><h2>Beyond research</h2></div>
+    </div>
+    <div class="tablist reveal" role="tablist" aria-label="Interests">
+      <button role="tab" id="tab-travel" aria-selected="true" aria-controls="panel-travel">Travel &amp; exploration</button>
+      <button role="tab" id="tab-personal" aria-selected="false" aria-controls="panel-personal" tabindex="-1">Personal interests</button>
+    </div>
+    <div class="panel" id="panel-travel" role="tabpanel" aria-labelledby="tab-travel">
+      <div class="interest">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 34l12-20 7 11 5-7 10 16z"/><path d="M12 19l3 3 3-3"/></svg>
+        <h3>Mountain treks</h3>
+        <p>Long days on mountain trails are my counterweight to theory. They involve slow, physical progress, where the reward comes only at the top.</p>
+      </div>
+      <div class="interest">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 26h30v-6l-5-7H12l-5 7z"/><circle cx="12" cy="28" r="3.5"/><circle cx="28" cy="28" r="3.5"/><path d="M8 20h24"/></svg>
+        <h3>Road trips</h3>
+        <p>Exploring new places by road clears the mind and brings fresh perspective back to the desk.</p>
+      </div>
+    </div>
+    <div class="panel" id="panel-personal" role="tabpanel" aria-labelledby="tab-personal" hidden>
+      <div class="interest">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 20c3-8 5-8 8 0s5 8 8 0 5-8 8 0 5 8 8 0"/></svg>
+        <h3>Music &amp; singing</h3>
+        <p>I sing and play the keyboard. A voice is a resonator too: pitch, harmonics and timbre are the same wave physics I study, heard rather than measured.</p>
+      </div>
+      <div class="interest">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 8h11a3 3 0 013 3v22a3 3 0 00-3-3H6zM34 8H23a3 3 0 00-3 3v22a3 3 0 013-3h11z"/></svg>
+        <h3>Reading &amp; cooking</h3>
+        <p>Reading widely and cooking: two experiments with reliably good outcomes.</p>
+      </div>
+      <div class="interest">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="20" cy="8" r="3.5"/><path d="M20 12v10M9 17l11 3 11-3M14 34l6-12 6 12"/></svg>
+        <h3>Yoga &amp; swimming</h3>
+        <p>Practices that keep the body balanced and the mind steady through long research cycles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= NOTEBOOK ================= -->
+<section id="notebook">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">06 · Scientific Notebook</span><h2>Reflections &amp; derivations</h2></div>
+    </div>
+    <ul class="notes reveal">
+      <li><span class="idx">NOTE 01</span><div><h3>Deriving the temporal characteristic admittance</h3><p>How waves scatter at a temporal interface, and why admittance is the right quantity to match.</p></div><span class="soon">Coming soon</span></li>
+      <li><span class="idx">NOTE 02</span><div><h3>Mathieu equations in parametric oscillators</h3><p>Stability tongues, Floquet exponents and what they mean for a time-modulated spring.</p></div><span class="soon">Coming soon</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER / CONTACT ================= -->
+<footer id="contact">
+  <div class="wrap">
+    <div class="cta">
+      <div class="reveal">
+        <span class="eyebrow">07 · Collaboration</span>
+        <h2>Let's work together.</h2>
+        <p>I am <strong style="color:#fff">actively seeking postdoctoral fellowship opportunities</strong> in wave physics, mechanical metamaterials and non-Hermitian or time-varying systems. I'm also happy to talk about collaborations, talks and student projects.</p>
+      </div>
+      <ul class="contact-list reveal">
+        <li><a href="mailto:harshithk@iisc.ac.in"><span>Email</span><span>harshithk@iisc.ac.in</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=ZChppDUAAAAJ"><span>Scholar</span><span>Google Scholar ↗</span></a></li>
+        <li><a href="https://orcid.org/0009-0003-4816-3503"><span>ORCID</span><span>0009-0003-4816-3503 ↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/harshit-kumar-sandhu-491700b9"><span>LinkedIn</span><span>harshit-kumar-sandhu ↗</span></a></li>
+        <li><a href="{{ site.baseurl }}/assets/pdf/Harshit_Sandhu_CV.pdf"><span>CV</span><span>Download PDF ↓</span></a></li>
+      </ul>
+    </div>
+    <div class="signoff">
+      <address>Harshit Kumar Sandhu · LEMS Lab, Room 112<br>Department of Aerospace Engineering, Indian Institute of Science<br>Bengaluru, Karnataka 560012, India</address>
+      <nav aria-label="Site pages">
+        <a href="{{ site.baseurl }}/research/">Research</a>
+        <a href="{{ site.baseurl }}/publications/">Publications</a>
+        <a href="{{ site.baseurl }}/talks/">Talks</a>
+        <a href="{{ site.baseurl }}/cv/">CV</a>
+        <a href="{{ site.baseurl }}/news/">News</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  // mobile menu
+  var btn=document.querySelector('.menu-btn'), menu=document.getElementById('menu');
+  btn.addEventListener('click',function(){var o=menu.classList.toggle('open');btn.setAttribute('aria-expanded',o)});
+  menu.addEventListener('click',function(e){if(e.target.tagName==='A'){menu.classList.remove('open');btn.setAttribute('aria-expanded',false)}});
+
+  // tabs
+  var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+  function select(t){tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);x.tabIndex=on?0:-1;document.getElementById(x.getAttribute('aria-controls')).hidden=!on});}
+  tabs.forEach(function(t,i){
+    t.addEventListener('click',function(){select(t)});
+    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){var n=tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length];select(n);n.focus();}});
+  });
+
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // fade-up on scroll
+  var els=document.querySelectorAll('.reveal');
+  if(reduce||!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});}
+  else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});els.forEach(function(e){io.observe(e)});}
+
+  // hero: parametrically modulated travelling waves
+  var p=[document.getElementById('w1'),document.getElementById('w2'),document.getElementById('w3')];
+  function draw(t){
+    var specs=[[60,0.0105,0.9,1.0],[38,0.017,-0.6,0.7],[26,0.008,0.4,1.6]];
+    specs.forEach(function(s,k){
+      var A=s[0]*(1+0.35*Math.sin(t*s[3]*0.8)), d='';
+      for(var x=0;x<=1200;x+=8){
+        var env=Math.sin(Math.PI*x/1200);
+        var y=170+A*env*Math.sin(s[1]*x - s[2]*t)*(0.75+0.25*Math.cos(0.004*x+t*0.5));
+        d+=(x?'L':'M')+x+' '+y.toFixed(1);
+      }
+      p[k].setAttribute('d',d);
+    });
+  }
+  if(reduce){draw(0.8);}else{
+    var start=null;(function loop(ts){if(!start)start=ts;draw((ts-start)/1000);requestAnimationFrame(loop)})(performance.now());
+  }
+})();
+</script>
+</body>
+</html>
