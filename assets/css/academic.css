@@ -187,3 +187,31 @@ footer.sticky-bottom {
   .cv .date-column tbody { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; }
   .cv p.location { margin: 0; }
 }
+
+/* ================= Beyond Research: travel sets on a time axis ================= */
+.journey { position: relative; margin: 10px 0 44px; }
+.jr-axis { position: absolute; left: 6px; top: 6px; bottom: 34px; width: 2px; background: #e5e7eb; border-radius: 2px; }
+.jr-fill { position: absolute; left: 0; top: 0; width: 100%; height: calc(var(--p, 0) * 100%); border-radius: 2px; background: linear-gradient(to bottom, #bfdbfe, var(--global-theme-color)); }
+.jr { display: grid; grid-template-columns: 128px minmax(0, 1fr); column-gap: 28px; padding-bottom: 48px; }
+.jr-meta { position: sticky; top: 96px; align-self: start; padding-left: 26px; }
+.jr-dot { position: absolute; left: 1px; top: 4px; width: 12px; height: 12px; border-radius: 50%; background: #fff; border: 2px solid #cbd5e1; transition: border-color .3s, background .3s, box-shadow .3s; }
+.jr-y { display: block; height: 34px; line-height: 34px; margin: 0 0 8px; font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: 1.55rem; color: #111827; font-variant-numeric: lining-nums; }
+.jr-y + .jr-dot { top: 46px; }
+.jr.on .jr-dot { border-color: var(--global-theme-color); background: var(--global-theme-color); box-shadow: 0 0 0 4px rgba(29, 78, 216, .12); }
+.jr-meta time { display: block; font-size: 0.95rem; font-weight: 600; color: #111827; line-height: 1.4; }
+.jr-k { display: block; margin-top: 4px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--global-theme-color); }
+.jr-p { display: block; margin-top: 2px; font-size: 0.82rem; color: #6b7280; }
+.jr-body { min-width: 0; }
+.jr-body .trek { margin: 0; }
+.jr-body .gal-h { margin-top: 0; }
+.jr-end { position: relative; padding: 14px 0 0 26px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #9ca3af; }
+.jr-arrow { position: absolute; left: 2px; top: -2px; width: 12px; height: 12px; border-right: 2px solid #cbd5e1; border-bottom: 2px solid #cbd5e1; transform: rotate(45deg); transition: border-color .3s; }
+.journey.done .jr-arrow { border-color: var(--global-theme-color); }
+@media (max-width: 700px) {
+  .jr { grid-template-columns: minmax(0, 1fr); row-gap: 12px; padding-bottom: 36px; }
+  .jr-meta { position: relative; top: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
+  .jr-y { height: auto; line-height: 1.2; margin: 0; font-size: 1.25rem; flex-basis: 100%; }
+  .jr-y + .jr-dot { top: 7px; }
+  .jr-meta time, .jr-k, .jr-p { display: inline; margin: 0; }
+  .jr-body { padding-left: 26px; }
+}
