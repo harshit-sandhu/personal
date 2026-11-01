@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
+title: Publications
 description: journal articles and submitted manuscripts, in reverse chronological order.
 nav: true
 nav_order: 2

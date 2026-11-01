@@ -1,6 +1,6 @@
 ---
 layout: page
-title: research
+title: Research
 permalink: /research/
 description: Current research themes. Click a card for details and related work.
 nav: true

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: talks
+title: Talks
 permalink: /talks/
 description: Oral and poster presentations at conferences and symposia.
 nav: true
