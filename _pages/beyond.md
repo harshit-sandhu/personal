@@ -14,6 +14,15 @@ nav_order: 5
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v-3.5l2-4.5h12l2 4.5V16z"/><path d="M4 13h16"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/></svg><div><h3>Road trips</h3><p>Exploring new places by road clears the mind and brings a fresh perspective back to the desk.</p></div></div>
 </div>
 
+<figure class="trek">
+  <div class="trek-grid">
+    <a class="t-a" href="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}" alt="Selfie at the summit of Kolukkumalai, with tea estates and the hills of Munnar behind" loading="lazy" width="1600" height="900"></a>
+    <a class="t-b" href="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}" alt="Sunrise over misty ridges of the Western Ghats beside a steep rock peak" loading="lazy" width="1182" height="664"></a>
+    <a class="t-c" href="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}" alt="Holding the dancer's pose, Natarajasana, at the top with the rising sun behind" loading="lazy" width="664" height="1182"></a>
+  </div>
+  <figcaption><b>Kolukkumalai, Munnar, Kerala</b> · 4 May 2024. A sunrise trek on Munnar's best-known jeep-safari route.</figcaption>
+</figure>
+
 ## Music, books and food
 
 <div class="bx">
