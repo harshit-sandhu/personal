@@ -215,3 +215,5 @@ footer.sticky-bottom {
   .jr-meta time, .jr-k, .jr-p { display: inline; margin: 0; }
   .jr-body { padding-left: 26px; }
 }
+.jr-start { padding: 0 0 18px 26px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--global-theme-color); position: relative; }
+.jr-start::before { content: ""; position: absolute; left: 3px; top: 3px; width: 8px; height: 8px; border-radius: 50%; background: var(--global-theme-color); box-shadow: 0 0 0 4px rgba(29, 78, 216, .12); }
