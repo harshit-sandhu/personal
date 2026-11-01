@@ -34,6 +34,21 @@ nav_order: 5
   <figcaption><b>Kabbalu Betta, Karnataka</b> · 4 May 2025. A day hike with friends, up the rock-cut steps to the top.</figcaption>
 </figure>
 
+<figure class="trek mosaic" id="amsterdam">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}" alt="Programme booklet of Metamaterials 2025, Amsterdam" loading="lazy" width="360" height="638"></a>
+    <a href="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}" alt="The main hall before a plenary session" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/ams-reception.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-reception.jpg' | relative_url }}" alt="Coffee break among conference delegates" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/ams-lunch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-lunch.jpg' | relative_url }}" alt="Conference lunch" loading="lazy" width="454" height="360"></a>
+    <a href="{{ '/assets/img/beyond/ams-cafe-window.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-cafe-window.jpg' | relative_url }}" alt="An open window onto a canal street, from a café" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/ams-cafe-table.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-cafe-table.jpg' | relative_url }}" alt="A quiet café table by the window" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/ams-snack.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-snack.jpg' | relative_url }}" alt="A Dutch sausage roll, working between sessions" loading="lazy" width="360" height="638"></a>
+    <a href="{{ '/assets/img/beyond/ams-canal.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-canal.jpg' | relative_url }}" alt="A canal and arched bridge in the city centre" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/ams-building.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-building.jpg' | relative_url }}" alt="A classical canal-side building" loading="lazy" width="360" height="480"></a>
+  </div>
+  <figcaption><b>Metamaterials 2025, Amsterdam</b> · 1–6 September 2025. The 19th International Congress on Artificial Materials for Novel Wave Phenomena, where I presented a poster and attended the EUPROMETA Doctoral School. Between sessions: canals, cafés and the city.</figcaption>
+</figure>
+
 ## Music, books and food
 
 <div class="bx">

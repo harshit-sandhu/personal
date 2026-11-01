@@ -129,3 +129,10 @@ footer.sticky-bottom {
   .trek.five .k-c { grid-column: 1; grid-row: 3; }
   .trek.five .k-d { grid-column: 2; grid-row: 3; }
 }
+
+/* Mosaic photo set (keeps every photo uncropped) */
+.mosaic-cols { columns: 4 170px; column-gap: 8px; }
+.mosaic-cols a { display: block; margin: 0 0 8px; break-inside: avoid; overflow: hidden; border-radius: 4px; background: #f1f5f9; }
+.mosaic-cols img { display: block; width: 100%; height: auto; transition: transform .6s ease; }
+.mosaic-cols a:hover img { transform: scale(1.025); }
+@media (max-width: 700px) { .mosaic-cols { columns: 2; } }
