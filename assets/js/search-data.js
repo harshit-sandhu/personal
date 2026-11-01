@@ -4,27 +4,27 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-home",
-    title: "home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/personal/";
     },
   },{id: "nav-publications",
-          title: "publications",
+          title: "Publications",
           description: "journal articles and submitted manuscripts, in reverse chronological order.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal/publications/";
           },
         },{id: "nav-research",
-          title: "research",
+          title: "Research",
           description: "Current research themes. Click a card for details and related work.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal/research/";
           },
         },{id: "nav-talks",
-          title: "talks",
+          title: "Talks",
           description: "Oral and poster presentations at conferences and symposia.",
           section: "Navigation",
           handler: () => {
@@ -105,30 +105,4 @@ ninja.data = [{
         handler: () => {
           window.open("https://github.com/harshit-sandhu", "_blank");
         },
-      },{
-      id: 'light-theme',
-      title: 'Change theme to light',
-      description: 'Change the theme of the site to Light',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("light");
-      },
-    },
-    {
-      id: 'dark-theme',
-      title: 'Change theme to dark',
-      description: 'Change the theme of the site to Dark',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("dark");
-      },
-    },
-    {
-      id: 'system-theme',
-      title: 'Use system default theme',
-      description: 'Change the theme of the site to System Default',
-      section: 'Theme',
-      handler: () => {
-        setThemeSetting("system");
-      },
-    },];
+      },];
