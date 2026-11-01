@@ -30,6 +30,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/personal/talks/";
           },
+        },{id: "nav-beyond-research",
+          title: "Beyond Research",
+          description: "Interests outside the lab, and service and outreach.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/personal/beyond/";
+          },
         },{id: "nav-cv",
           title: "CV",
           description: "Download the full CV as a PDF using the button on the right.",
