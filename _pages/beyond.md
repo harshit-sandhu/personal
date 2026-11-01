@@ -68,6 +68,30 @@ nav_order: 5
   <figcaption><b>Amsterdam, the city</b> · September 2025. Exploring around the conference, by bike and on foot: the Rijksmuseum and Museumplein, the Westerkerk, the De Gooyer windmill, canals at dusk, and an evening at the Wynand Fockink tasting room.</figcaption>
 </figure>
 
+<h3 class="gal-h" id="rijksmuseum">A day at the Rijksmuseum</h3>
+<p class="gal-p">From the Golden Age galleries and the Night Watch to ship models, the Cuypers Library and the modern wing.</p>
+<figure class="trek mosaic" id="rijksmuseum-photos">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/rm-atrium.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-atrium.jpg' | relative_url }}" alt="The atrium under the glass roof" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-selfie.jpg' | relative_url }}" alt="In the 19th-century painting galleries" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-landscapes.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-landscapes.jpg' | relative_url }}" alt="A wall of Dutch landscape paintings" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-schutterij.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-schutterij.jpg' | relative_url }}" alt="A large painting of a civic guard marching through the city" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-nightwatch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-nightwatch.jpg' | relative_url }}" alt="The Night Watch gallery" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-window.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-window.jpg' | relative_url }}" alt="A stained-glass window in the Great Hall" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-library.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-library.jpg' | relative_url }}" alt="The Cuypers Library, the museum research library" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-ship.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-ship.jpg' | relative_url }}" alt="A historic ship model" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-ship-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-ship-2.jpg' | relative_url }}" alt="The ship model from the other side" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-period-room.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-period-room.jpg' | relative_url }}" alt="Gilded furniture and a tapestry in a period room" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-cabinet.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-cabinet.jpg' | relative_url }}" alt="An ornate inlaid cabinet with a bronze on top" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-bust.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-bust.jpg' | relative_url }}" alt="A marble portrait bust" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-weapons.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-weapons.jpg' | relative_url }}" alt="A display case of historic arms and armour" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/rm-relief.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-relief.jpg' | relative_url }}" alt="A textured relief in the modern galleries" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-pyramids.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-pyramids.jpg' | relative_url }}" alt="A sequence of panels building a red pattern step by step" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/rm-halftone.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/rm-halftone.jpg' | relative_url }}" alt="A painting of a halftone dot pattern, where the dot size encodes the image" loading="lazy" width="1400" height="1050"></a>
+  </div>
+  <figcaption><b>Rijksmuseum, Amsterdam</b> · September 2025.</figcaption>
+</figure>
+
 ## Music, books and food
 
 <div class="bx">
