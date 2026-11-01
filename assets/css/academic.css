@@ -81,3 +81,12 @@ footer.sticky-bottom {
   font-size: 0.88rem;
   color: var(--global-footer-text-color);
 }
+
+/* Beyond Research page */
+.bx { display: grid; grid-template-columns: 1fr 1fr; gap: 0 40px; margin: 0 0 24px; }
+.bx.one { grid-template-columns: 1fr; margin-bottom: 8px; }
+.bx .item { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 16px; padding: 18px 0; border-top: 1px solid var(--global-divider-color); }
+.bx svg { width: 34px; height: 34px; color: var(--global-theme-color); margin-top: 2px; }
+.bx h3 { font-size: 1.05rem; margin: 0 0 4px; }
+.bx p { margin: 0; font-size: 0.95rem; color: #374151; }
+@media (max-width: 700px) { .bx { grid-template-columns: 1fr; } }
