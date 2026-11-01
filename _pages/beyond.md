@@ -14,7 +14,7 @@ nav_order: 5
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16v-3.5l2-4.5h12l2 4.5V16z"/><path d="M4 13h16"/><circle cx="7.5" cy="17" r="1.6"/><circle cx="16.5" cy="17" r="1.6"/></svg><div><h3>Road trips</h3><p>Exploring new places by road clears the mind and brings a fresh perspective back to the desk.</p></div></div>
 </div>
 
-<figure class="trek">
+<figure class="trek" data-toc="Kolukkumalai, 2024">
   <div class="trek-grid">
     <a class="t-a" href="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}" alt="Selfie at the summit of Kolukkumalai, with tea estates and the hills of Munnar behind" loading="lazy" width="1600" height="900"></a>
     <a class="t-b" href="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}" alt="Sunrise over misty ridges of the Western Ghats beside a steep rock peak" loading="lazy" width="1182" height="664"></a>
@@ -23,7 +23,7 @@ nav_order: 5
   <figcaption><b>Kolukkumalai, Munnar, Kerala</b> · 4 May 2024. A sunrise trek on Munnar's best-known jeep-safari route.</figcaption>
 </figure>
 
-<figure class="trek five">
+<figure class="trek five" data-toc="Kabbalu Betta, 2025">
   <div class="trek-grid">
     <a class="k-a" href="{{ '/assets/img/beyond/kabbalu-view.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-view.jpg' | relative_url }}" alt="View from the top of Kabbalu Betta over farmland and distant hills" loading="lazy" width="1280" height="720"></a>
     <a class="k-e" href="{{ '/assets/img/beyond/kabbalu-steps.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kabbalu-steps.jpg' | relative_url }}" alt="Group selfie with friends on the rock-cut steps up the hill" loading="lazy" width="1050" height="1400"></a>
@@ -34,13 +34,13 @@ nav_order: 5
   <figcaption><b>Kabbalu Betta, Karnataka</b> · 4 May 2025. A day hike with friends, up the rock-cut steps to the top.</figcaption>
 </figure>
 
-<figure class="trek mosaic" id="amsterdam">
+<figure class="trek mosaic" id="amsterdam" data-toc="Metamaterials 2025">
   <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}" alt="Programme booklet of Metamaterials 2025, Amsterdam" loading="lazy" width="360" height="638"></a>
+    <a href="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}" alt="The main hall before a plenary session" loading="lazy" width="360" height="480"></a>
     <a href="{{ '/assets/img/beyond/ams-poster-me.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-poster-me.jpg' | relative_url }}" alt="Presenting my poster, Wave Propagation in an Elastic Lattice with Nonreciprocal Stiffness and Engineered Damping" loading="lazy" width="360" height="480"></a>
     <a href="{{ '/assets/img/beyond/ams-poster.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-poster.jpg' | relative_url }}" alt="The poster: Wave Propagation in an Elastic Lattice with Nonreciprocal Stiffness and Engineered Damping, by Sandhu, Dutta and Chaunsali" loading="lazy" width="360" height="480"></a>
     <a href="{{ '/assets/img/beyond/ams-venue.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-venue.jpg' | relative_url }}" alt="Delegates gathered outside the conference venue, with Metamaterials 2025 banners" loading="lazy" width="360" height="480"></a>
-    <a href="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}" alt="Programme booklet of Metamaterials 2025, Amsterdam" loading="lazy" width="360" height="638"></a>
-    <a href="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}" alt="The main hall before a plenary session" loading="lazy" width="360" height="480"></a>
     <a href="{{ '/assets/img/beyond/ams-reception.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-reception.jpg' | relative_url }}" alt="Coffee break among conference delegates" loading="lazy" width="480" height="360"></a>
     <a href="{{ '/assets/img/beyond/ams-lunch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-lunch.jpg' | relative_url }}" alt="Conference lunch" loading="lazy" width="454" height="360"></a>
     <a href="{{ '/assets/img/beyond/ams-cafe-window.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-cafe-window.jpg' | relative_url }}" alt="An open window onto a canal street, from a café" loading="lazy" width="360" height="480"></a>
@@ -51,7 +51,7 @@ nav_order: 5
   <figcaption><b>Metamaterials 2025, Amsterdam</b> · 1–6 September 2025. The 19th International Congress on Artificial Materials for Novel Wave Phenomena, where I presented a poster, <i>Wave Propagation in an Elastic Lattice with Nonreciprocal Stiffness and Engineered Damping</i> (with S. Dutta and R. Chaunsali), and attended the EUPROMETA Doctoral School. Between sessions: canals, cafés and the city.</figcaption>
 </figure>
 
-<figure class="trek mosaic" id="amsterdam-city">
+<figure class="trek mosaic" id="amsterdam-city" data-toc="Amsterdam">
   <div class="mosaic-cols">
     <a href="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}" alt="The Rijksmuseum" loading="lazy" width="480" height="360"></a>
     <a href="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}" alt="In front of the Rijksmuseum" loading="lazy" width="360" height="480"></a>
@@ -70,7 +70,7 @@ nav_order: 5
   <figcaption><b>Amsterdam, the city</b> · September 2025. Exploring around the conference, by bike and on foot: the Rijksmuseum and Museumplein, the Westerkerk, the De Gooyer windmill, canals at dusk, and an evening at the Wynand Fockink tasting room.</figcaption>
 </figure>
 
-<h3 class="gal-h" id="rijksmuseum">A day at the Rijksmuseum</h3>
+<h3 class="gal-h" id="rijksmuseum" data-toc="Rijksmuseum">A day at the Rijksmuseum</h3>
 <p class="gal-p">From the Golden Age galleries and the Night Watch to ship models, the Cuypers Library and the modern wing.</p>
 <figure class="trek mosaic" id="rijksmuseum-photos">
   <div class="mosaic-cols">

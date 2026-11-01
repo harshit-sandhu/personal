@@ -22,6 +22,7 @@
             {% assign startDate = start_date | split: '-' | first %}
             {% assign endDate = end_date | split: '-' | first | default: 'Present' %}
             {% assign date = startDate | append: ' - ' | append: endDate %}
+            {% if startDate == endDate %}{% assign date = startDate %}{% endif %}
           {% else %}
             {% assign date = null %}
           {% endif %}
