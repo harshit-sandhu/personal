@@ -49,6 +49,25 @@ nav_order: 5
   <figcaption><b>Metamaterials 2025, Amsterdam</b> · 1–6 September 2025. The 19th International Congress on Artificial Materials for Novel Wave Phenomena, where I presented a poster and attended the EUPROMETA Doctoral School. Between sessions: canals, cafés and the city.</figcaption>
 </figure>
 
+<figure class="trek mosaic" id="amsterdam-city">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}" alt="The Rijksmuseum" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}" alt="In front of the Rijksmuseum" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/city-bike-tour.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-bike-tour.jpg' | relative_url }}" alt="Setting off on a bike tour of the city" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/city-museumplein.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-museumplein.jpg' | relative_url }}" alt="A stop on Museumplein during the bike tour" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/city-westerkerk.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-westerkerk.jpg' | relative_url }}" alt="A narrow street leading to the Westerkerk tower" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/city-windmill.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-windmill.jpg' | relative_url }}" alt="The De Gooyer windmill" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/city-bridge.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-bridge.jpg' | relative_url }}" alt="On a canal bridge in the evening light" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/city-street.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-street.jpg' | relative_url }}" alt="Walking an Amsterdam street at dusk" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/city-canal-dusk.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-canal-dusk.jpg' | relative_url }}" alt="Lit bridges along a canal at dusk" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/city-wf-sign.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-wf-sign.jpg' | relative_url }}" alt="The lantern sign of Wynand Fockink, dated 1679" loading="lazy" width="360" height="480"></a>
+    <a href="{{ '/assets/img/beyond/city-wf-bar.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-wf-bar.jpg' | relative_url }}" alt="Inside the Wynand Fockink tasting room" loading="lazy" width="1400" height="1050"></a>
+    <a href="{{ '/assets/img/beyond/city-wf-counter.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-wf-counter.jpg' | relative_url }}" alt="Glasses lined up on the old wooden counter" loading="lazy" width="1050" height="1400"></a>
+    <a href="{{ '/assets/img/beyond/city-wf-friends.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-wf-friends.jpg' | relative_url }}" alt="An evening out in the lanes behind the tasting room" loading="lazy" width="360" height="480"></a>
+  </div>
+  <figcaption><b>Amsterdam, the city</b> · September 2025. Exploring around the conference, by bike and on foot: the Rijksmuseum and Museumplein, the Westerkerk, the De Gooyer windmill, canals at dusk, and an evening at the Wynand Fockink tasting room.</figcaption>
+</figure>
+
 ## Music, books and food
 
 <div class="bx">
