@@ -30,8 +30,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/personal/talks/";
           },
-        },{id: "nav-beyond-research",
-          title: "Beyond Research",
+        },{id: "nav-beyond-academics",
+          title: "Beyond Academics",
           description: "Interests outside the lab, and service and outreach.",
           section: "Navigation",
           handler: () => {
