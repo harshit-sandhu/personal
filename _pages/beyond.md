@@ -281,3 +281,17 @@ nav_order: 5
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><path d="M12 8.2v6.3M4.5 11l7.5 2 7.5-2M8 21l4-6.5 4 6.5"/></svg><div><h3>Yoga</h3><p>A daily practice that keeps the body balanced and the mind steady through long research cycles.</p></div></div>
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16.5" cy="7" r="2"/><path d="M5 12.5l5-2.2 3.5 2.2 3-1.2"/><path d="M3 16.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3M3 20.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3"/></svg><div><h3>Swimming</h3><p>Regular laps, a good way to reset between experiments and writing.</p></div></div>
 </div>
+
+<figure class="trek mosaic" id="happiness-program" data-toc="Happiness Program, 2025">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/aol-temple.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-temple.jpg' | relative_url }}" alt="With friends in front of the Vishalakshi Mantap" loading="lazy" width="1050" height="1400"></a>
+    <a href="{{ '/assets/img/beyond/aol-temple-night.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-temple-night.jpg' | relative_url }}" alt="The Vishalakshi Mantap lit up at night" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/aol-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-selfie.jpg' | relative_url }}" alt="On the balcony of the residence block" loading="lazy" width="1050" height="1400"></a>
+    <a href="{{ '/assets/img/beyond/aol-yoga-day.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-yoga-day.jpg' | relative_url }}" alt="A large outdoor yoga session on the amphitheatre lawns" loading="lazy" width="1400" height="1050"></a>
+    <a href="{{ '/assets/img/beyond/aol-session.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-session.jpg' | relative_url }}" alt="Between sessions, seated on the hall floor" loading="lazy" width="480" height="360"></a>
+    <a href="{{ '/assets/img/beyond/aol-lunch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-lunch.jpg' | relative_url }}" alt="Lunch with friends from the course" loading="lazy" width="1400" height="1050"></a>
+    <a href="{{ '/assets/img/beyond/aol-lunch-sketch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-lunch-sketch.jpg' | relative_url }}" alt="The same lunch, redrawn as an illustration" loading="lazy" width="540" height="360"></a>
+    <a href="{{ '/assets/img/beyond/aol-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-group.jpg' | relative_url }}" alt="A group selfie on the marble terrace" loading="lazy" width="1400" height="1050"></a>
+  </div>
+  <figcaption><b>Happiness Program, The Art of Living International Center, Bengaluru</b> · 19–23 June 2025. Five residential days of breathing practice, meditation and yoga.</figcaption>
+</figure>
