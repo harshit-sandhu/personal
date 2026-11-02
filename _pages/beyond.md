@@ -168,7 +168,32 @@ nav_order: 5
 </div>
 </section>
 <section class="jr">
-<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-09-08">8 Sep 2024</time><span class="jr-k">Road trip</span><span class="jr-p">Mysuru, Karnataka</span></div>
+<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-12-28">28 Dec 2024</time><span class="jr-k">Weekend trip</span><span class="jr-p">Gokarna, Karnataka</span></div>
+<div class="jr-body">
+<figure class="trek mosaic" id="gokarna" data-toc="Gokarna, 2024">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/gokarna-jog-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-jog-selfie.jpg' | relative_url }}" alt="At the railing above the waterfalls, on the way to the coast" loading="lazy" width="768" height="1024"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-jog-falls.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-jog-falls.jpg' | relative_url }}" alt="Waterfalls dropping into a deep forested gorge" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-beach-standing.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-beach-standing.jpg' | relative_url }}" alt="Standing at the water’s edge on a wide beach" loading="lazy" width="768" height="1024"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-beach-seated.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-beach-seated.jpg' | relative_url }}" alt="Looking out at the beach from under the palms" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-tents.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-tents.jpg' | relative_url }}" alt="Beach tents under coconut palms at dawn" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-shoreline.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-shoreline.jpg' | relative_url }}" alt="Foam lines on an empty beach at dusk" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-crab.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-crab.jpg' | relative_url }}" alt="A ghost crab on the wet sand" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-cafe-view.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-cafe-view.jpg' | relative_url }}" alt="A beach-shack table looking out over the rocks and the bay" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-lunch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-lunch.jpg' | relative_url }}" alt="Lunch with a view of the headland" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-laterite.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-laterite.jpg' | relative_url }}" alt="Pitted laterite rock on the beach" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-rocky-shore.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-rocky-shore.jpg' | relative_url }}" alt="Dark rocks running out into the sea" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-boats.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-boats.jpg' | relative_url }}" alt="Two boats on the backwaters, palms behind" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-statue.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-statue.jpg' | relative_url }}" alt="A giant Shiva statue from below" loading="lazy" width="768" height="1024"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-statue-silhouette.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-statue-silhouette.jpg' | relative_url }}" alt="The statue against the sea at sunset" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/gokarna-sunset.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/gokarna-sunset.jpg' | relative_url }}" alt="The sun setting over the Arabian Sea" loading="lazy" width="1024" height="768"></a>
+  </div>
+  <figcaption><b>Gokarna and the Karnataka coast</b> · 28 December 2024. A weekend by the sea: waterfalls on the way, beaches, a night in a beach tent, a boat ride on the backwaters, and sunset beside the giant Shiva statue.</figcaption>
+</figure>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-09-08">8 Sep 2024</time><span class="jr-k">Road trip</span><span class="jr-p">Mysuru, Karnataka</span></div>
 <div class="jr-body">
 <figure class="trek mosaic" id="mysuru" data-toc="Mysuru backwaters, 2024">
   <div class="mosaic-cols">
@@ -185,7 +210,7 @@ nav_order: 5
 </div>
 </section>
 <section class="jr">
-<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trip</span><span class="jr-p">Munnar, Kerala</span></div>
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Weekend trip</span><span class="jr-p">Munnar, Kerala</span></div>
 <div class="jr-body">
 <figure class="trek four" data-toc="Munnar and Kolukkumalai, 2024">
   <div class="trek-grid">
@@ -219,7 +244,7 @@ nav_order: 5
 </div>
 </section>
 <section class="jr">
-<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-04-20">20 Apr 2024</time><span class="jr-k">Trip</span><span class="jr-p">Kodaikanal, Tamil Nadu</span></div>
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-04-20">20 Apr 2024</time><span class="jr-k">Weekend trip</span><span class="jr-p">Kodaikanal, Tamil Nadu</span></div>
 <div class="jr-body">
 <figure class="trek mosaic" id="kodaikanal" data-toc="Kodaikanal, 2024">
   <div class="mosaic-cols">
