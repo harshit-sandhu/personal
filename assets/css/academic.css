@@ -1041,3 +1041,6 @@ footer.sticky-bottom {
   .yd-a { grid-row: auto; grid-column: 1 / span 2; aspect-ratio: 3 / 4; }
   .yd-b, .yd-c { aspect-ratio: 4 / 3; }
 }
+.yd-d { grid-column: 1 / span 2; position: relative; overflow: hidden; border-radius: 4px; }
+.yd-d img { display: block; width: 100%; height: auto; }
+@media (prefers-reduced-motion: reduce) { .yd-d { display: none; } }
