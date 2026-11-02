@@ -999,3 +999,4 @@ footer.sticky-bottom {
 .jr-note p { margin: 0; font-size: 0.93rem; color: #4b5563; }
 .jr-body .openday { margin: 0; }
 @media (min-width: 701px) { .jr:has(.jr-y) .jr-note { padding-top: 42px; } }
+.jr-body .trek + .trek { margin-top: 26px; }

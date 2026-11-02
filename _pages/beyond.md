@@ -20,7 +20,7 @@ nav_order: 5
 <section class="jr">
 <div class="jr-meta"><span class="jr-y">2025</span><i class="jr-dot"></i><time datetime="2025-09">Sep 2025</time><span class="jr-k">Museum</span><span class="jr-p">Amsterdam</span></div>
 <div class="jr-body">
-<h3 class="gal-h" id="rijksmuseum" data-toc="Rijksmuseum">A day at the Rijksmuseum</h3>
+<h3 class="gal-h" id="rijksmuseum" data-toc="Amsterdam, Netherlands, 2025">A day at the Rijksmuseum</h3>
 <p class="gal-p">From the Golden Age galleries and the Night Watch to ship models, the Cuypers Library and the modern wing.</p>
 <figure class="trek mosaic" id="rijksmuseum-photos">
   <div class="mosaic-cols">
@@ -48,7 +48,7 @@ nav_order: 5
 <section class="jr">
 <div class="jr-meta"><i class="jr-dot"></i><time datetime="2025-09">Sep 2025</time><span class="jr-k">City</span><span class="jr-p">Amsterdam</span></div>
 <div class="jr-body">
-<figure class="trek mosaic" id="amsterdam-city" data-toc="Amsterdam">
+<figure class="trek mosaic" id="amsterdam-city">
   <div class="mosaic-cols">
     <a href="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum.jpg' | relative_url }}" alt="The Rijksmuseum" loading="lazy" width="480" height="360"></a>
     <a href="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/city-rijksmuseum-me.jpg' | relative_url }}" alt="In front of the Rijksmuseum" loading="lazy" width="360" height="480"></a>
@@ -71,7 +71,7 @@ nav_order: 5
 <section class="jr">
 <div class="jr-meta"><i class="jr-dot"></i><time datetime="2025-09-01">1–6 Sep 2025</time><span class="jr-k">Conference</span><span class="jr-p">Amsterdam</span></div>
 <div class="jr-body">
-<figure class="trek mosaic" id="amsterdam" data-toc="Metamaterials 2025">
+<figure class="trek mosaic" id="amsterdam">
   <div class="mosaic-cols">
     <a href="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-programme.jpg' | relative_url }}" alt="Programme booklet of Metamaterials 2025, Amsterdam" loading="lazy" width="360" height="638"></a>
     <a href="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/ams-hall.jpg' | relative_url }}" alt="The main hall before a plenary session" loading="lazy" width="360" height="480"></a>
@@ -105,15 +105,36 @@ nav_order: 5
 </div>
 </section>
 <section class="jr">
-<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trek</span><span class="jr-p">Munnar, Kerala</span></div>
+<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trip</span><span class="jr-p">Munnar, Kerala</span></div>
 <div class="jr-body">
-<figure class="trek" data-toc="Kolukkumalai, 2024">
+<figure class="trek" data-toc="Munnar and Kolukkumalai, 2024">
   <div class="trek-grid">
     <a class="t-a" href="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}" alt="Selfie at the summit of Kolukkumalai, with tea estates and the hills of Munnar behind" loading="lazy" width="1600" height="900"></a>
     <a class="t-b" href="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}" alt="Sunrise over misty ridges of the Western Ghats beside a steep rock peak" loading="lazy" width="1182" height="664"></a>
     <a class="t-c" href="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}" alt="Holding the dancer's pose, Natarajasana, at the top with the rising sun behind" loading="lazy" width="664" height="1182"></a>
   </div>
   <figcaption><b>Kolukkumalai, Munnar, Kerala</b> · 4 May 2024. A sunrise trek on Munnar's best-known jeep-safari route.</figcaption>
+</figure>
+
+<figure class="trek mosaic" id="munnar">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/munnar-tea-rows.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-tea-rows.jpg' | relative_url }}" alt="Rows of tea bushes on a hillside estate" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-tea-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-tea-selfie.jpg' | relative_url }}" alt="Selfie above the tea slopes of Munnar" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-zipline.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-zipline.jpg' | relative_url }}" alt="Ready for the zipline, among the tea gardens" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-lake-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-lake-group.jpg' | relative_url }}" alt="The group by a lake ringed with eucalyptus" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-kayak.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-kayak.jpg' | relative_url }}" alt="Kayaking selfie on the reservoir" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-kayak-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-kayak-2.jpg' | relative_url }}" alt="Paddling a tandem kayak" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-tent.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-tent.jpg' | relative_url }}" alt="Morning view from inside the tent" loading="lazy" width="768" height="1024"></a>
+    <a href="{{ '/assets/img/beyond/munnar-summit-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-selfie.jpg' | relative_url }}" alt="Selfie on a rocky summit at dusk" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}" alt="The whole group on the summit" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}" alt="Sitting on the rock edge above the valley" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}" alt="Panorama from the summit at dusk" loading="lazy" width="1600" height="474"></a>
+    <a href="{{ '/assets/img/beyond/munnar-peak.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak.jpg' | relative_url }}" alt="A sharp granite peak rising above the haze" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}" alt="Selfie with the peak behind" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-peak-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-2.jpg' | relative_url }}" alt="The peak at sunrise" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/munnar-peak-sun.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-sun.jpg' | relative_url }}" alt="The sun coming up beside the peak" loading="lazy" width="1182" height="664"></a>
+  </div>
+  <figcaption><b>Around Munnar</b> · the same trip. Tea estates, a zipline, kayaking on the reservoir, a night in a tent, and a summit at dusk.</figcaption>
 </figure>
 </div>
 </section>
