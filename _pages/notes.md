@@ -1,16 +1,29 @@
 ---
 layout: page
-title: From a measured record to a model
-description: One pendulum, one free decay, and the question of when a model is good enough.
-importance: 4
+title: Notes
+permalink: /notes/
+description: Things learnt along the way, theoretical and experimental, written up with figures.
+nav: true
+nav_order: 4
 ---
+
+<nav class="note-index" aria-label="Notes">
+  <p>In these notes</p>
+  <ol>
+    <li><a href="#from-a-measured-record-to-a-model">From a measured record to a model</a> <span>· experiment and modelling · 2026</span></li>
+  </ol>
+</nav>
+
+<article class="note" id="from-a-measured-record-to-a-model">
+<h2 data-toc="From a measured record to a model">From a measured record to a model</h2>
+<p class="note-meta">Experiment and modelling · 2026 · one pendulum, one free decay, and the question of when a model is good enough</p>
 
 <figure class="pd-setup">
   <img src="{{ '/assets/img/pendulum/setup.png' | relative_url }}" alt="Pendulum on a ball bearing, magnets on the rod, two magnet hubs rotated by theta that tune the stiffness, and a laser Doppler vibrometer on the bob" width="1100" height="796" loading="lazy">
   <figcaption>The rig. Magnet hubs tune the stiffness; a laser vibrometer reads the bob.</figcaption>
 </figure>
 
-## Try the models
+<h3 id="try-the-models">Try the models</h3>
 
 <div id="bench" class="bench">
   <div class="bench-ctl" role="group" aria-label="Model">
@@ -34,7 +47,7 @@ importance: 4
   <p class="bench-key"><span class="k-meas"></span>measured <span class="k-sim"></span>model ẍ + 2ζω<sub>n</sub>ẋ + ω<sub>n</sub><sup>2</sup>x + μ sgn(ẋ) = 0</p>
 </div>
 
-## Four suspects
+<h3 id="four-suspects">Four suspects</h3>
 
 <ol class="suspects">
   <li><b>The start</b><span>measured, not fitted</span><i>ruled out</i></li>
@@ -43,7 +56,7 @@ importance: 4
   <li class="hit"><b>The physics</b><span>the bearing adds dry friction</span><i>found</i></li>
 </ol>
 
-## What is still left
+<h3 id="what-is-still-left">What is still left</h3>
 
 <figure class="pd-fig">
   <img src="{{ '/assets/img/pendulum/frequency-amplitude.png' | relative_url }}" alt="Frequency of each cycle against amplitude: the measured frequency rises about 1 percent as the swing dies, while linear and dry-friction simulations stay flat" width="1500" height="694" loading="lazy">
@@ -55,3 +68,4 @@ importance: 4
 <p class="pd-note">From a research-skills session at LEMS, IISc (Part B; Part A by Avinash Umashankar). Measured data: free decay at hub angle 5°, laser Doppler vibrometer. Errors are RMS displacement error relative to the peak in each window, computed live in your browser.</p>
 
 <script defer src="{{ '/assets/js/pendulum-bench.js' | relative_url }}"></script>
+</article>

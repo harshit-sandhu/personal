@@ -152,6 +152,12 @@ h3{font-size:1.15rem;margin-bottom:8px}
 
 .news{list-style:none}
 .news li{display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;margin-bottom:9px;font-size:.96rem;color:var(--ink-2)}
+.news li.hl{padding:10px 12px 10px 12px;margin-left:-12px;margin-right:-12px;border-radius:6px;background:#eff4ff}
+.news .tag{display:inline-block;font-style:normal;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-right:8px;vertical-align:1px}
+.news .pt{display:block;font-family:var(--serif);font-size:1.05rem;font-weight:600;line-height:1.35;color:var(--ink);margin:2px 0}
+.news .pt:hover{color:var(--accent)}
+.news .pa,.news .pv{display:block;font-size:.9rem;color:var(--muted)}
+.news .pa{color:var(--ink-2)}
 .news time{color:var(--muted);font-size:.9rem;padding-top:1px}
 
 .theme{margin-bottom:40px}
@@ -234,10 +240,9 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
   <div class="wrap">
     <a class="brand" href="#top">Harshit K. Sandhu</a>
     <nav aria-label="Main">
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
-      <a href="#experiments">Experiments</a>
-      <a href="#timeline">Timeline</a>
+      <a href="{{ site.baseurl }}/research/">Research</a>
+      <a href="{{ site.baseurl }}/publications/">Publications</a>
+      <a href="{{ site.baseurl }}/notes/">Notes</a>
       <a href="{{ site.baseurl }}/talks/">Talks</a>
       <a href="{{ site.baseurl }}/beyond/">Beyond academics</a>
       <a href="{{ site.baseurl }}/cv/">CV</a>
@@ -444,273 +449,20 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
 <div class="wrap">
 
 <!-- ================= NEWS ================= -->
-<section class="sec" aria-label="News">
+<section class="sec" id="news" aria-label="News">
   <h2>News</h2>
   <div>
     <ul class="news">
       {% assign news = site.news | sort: 'date' | reverse %}
-      {% for item in news limit: 4 %}
-      <li><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><span>{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+      {% for item in news limit: 9 %}
+      {% if item.paper %}
+      <li class="hl"><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><span><em class="tag">Paper</em><a class="pt" href="{{ item.paper.url }}">{{ item.paper.title }}</a><span class="pa">{{ item.paper.authors }}</span><span class="pv">{{ item.paper.venue }}</span></span></li>
+      {% else %}
+      <li><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><span>{% if item.tag %}<em class="tag">{{ item.tag }}</em>{% endif %}{{ item.content | remove: '<p>' | remove: '</p>' | strip }}</span></li>
+      {% endif %}
       {% endfor %}
     </ul>
-    <p class="small" style="margin:12px 0 0"><a href="{{ site.baseurl }}/news/">All news</a></p>
-  </div>
-</section>
-
-<!-- ================= RESEARCH ================= -->
-<section class="sec" id="research">
-  <h2>Research</h2>
-  <div>
-
-    <article class="theme">
-      <h3>Phononic time crystals and temporal topology</h3>
-      <p>When the stiffness of a medium is modulated periodically in time rather than in space, the roles of frequency and wavenumber swap, and the medium opens gaps in momentum instead of frequency. This is a phononic time crystal.</p>
-      <p>I study the topology of these time-periodic bands using single-degree-of-freedom parametric oscillators as a minimal platform, and the temporal characteristic admittance that governs how waves scatter at temporal interfaces. This is the subject of my thesis, <em>Dynamics of Elastic Time Crystals</em>.</p>
-      <figure class="fig">
-        <svg viewBox="0 0 760 290" role="img" aria-labelledby="f1t">
-          <title id="f1t">(a) A stiffness modulated periodically in time. (b) The band structure of the resulting time crystal, with a momentum gap at half the modulation frequency.</title>
-          <defs><marker id="ax" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker></defs>
-          <g font-family="Georgia,'Times New Roman',serif" fill="#0f172a" font-size="14">
-            <text x="50" y="18"><tspan font-weight="700">(a)</tspan> stiffness modulated in time</text>
-            <text x="450" y="18"><tspan font-weight="700">(b)</tspan> band structure</text>
-          </g>
-          <!-- (a) -->
-          <line x1="50" y1="250" x2="385" y2="250" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax)"/>
-          <line x1="50" y1="250" x2="50" y2="38" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax)"/>
-          <line x1="50" y1="145" x2="375" y2="145" stroke="#94a3b8" stroke-dasharray="4 4"/>
-          <path d="M50.0 90.0 L54.0 91.4 L58.0 95.6 L62.0 102.4 L66.0 111.4 L70.0 122.2 L74.0 134.1 L78.0 146.6 L82.0 159.0 L86.0 170.7 L90.0 181.0 L94.0 189.5 L98.0 195.7 L102.0 199.2 L106.0 199.9 L110.0 197.8 L114.0 192.9 L118.0 185.5 L122.0 176.0 L126.0 165.0 L130.0 152.8 L134.0 140.3 L138.0 128.0 L142.0 116.6 L146.0 106.7 L150.0 98.7 L154.0 93.2 L158.0 90.4 L162.0 90.4 L166.0 93.2 L170.0 98.7 L174.0 106.7 L178.0 116.6 L182.0 128.0 L186.0 140.3 L190.0 152.8 L194.0 165.0 L198.0 176.0 L202.0 185.5 L206.0 192.9 L210.0 197.8 L214.0 199.9 L218.0 199.2 L222.0 195.7 L226.0 189.5 L230.0 181.0 L234.0 170.7 L238.0 159.0 L242.0 146.6 L246.0 134.1 L250.0 122.2 L254.0 111.4 L258.0 102.4 L262.0 95.6 L266.0 91.4 L270.0 90.0 L274.0 91.4 L278.0 95.6 L282.0 102.4 L286.0 111.4 L290.0 122.2 L294.0 134.1 L298.0 146.6 L302.0 159.0 L306.0 170.7 L310.0 181.0 L314.0 189.5 L318.0 195.7 L322.0 199.2 L326.0 199.9 L330.0 197.8 L334.0 192.9 L338.0 185.5 L342.0 176.0 L346.0 165.0 L350.0 152.8 L354.0 140.3 L358.0 128.0 L362.0 116.6 L366.0 106.7 L370.0 98.7" fill="none" stroke="#1d4ed8" stroke-width="2.4"/>
-          <g stroke="#0f172a" stroke-width="1"><line x1="50" y1="66" x2="160" y2="66"/><line x1="50" y1="61" x2="50" y2="71"/><line x1="160" y1="61" x2="160" y2="71"/></g>
-          <g font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a">
-            <text x="105" y="56" text-anchor="middle">2π/Ω</text>
-            <text x="40" y="149" text-anchor="end" font-size="13" fill="#64748b">k<tspan font-size="10" dy="3">0</tspan></text>
-            <text x="40" y="50" text-anchor="end">k</text>
-            <text x="383" y="270">t</text>
-            <text x="215" y="282" text-anchor="middle" font-size="13" fill="#475569">k(t) = k<tspan font-size="10" dy="3">0</tspan><tspan dy="-3">[1 + ε cos(Ωt)]</tspan></text>
-          </g>
-          <!-- (b) -->
-          <line x1="450" y1="250" x2="742" y2="250" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax)"/>
-          <line x1="450" y1="250" x2="450" y2="38" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax)"/>
-          <rect x="573" y="40" width="44" height="210" fill="#b91c1c" fill-opacity=".07"/>
-          <line x1="595" y1="135" x2="595" y2="250" stroke="#64748b" stroke-dasharray="3 4"/>
-          <line x1="446" y1="135" x2="595" y2="135" stroke="#94a3b8" stroke-dasharray="3 4"/>
-          <g fill="none" stroke="#1d4ed8" stroke-width="2.4" stroke-linecap="round">
-            <path d="M490 229.5 L573 154.8 Q581 146 590 135 L600 135 Q609 146 617 154.8 L700 229.5"/>
-            <path d="M490 40.5 L573 115.2 Q581 124 590 135 M600 135 Q609 124 617 115.2 L700 40.5"/>
-          </g>
-          <path d="M590 135 L600 135" stroke="#b91c1c" stroke-width="3.2" stroke-linecap="round"/>
-          <g font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a">
-            <text x="738" y="270">k</text>
-            <text x="440" y="50" text-anchor="end">Re ω</text>
-            <text x="595" y="268" text-anchor="middle">k<tspan font-size="10" dy="3">0</tspan></text>
-            <text x="441" y="139" text-anchor="end" font-size="13" fill="#64748b">Ω/2</text>
-          </g>
-          <g font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="12.5" fill="#b91c1c">
-            <text x="595" y="32" text-anchor="middle">momentum gap</text>
-            <text x="626" y="139">Im ω ≠ 0</text>
-          </g>
-        </svg>
-        <figcaption><b>Fig. 1.</b> Schematic. (a) The stiffness of the medium is modulated periodically in time. (b) Band structure of the resulting phononic time crystal. Waves with wavenumber inside the momentum gap have complex frequency and grow or decay exponentially in time.</figcaption>
-      </figure>
-    </article>
-
-    <article class="theme">
-      <h3>Non-reciprocal lattices and metamaterials</h3>
-      <p>In a passive elastic lattice a wave travels the same way in both directions. Non-reciprocal stiffness, realised with active feedback, together with engineered damping makes the lattice non-Hermitian and breaks this symmetry.</p>
-      <p>I study how non-reciprocity and dissipation shape dispersion, directional amplification and localisation. This work appeared in a special issue of <em>JASA</em> on active and tunable acoustic metamaterials.</p>
-      <figure class="fig">
-        <svg viewBox="0 0 760 250" role="img" aria-labelledby="f2t">
-          <title id="f2t">(a) A one-dimensional lattice of masses and springs with dashpots and an asymmetric active coupling. (b) Illustration of directional amplification: a wave is amplified in one direction and attenuated in the other.</title>
-          <defs>
-            <marker id="fa" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#1d4ed8"/></marker>
-            <marker id="fb" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#b91c1c"/></marker>
-            <marker id="ax2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#64748b"/></marker>
-            <pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="8" stroke="#94a3b8" stroke-width="1.4"/></pattern>
-          </defs>
-          <g font-family="Georgia,'Times New Roman',serif" fill="#0f172a" font-size="14">
-            <text x="10" y="18"><tspan font-weight="700">(a)</tspan> lattice with active coupling</text>
-            <text x="490" y="18"><tspan font-weight="700">(b)</tspan> directional amplification</text>
-          </g>
-          <g transform="translate(5,18)">
-            <rect x="5" y="170" width="430" height="10" fill="url(#hatch)"/>
-            <line x1="5" y1="170" x2="435" y2="170" stroke="#475569" stroke-width="1.2"/>
-            <g fill="none" stroke="#0f172a" stroke-width="1.4">
-              <path d="M5 96 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
-              <path d="M105 96 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
-              <path d="M205 96 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
-              <path d="M305 96 h10 l5 -10 l10 20 l10 -20 l10 20 l5 -10 h10"/>
-            </g>
-            <g fill="#fff" stroke="#0f172a" stroke-width="1.6">
-              <rect x="65" y="74" width="40" height="44" rx="3"/><rect x="165" y="74" width="40" height="44" rx="3"/><rect x="265" y="74" width="40" height="44" rx="3"/><rect x="365" y="74" width="40" height="44" rx="3" stroke-dasharray="3 3"/>
-            </g>
-            <g font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a" text-anchor="middle">
-              <text x="85" y="101">m</text><text x="185" y="101">m</text><text x="285" y="101">m</text><text x="385" y="101" fill="#64748b">…</text>
-            </g>
-            <g fill="none" stroke="#475569" stroke-width="1.3">
-              <path d="M85 118 v10 M75 128 h20 M77 128 v14 h16 v-14 M85 138 v32"/>
-              <path d="M185 118 v10 M175 128 h20 M177 128 v14 h16 v-14 M185 138 v32"/>
-              <path d="M285 118 v10 M275 128 h20 M277 128 v14 h16 v-14 M285 138 v32"/>
-            </g>
-            <text x="297" y="155" font-family="Georgia,serif" font-style="italic" font-size="13" fill="#475569">c</text>
-            <path d="M91 70 C 115 28, 155 28, 179 70" fill="none" stroke="#1d4ed8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#fa)"/>
-            <path d="M191 70 C 215 28, 255 28, 279 70" fill="none" stroke="#1d4ed8" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#fa)"/>
-            <path d="M167 120 C 153 152, 117 152, 105 122" fill="none" stroke="#b91c1c" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#fb)"/>
-            <path d="M267 120 C 253 152, 217 152, 205 122" fill="none" stroke="#b91c1c" stroke-width="1.4" stroke-dasharray="3 4" marker-end="url(#fb)"/>
-            <g font-family="Georgia,serif" font-style="italic" font-size="14" text-anchor="middle">
-              <text x="135" y="26" fill="#1d4ed8">k + κ</text>
-              <text x="135" y="164" fill="#b91c1c" font-size="13">k − κ</text>
-            </g>
-          </g>
-          <!-- (b) -->
-          <line x1="490" y1="215" x2="745" y2="215" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax2)"/>
-          <line x1="490" y1="215" x2="490" y2="36" stroke="#64748b" stroke-width="1.2" marker-end="url(#ax2)"/>
-          <path d="M500.0 200.0 L506.0 199.3 L512.0 198.5 L518.0 197.7 L524.0 196.8 L530.0 195.8 L536.0 194.8 L542.0 193.7 L548.0 192.5 L554.0 191.2 L560.0 189.8 L566.0 188.4 L572.0 186.8 L578.0 185.1 L584.0 183.3 L590.0 181.3 L596.0 179.3 L602.0 177.0 L608.0 174.6 L614.0 172.0 L620.0 169.3 L626.0 166.3 L632.0 163.1 L638.0 159.7 L644.0 156.1 L650.0 152.2 L656.0 148.0 L662.0 143.4 L668.0 138.6 L674.0 133.4 L680.0 127.8 L686.0 121.9 L692.0 115.5 L698.0 108.6 L704.0 101.2 L710.0 93.3 L716.0 84.8 L722.0 75.7 L728.0 65.9" fill="none" stroke="#1d4ed8" stroke-width="2.2" transform="translate(0,5)"/>
-          <path d="M500.0 60.0 L506.0 70.2 L512.0 79.6 L518.0 88.5 L524.0 96.7 L530.0 104.4 L536.0 111.6 L542.0 118.2 L548.0 124.5 L554.0 130.3 L560.0 135.7 L566.0 140.7 L572.0 145.4 L578.0 149.8 L584.0 153.9 L590.0 157.7 L596.0 161.2 L602.0 164.5 L608.0 167.6 L614.0 170.5 L620.0 173.2 L626.0 175.7 L632.0 178.0 L638.0 180.2 L644.0 182.2 L650.0 184.1 L656.0 185.8 L662.0 187.5 L668.0 189.0 L674.0 190.4 L680.0 191.7 L686.0 193.0 L692.0 194.1 L698.0 195.2 L704.0 196.2 L710.0 197.1 L716.0 198.0 L722.0 198.8 L728.0 199.6" fill="none" stroke="#b91c1c" stroke-width="2.2" transform="translate(0,5)"/>
-          <g transform="translate(0,5)"><circle cx="500.0" cy="200.0" r="2.8" fill="#1d4ed8"/><circle cx="523.0" cy="196.9" r="2.8" fill="#1d4ed8"/><circle cx="546.0" cy="192.9" r="2.8" fill="#1d4ed8"/><circle cx="569.0" cy="187.6" r="2.8" fill="#1d4ed8"/><circle cx="592.0" cy="180.7" r="2.8" fill="#1d4ed8"/><circle cx="615.0" cy="171.6" r="2.8" fill="#1d4ed8"/><circle cx="638.0" cy="159.7" r="2.8" fill="#1d4ed8"/><circle cx="661.0" cy="144.2" r="2.8" fill="#1d4ed8"/><circle cx="684.0" cy="123.9" r="2.8" fill="#1d4ed8"/><circle cx="707.0" cy="97.3" r="2.8" fill="#1d4ed8"/><circle cx="730.0" cy="62.5" r="2.8" fill="#1d4ed8"/><circle cx="500.0" cy="60.0" r="2.8" fill="#b91c1c"/><circle cx="523.0" cy="95.4" r="2.8" fill="#b91c1c"/><circle cx="546.0" cy="122.4" r="2.8" fill="#b91c1c"/><circle cx="569.0" cy="143.1" r="2.8" fill="#b91c1c"/><circle cx="592.0" cy="158.9" r="2.8" fill="#b91c1c"/><circle cx="615.0" cy="170.9" r="2.8" fill="#b91c1c"/><circle cx="638.0" cy="180.2" r="2.8" fill="#b91c1c"/><circle cx="661.0" cy="187.2" r="2.8" fill="#b91c1c"/><circle cx="684.0" cy="192.6" r="2.8" fill="#b91c1c"/><circle cx="707.0" cy="196.7" r="2.8" fill="#b91c1c"/><circle cx="730.0" cy="199.8" r="2.8" fill="#b91c1c"/></g>
-          <g font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a"><text x="478" y="48" text-anchor="end">|u</text><text x="742" y="236">n</text></g>
-          <g class="minor" font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="12.5">
-            <text x="560" y="62" fill="#b91c1c">sent backward: attenuated</text>
-            <text x="690" y="98" fill="#1d4ed8" text-anchor="end">sent forward: amplified</text>
-          </g>
-        </svg>
-        <figcaption><b>Fig. 2.</b> Schematic. (a) Masses <i>m</i>, springs <i>k</i> and dashpots <i>c</i>; an active feedback adds an asymmetric part <i>κ</i>, so forward and backward coupling differ. (b) Illustration of directional amplification, a typical effect of non-reciprocal coupling: a wave sent one way grows, the same wave sent the other way decays.</figcaption>
-      </figure>
-    </article>
-
-    <p class="small muted" style="margin:0">A newer direction, pursued through student projects in the LEMS lab: active mechanical oscillators as physical reservoirs and mechanical neural networks. More on the <a href="{{ site.baseurl }}/research/">research page</a>.</p>
-  </div>
-</section>
-
-<!-- ================= PUBLICATIONS ================= -->
-<section class="sec" id="publications">
-  <h2>Publications</h2>
-  <div>
-    <ol class="pubs">
-      <li class="pub-j">
-        <span class="t">Wave propagation in an elastic lattice with nonreciprocal stiffness and engineered damping</span>
-        <span class="a"><b>H. K. Sandhu</b>, S. Dutta and R. Chaunsali</span><br>
-        <span class="v"><i>The Journal of the Acoustical Society of America</i> 159(2), 978–993 (2026). Special issue: Active and Tunable Acoustic Metamaterials. <a href="https://doi.org/10.1121/10.0042349">doi:10.1121/10.0042349</a></span>
-      </li>
-      <li>
-        <span class="t">Observation of a Temporal Topological Interface State in a Parametric Oscillator</span>
-        <span class="a"><b>H. K. Sandhu</b>, A. Umashankar and R. Chaunsali</span><br>
-        <span class="v">Submitted (2026). Presented at the APS Global Physics Summit 2026.{% if page.arxiv.temporal_interface_state != "" %} <a href="{{ page.arxiv.temporal_interface_state }}">arXiv</a>{% endif %}</span>
-      </li>
-      <li>
-        <span class="t">Temporal Band Topology in Dissipative Phononic Time Crystals</span>
-        <span class="a"><b>H. K. Sandhu</b> and R. Chaunsali</span><br>
-        <span class="v">Submitted (2026).{% if page.arxiv.temporal_band_topology != "" %} <a href="{{ page.arxiv.temporal_band_topology }}">arXiv</a>{% endif %}</span>
-      </li>
-    </ol>
-    <p class="small" style="margin:0">Full list with BibTeX on the <a href="{{ site.baseurl }}/publications/">publications page</a>; conference talks and posters on the <a href="{{ site.baseurl }}/talks/">talks page</a>.</p>
-  </div>
-</section>
-
-<!-- ================= EXPERIMENTS ================= -->
-<section class="sec" id="experiments">
-  <h2>Experimental work</h2>
-  <div>
-    <div class="lab3">
-
-      <figure>
-        <svg viewBox="0 0 320 190" role="img" aria-label="Schematic of an oscillator on a spring with a magnet, a motor-driven disc of magnets that modulates the stiffness, and a laser vibrometer measuring the motion">
-          <defs><pattern id="h1" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="7" stroke="#94a3b8" stroke-width="1.3"/></pattern></defs>
-          <rect x="10" y="164" width="300" height="9" fill="url(#h1)"/><line x1="10" y1="164" x2="310" y2="164" stroke="#475569" stroke-width="1.2"/>
-          <rect x="14" y="96" width="7" height="48" fill="url(#h1)"/><line x1="21" y1="96" x2="21" y2="144" stroke="#475569" stroke-width="1.2"/>
-          <path d="M21 120 h16 l5 -11 l10 22 l10 -22 l10 22 l5 -11 h12" fill="none" stroke="#0f172a" stroke-width="1.4"/>
-          <rect x="79" y="100" width="52" height="40" rx="3" fill="#fff" stroke="#0f172a" stroke-width="1.6"/>
-          <rect x="131" y="108" width="10" height="12" fill="#b91c1c"/><rect x="131" y="120" width="10" height="12" fill="#1d4ed8"/>
-          <line x1="70" y1="144" x2="140" y2="144" stroke="#475569" stroke-width="1.2"/>
-          <circle cx="222" cy="120" r="42" fill="#fff" stroke="#0f172a" stroke-width="1.6"/>
-          <circle cx="222" cy="120" r="4" fill="#0f172a"/>
-          <g><circle cx="184" cy="120" r="6.5" fill="#1d4ed8"/><circle cx="222" cy="82" r="6.5" fill="#b91c1c"/><circle cx="260" cy="120" r="6.5" fill="#1d4ed8"/><circle cx="222" cy="158" r="6.5" fill="#b91c1c"/></g>
-          <path d="M255 68 A 56 56 0 0 1 276 104" fill="none" stroke="#475569" stroke-width="1.3" marker-end="url(#ax3)"/>
-          <defs><marker id="ax3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L10 5L0 10z" fill="#475569"/></marker></defs>
-          <rect x="282" y="104" width="30" height="32" rx="3" fill="#f1f5f9" stroke="#475569" stroke-width="1.3"/><line x1="264" y1="120" x2="282" y2="120" stroke="#475569" stroke-width="1.3"/>
-          <rect x="58" y="14" width="46" height="22" rx="3" fill="#fff" stroke="#0f172a" stroke-width="1.4"/>
-          <line x1="81" y1="36" x2="100" y2="98" stroke="#b91c1c" stroke-width="1.4" stroke-dasharray="4 3"/>
-          <g font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="11" fill="#475569" text-anchor="middle"><text x="81" y="29" font-weight="600">LDV</text><text x="297" y="152">motor</text><text x="106" y="158" fill="#64748b">m</text></g>
-          <text x="162" y="182" font-family="Georgia,serif" font-style="italic" font-size="12" fill="#475569" text-anchor="middle">k(t) set by the rotating magnets</text>
-        </svg>
-        <h3>Magneto-mechanical oscillators</h3>
-        <p>Motor-driven rotating magnet arrays modulate the effective stiffness of an oscillator in time. The response is measured without contact using laser Doppler vibrometry (LDV).</p>
-      </figure>
-
-      <figure>
-        <svg viewBox="0 0 320 190" role="img" aria-label="Schematic of a chain of five coupled pendulums hanging from a bar">
-          <rect x="16" y="20" width="288" height="8" fill="#fff" stroke="#0f172a" stroke-width="1.5"/>
-          <g stroke="#0f172a" stroke-width="1.4"><line x1="50" y1="28" x2="38" y2="140"/><line x1="105" y1="28" x2="99" y2="140"/><line x1="160" y1="28" x2="165" y2="140"/><line x1="215" y1="28" x2="227" y2="140"/><line x1="270" y1="28" x2="278" y2="140"/></g>
-          <g fill="none" stroke="#0f172a" stroke-width="1.3">
-            <path d="M42.2 100 h4 l3 -7 l6 14 l6 -14 l6 14 l3 -7 h4 L97 100"/>
-            <path d="M101 100 h4 l3 -7 l6 14 l6 -14 l6 14 l3 -7 h4 L158 100"/>
-            <path d="M162 100 h6 l3 -7 l6 14 l6 -14 l6 14 l3 -7 h4 L223 100"/>
-            <path d="M222 100 h6 l3 -7 l6 14 l6 -14 l6 14 l3 -7 h6 L275 100"/>
-          </g>
-          <g fill="#fff" stroke="#0f172a" stroke-width="1.6"><circle cx="38" cy="140" r="12"/><circle cx="99" cy="140" r="12"/><circle cx="165" cy="140" r="12"/><circle cx="227" cy="140" r="12"/><circle cx="278" cy="140" r="12"/></g>
-          <g fill="#1d4ed8"><circle cx="38" cy="140" r="3.5"/><circle cx="99" cy="140" r="3.5"/><circle cx="165" cy="140" r="3.5"/><circle cx="227" cy="140" r="3.5"/><circle cx="278" cy="140" r="3.5"/></g>
-          <g font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="11" fill="#64748b" text-anchor="middle"><text x="38" y="170">1</text><text x="99" y="170">2</text><text x="165" y="170">3</text><text x="227" y="170">4</text><text x="278" y="170">5</text></g>
-        </svg>
-        <h3>Coupled pendulum lattices</h3>
-        <p>A five-degree-of-freedom chain of coupled pendula for studying discrete modal dynamics and wave transport.</p>
-      </figure>
-
-      <figure>
-        <svg viewBox="0 0 320 190" role="img" aria-label="Schematic of a camera tracking an ArUco marker, the recorded decaying trajectory, and the SINDy equation used to identify the dynamics">
-          <rect x="18" y="26" width="46" height="32" rx="4" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><circle cx="64" cy="42" r="9" fill="#fff" stroke="#0f172a" stroke-width="1.5"/><circle cx="64" cy="42" r="3.5" fill="#0f172a"/>
-          <line x1="72" y1="38" x2="132" y2="82" stroke="#1d4ed8" stroke-width="1.1" stroke-dasharray="4 3"/><line x1="72" y1="46" x2="132" y2="148" stroke="#1d4ed8" stroke-width="1.1" stroke-dasharray="4 3"/>
-          <g transform="translate(132,82)">
-            <rect width="66" height="66" fill="#0f172a"/>
-            <g fill="#fff"><rect x="11" y="11" width="11" height="11"/><rect x="33" y="11" width="11" height="11"/><rect x="22" y="22" width="11" height="11"/><rect x="44" y="22" width="11" height="11"/><rect x="11" y="33" width="11" height="11"/><rect x="33" y="44" width="11" height="11"/><rect x="44" y="33" width="11" height="11"/></g>
-          </g>
-          <line x1="215" y1="115" x2="308" y2="115" stroke="#cbd5e1" stroke-dasharray="3 4"/>
-          <path d="M215 115 C 224 70 232 70 241 115 C 248 148 255 148 262 115 C 267 95 272 95 277 115 C 281 128 285 128 289 115 C 292 110 295 110 298 115 L308 115" fill="none" stroke="#b91c1c" stroke-width="2"/>
-          <g font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="11" fill="#64748b" text-anchor="middle"><text x="165" y="170">ArUco marker</text><text x="262" y="70">tracked motion</text></g>
-          <text x="262" y="176" font-family="Georgia,serif" font-style="italic" font-size="14" fill="#0f172a" text-anchor="middle">ẋ = Θ(x) Ξ</text>
-          <text x="262" y="156" font-family="-apple-system,'Segoe UI',Roboto,Arial,sans-serif" font-size="11" fill="#1d4ed8" text-anchor="middle" font-weight="600">SINDy</text>
-        </svg>
-        <h3>Optical tracking and system identification</h3>
-        <p>Camera-based tracking of ArUco markers captures motion; Sparse Identification of Nonlinear Dynamics (SINDy) recovers the governing equations from the data.</p>
-      </figure>
-
-    </div>
-    <p style="margin:22px 0 0"><a href="{{ site.baseurl }}/projects/4_experiment_to_model/">Case study: from a measured record to a model, with the measured data to try models on yourself →</a></p>
-    <p class="small muted" style="margin:10px 0 0">Tools: laser Doppler vibrometer, data acquisition systems, 3D printing, COMSOL Multiphysics, MATLAB, Python, C++.</p>
-  </div>
-</section>
-
-<!-- ================= TIMELINE ================= -->
-<section class="sec" id="timeline">
-  <h2>Timeline</h2>
-  <div>
-    <dl class="tl">
-      <dt>May 2026 – present</dt><dd><b>Project Associate</b>, LEMS Lab, Department of Aerospace Engineering, IISc Bengaluru</dd>
-      <dt>Sep 2025</dt><dd><b>Metamaterials 2025</b>, Amsterdam: poster and EUPROMETA Doctoral School (conference travel grant; IISc GARP Travel Fellowship)</dd>
-      <dt>Jan – May 2024</dt><dd><b>Teaching Assistant</b>, AE 264 Vibrations, IISc (guest lecture in AE 351A, Dec 2023)</dd>
-      <dt>2020 – 2027 (expected)</dt><dd><b>M.Tech (Research) and Ph.D., Aerospace Engineering</b>, Indian Institute of Science, Bengaluru. Thesis: <i>Dynamics of Elastic Time Crystals</i>. GATE Fellowship, Ministry of Education.</dd>
-      <dt>2018 – 2019</dt><dd><b>Subject Matter Expert and Faculty</b>, THE GATE ACADEMY, Bengaluru</dd>
-      <dt>2012 – 2016</dt><dd><b>B.E., Mechanical Engineering</b>, Government Engineering College, Raipur</dd>
-    </dl>
-    <div class="two">
-      <div>
-        <h3 class="sub">Mentoring (LEMS Lab)</h3>
-        <ul class="plain">
-          <li><b>Jayalakshmi K</b>, M.Tech (Research), IISc: mechanical neural networks and physical reservoir computing (Dec 2025 – present)</li>
-          <li><b>Pranav M N</b>, summer intern, IIT Madras: active mechanical oscillators for reservoir computing (2026)</li>
-          <li><b>Vaishnavi Devgire</b>, summer intern, IIEST Shibpur: wave propagation in a 1D chain with a local active site (2025)</li>
-          <li><b>Avinash Umashankar</b>, winter intern, SASTRA: nonlinear vibrations in parametric systems (2024)</li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="sub">Fellowships and honours</h3>
-        <ul class="plain">
-          <li>Metamaterials 2025 Travel Grant, EUR 1080 (2025)</li>
-          <li>IISc GARP Travel Fellowship (2025)</li>
-          <li>Student Council representative, Aerospace Engineering, IISc (2024–2026)</li>
-          <li>GATE Fellowship, Ministry of Education, Government of India (2020–2025)</li>
-          <li>GATE Engineering Sciences (XE) 2019, All-India Rank 53</li>
-        </ul>
-      </div>
-    </div>
-    <p class="small muted" style="margin:10px 0 0">Interests outside research, service and outreach: <a href="{{ site.baseurl }}/beyond/">Beyond Academics</a>.</p>
+    <p class="small" style="margin:12px 0 0"><a href="{{ site.baseurl }}/news/">All news</a> · <a href="{{ site.baseurl }}/publications/">All publications</a> · <a href="{{ site.baseurl }}/research/">Research</a> · <a href="{{ site.baseurl }}/notes/">Notes</a></p>
   </div>
 </section>
 

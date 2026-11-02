@@ -1080,3 +1080,25 @@ footer.sticky-bottom {
   .yd-motion .ym-vid video { aspect-ratio: 9 / 16; height: auto; max-height: 520px; object-fit: contain; }
 }
 @media (prefers-reduced-motion: reduce) { .yd-motion .ym:not(.ym-vid) img { display: none; } }
+
+/* ================= Research page ================= */
+.r-lead { font-size: 1.05rem; color: #374151; margin: 0 0 8px; }
+.r-area { padding: 26px 0 8px; border-top: 1px solid var(--global-divider-color); margin-top: 22px; }
+.r-area h2 { font-size: 1.45rem; margin: 0 0 10px; }
+.r-area p { color: #374151; }
+.r-k { margin: 0 0 4px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--global-theme-color); }
+.rfig { margin: 18px 0 12px; }
+.rfig svg { display: block; width: 100%; height: auto; border: 1px solid var(--global-divider-color); border-radius: 6px; padding: 12px; background: #fff; }
+.rfig figcaption { margin-top: 8px; font-size: 0.85rem; color: #6b7280; }
+.r-ref { font-size: 0.92rem; padding-left: 12px; border-left: 2px solid var(--global-theme-color); }
+.r-foot { margin-top: 28px; font-size: 0.9rem; color: #6b7280; }
+@media (max-width: 700px) { .rfig svg text { font-size: 21px; } .rfig svg .minor { display: none; } }
+
+/* ================= Notes page ================= */
+.note-index { padding: 14px 16px; border: 1px solid var(--global-divider-color); border-radius: 6px; margin: 0 0 30px; }
+.note-index p { margin: 0 0 6px; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #9ca3af; }
+.note-index ol { margin: 0; padding-left: 1.2rem; }
+.note-index span { font-size: 0.85rem; color: #6b7280; }
+.note h2 { font-size: 1.6rem; margin-bottom: 4px; }
+.note-meta { font-size: 0.88rem; color: #6b7280; margin: 0 0 18px; }
+.note h3 { font-size: 1.15rem; margin-top: 28px; }

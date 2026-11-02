@@ -4,7 +4,7 @@ title: Talks
 permalink: /talks/
 description: Oral and poster presentations at conferences and symposia.
 nav: true
-nav_order: 4
+nav_order: 5
 ---
 
 ### Upcoming (tentative)

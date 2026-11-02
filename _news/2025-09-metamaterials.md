@@ -2,6 +2,7 @@
 layout: post
 date: 2025-09-01
 inline: true
+tag: Poster
 related_posts: false
 ---
 

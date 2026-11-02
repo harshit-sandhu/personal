@@ -4,7 +4,7 @@ permalink: /beyond/
 title: Beyond Academics
 description: Interests outside the lab, and service and outreach.
 nav: true
-nav_order: 5
+nav_order: 6
 ---
 
 ## Service and outreach
