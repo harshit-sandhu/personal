@@ -150,6 +150,15 @@ nav_order: 5
   <figcaption><b>IISc Open Day 2026</b> · Department of Aerospace Engineering. As a lab volunteer I showed visitors how a folded sheet can deploy into a large structure, and how vibration alone can loosen a tightened nut.</figcaption>
 </figure>
 
+<figure class="openday cism" data-toc="CISM–IISc Workshop 2025">
+  <div class="cw-grid">
+    <a class="cw-a" href="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}" alt="Participants, speakers and organisers of the CISM–IISc joint advanced workshop outside the Aerospace Engineering building" loading="lazy" width="1600" height="1067"><span class="od-tag">Participants</span></a>
+    <a class="cw-b" href="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}" alt="Volunteers beside the workshop banner" loading="lazy" width="480" height="360"><span class="od-tag">Volunteers</span></a>
+    <a class="cw-c" href="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}" alt="Speakers with the volunteer team in the auditorium" loading="lazy" width="1600" height="1067"><span class="od-tag">Speakers and team</span></a>
+  </div>
+  <figcaption><b>CISM–IISc Joint Advanced Workshop</b> · 21–25 July 2025, Aerospace Engineering, IISc. Architectured and multiscale materials, soft robotics and data-driven model discovery. I was one of the volunteer organisers.</figcaption>
+</figure>
+
 - Lab volunteer, IISc Open Day 2026: demonstrated deployable structures and vibration-based nut loosening.
 - Volunteer organizer, CISM–IISc Workshop on Architectured and Multiscale Materials (July 2025).
 - Hosted a lab tour for Class 12 students, IISc–Agastya Science Enrichment Program (2024).
