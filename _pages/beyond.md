@@ -293,5 +293,5 @@ nav_order: 5
     <a href="{{ '/assets/img/beyond/aol-lunch-sketch.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-lunch-sketch.jpg' | relative_url }}" alt="The same lunch, redrawn as an illustration" loading="lazy" width="540" height="360"></a>
     <a href="{{ '/assets/img/beyond/aol-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-group.jpg' | relative_url }}" alt="A group selfie on the marble terrace" loading="lazy" width="1400" height="1050"></a>
   </div>
-  <figcaption><b>Happiness Program, The Art of Living International Center, Bengaluru</b> · 19–23 June 2025. Five residential days of breathing practice, meditation and yoga.</figcaption>
+  <figcaption><b>Happiness Program, The Art of Living International Center, Bengaluru</b> · 19–22 June 2025. A three-day residential course of breathing practice, meditation and yoga, from Thursday evening to Sunday evening.</figcaption>
 </figure>
