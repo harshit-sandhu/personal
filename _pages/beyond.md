@@ -107,16 +107,21 @@ nav_order: 5
 <section class="jr">
 <div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trip</span><span class="jr-p">Munnar, Kerala</span></div>
 <div class="jr-body">
-<figure class="trek" data-toc="Munnar and Kolukkumalai, 2024">
+<figure class="trek four" data-toc="Munnar and Kolukkumalai, 2024">
   <div class="trek-grid">
     <a class="t-a" href="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-summit.jpg' | relative_url }}" alt="Selfie at the summit of Kolukkumalai, with tea estates and the hills of Munnar behind" loading="lazy" width="1600" height="900"></a>
     <a class="t-b" href="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-sunrise.jpg' | relative_url }}" alt="Sunrise over misty ridges of the Western Ghats beside a steep rock peak" loading="lazy" width="1182" height="664"></a>
+    <a class="t-d" href="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}" alt="Selfie with friends, the Kolukkumalai peak behind" loading="lazy" width="1182" height="664"></a>
+    <a class="t-e" href="{{ '/assets/img/beyond/kolukkumalai-peak.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-peak.jpg' | relative_url }}" alt="The Kolukkumalai peak above the grass at sunrise" loading="lazy" width="1182" height="664"></a>
     <a class="t-c" href="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kolukkumalai-yoga.jpg' | relative_url }}" alt="Holding the dancer's pose, Natarajasana, at the top with the rising sun behind" loading="lazy" width="664" height="1182"></a>
   </div>
   <figcaption><b>Kolukkumalai, Munnar, Kerala</b> · 4 May 2024. A sunrise trek on Munnar's best-known jeep-safari route.</figcaption>
 </figure>
 
 <figure class="trek mosaic" id="munnar">
+  <div class="pano">
+    <a href="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}" alt="Panorama from the summit at dusk" loading="lazy" width="1600" height="474"></a>
+  </div>
   <div class="mosaic-cols">
     <a href="{{ '/assets/img/beyond/munnar-tea-rows.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-tea-rows.jpg' | relative_url }}" alt="Rows of tea bushes on a hillside estate" loading="lazy" width="1024" height="768"></a>
     <a href="{{ '/assets/img/beyond/munnar-tea-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-tea-selfie.jpg' | relative_url }}" alt="Selfie above the tea slopes of Munnar" loading="lazy" width="1024" height="768"></a>
@@ -128,8 +133,6 @@ nav_order: 5
     <a href="{{ '/assets/img/beyond/munnar-summit-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-selfie.jpg' | relative_url }}" alt="Selfie on a rocky summit at dusk" loading="lazy" width="1024" height="768"></a>
     <a href="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}" alt="The whole group on the summit" loading="lazy" width="1024" height="768"></a>
     <a href="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}" alt="Sitting on the rock edge above the valley" loading="lazy" width="1182" height="664"></a>
-    <a href="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}" alt="Panorama from the summit at dusk" loading="lazy" width="1600" height="474"></a>
-    <a href="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}" alt="Selfie with the peak behind" loading="lazy" width="1182" height="664"></a>
   </div>
   <figcaption><b>Around Munnar</b> · the same trip. Tea estates, a zipline, kayaking on the reservoir, a night in a tent, and a summit at dusk.</figcaption>
 </figure>
