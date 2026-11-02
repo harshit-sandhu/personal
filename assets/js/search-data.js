@@ -23,12 +23,12 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/personal/research/";
           },
-        },{id: "nav-notes",
-          title: "Notes",
-          description: "Things learnt along the way, theoretical and experimental, written up with figures.",
+        },{id: "nav-reflections",
+          title: "Reflections",
+          description: "What waves, experiments and failed fits have taught me along the way.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/personal/notes/";
+            window.location.href = "/personal/reflections/";
           },
         },{id: "nav-talks",
           title: "Talks",
