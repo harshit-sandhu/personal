@@ -18,10 +18,17 @@ ninja.data = [{
           },
         },{id: "nav-research",
           title: "Research",
-          description: "Current research themes. Click a card for details and related work.",
+          description: "Waves in engineered mechanical systems. Figures here describe published work only.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/personal/research/";
+          },
+        },{id: "nav-notes",
+          title: "Notes",
+          description: "Things learnt along the way, theoretical and experimental, written up with figures.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/personal/notes/";
           },
         },{id: "nav-talks",
           title: "Talks",
@@ -44,11 +51,20 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/personal/cv/";
           },
-        },{id: "news-gave-a-talk-on-wave-propagation-in-phononic-time-crystals-at-icmams-2024-bengaluru",
+        },{id: "news-gave-a-guest-lecture-on-wave-propagation-in-active-elastic-lattices-in-wave-propagation-in-designed-materials-ae-351a-iisc",
+          title: 'Gave a guest lecture on wave propagation in active elastic lattices in Wave...',
+          description: "",
+          section: "News",},{id: "news-teaching-assistant-for-ae-264-vibrations-iisc-january-may-2024",
+          title: 'Teaching Assistant for AE 264 Vibrations, IISc (January–May 2024).',
+          description: "",
+          section: "News",},{id: "news-gave-a-talk-on-wave-propagation-in-phononic-time-crystals-at-icmams-2024-bengaluru",
           title: 'Gave a talk on wave propagation in phononic time crystals at ICMAMS 2024,...',
           description: "",
           section: "News",},{id: "news-presented-a-poster-at-metamaterials-2025-in-amsterdam-supported-by-a-conference-travel-grant-and-an-iisc-garp-travel-fellowship",
           title: 'Presented a poster at Metamaterials 2025 in Amsterdam, supported by a conference travel...',
+          description: "",
+          section: "News",},{id: "news-began-co-mentoring-jayalakshmi-k-m-tech-research-iisc-on-mechanical-neural-networks-and-physical-reservoir-computing",
+          title: 'Began co-mentoring Jayalakshmi K (M.Tech Research, IISc) on mechanical neural networks and physical...',
           description: "",
           section: "News",},{id: "news-our-paper-on-wave-propagation-in-an-elastic-lattice-with-nonreciprocal-stiffness-and-engineered-damping-is-out-in-jasa-special-issue-on-active-and-tunable-acoustic-metamaterials",
           title: 'Our paper on wave propagation in an elastic lattice with nonreciprocal stiffness and...',
@@ -62,27 +78,7 @@ ninja.data = [{
           section: "News",},{id: "news-completed-the-phd-course-complex-wave-phenomena-in-metamaterials-and-topological-mechanics-at-politecnico-di-milano-virtual",
           title: 'Completed the PhD course Complex Wave Phenomena in Metamaterials and Topological Mechanics at...',
           description: "",
-          section: "News",},{id: "projects-phononic-time-crystals-and-temporal-topology",
-          title: 'Phononic time crystals and temporal topology',
-          description: "Waves in elastic media whose properties are modulated in time — momentum bandgaps, temporal band topology and temporal interface states.",
-          section: "Projects",handler: () => {
-              window.location.href = "/personal/projects/1_time_crystals/";
-            },},{id: "projects-nonreciprocal-and-non-hermitian-lattices",
-          title: 'Nonreciprocal and non-Hermitian lattices',
-          description: "Elastic lattices with active, nonreciprocal stiffness and engineered damping that break the usual symmetry of wave transmission.",
-          section: "Projects",handler: () => {
-              window.location.href = "/personal/projects/2_nonreciprocal_lattices/";
-            },},{id: "projects-active-oscillators-for-physical-computing",
-          title: 'Active oscillators for physical computing',
-          description: "Using the dynamics of active mechanical oscillators and lattices as physical reservoirs and mechanical neural networks.",
-          section: "Projects",handler: () => {
-              window.location.href = "/personal/projects/3_reservoir_computing/";
-            },},{id: "projects-from-a-measured-record-to-a-model",
-          title: 'From a measured record to a model',
-          description: "One pendulum, one free decay, and the question of when a model is good enough.",
-          section: "Projects",handler: () => {
-              window.location.href = "/personal/projects/4_experiment_to_model/";
-            },},{
+          section: "News",},{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
