@@ -168,7 +168,24 @@ nav_order: 5
 </div>
 </section>
 <section class="jr">
-<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trip</span><span class="jr-p">Munnar, Kerala</span></div>
+<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-09-08">8 Sep 2024</time><span class="jr-k">Road trip</span><span class="jr-p">Mysuru, Karnataka</span></div>
+<div class="jr-body">
+<figure class="trek mosaic" id="mysuru" data-toc="Mysuru backwaters, 2024">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/mysuru-shore.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-shore.jpg' | relative_url }}" alt="By the backwaters under a monsoon sky" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-selfie.jpg' | relative_url }}" alt="Selfie at the water’s edge" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-marigold.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-marigold.jpg' | relative_url }}" alt="A field of marigolds in bloom" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-marigold-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-marigold-selfie.jpg' | relative_url }}" alt="Selfie by the marigold field" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-horse.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-horse.jpg' | relative_url }}" alt="A white horse grazing under a lone tree" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-herd.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-herd.jpg' | relative_url }}" alt="Cattle grazing on open pasture" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/mysuru-bull.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/mysuru-bull.jpg' | relative_url }}" alt="A long-horned bull in the herd" loading="lazy" width="1024" height="768"></a>
+  </div>
+  <figcaption><b>Mysuru backwaters, Karnataka</b> · 8 September 2024. A monsoon road trip: wide water under heavy clouds, marigold fields, and pasture along the way.</figcaption>
+</figure>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-05-04">4 May 2024</time><span class="jr-k">Trip</span><span class="jr-p">Munnar, Kerala</span></div>
 <div class="jr-body">
 <figure class="trek four" data-toc="Munnar and Kolukkumalai, 2024">
   <div class="trek-grid">
