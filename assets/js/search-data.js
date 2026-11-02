@@ -77,6 +77,11 @@ ninja.data = [{
           description: "Using the dynamics of active mechanical oscillators and lattices as physical reservoirs and mechanical neural networks.",
           section: "Projects",handler: () => {
               window.location.href = "/personal/projects/3_reservoir_computing/";
+            },},{id: "projects-from-a-measured-record-to-a-model",
+          title: 'From a measured record to a model',
+          description: "One pendulum, one free decay, and the question of when a model is good enough.",
+          section: "Projects",handler: () => {
+              window.location.href = "/personal/projects/4_experiment_to_model/";
             },},{
         id: 'social-email',
         title: 'email',
