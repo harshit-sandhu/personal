@@ -293,9 +293,12 @@ nav_order: 5
     <a class="yd-a" href="{{ '/assets/img/beyond/yogaday-dancer.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-dancer.jpg' | relative_url }}" alt="Natarajasana, the dancer pose" loading="lazy" width="768" height="1024"></a>
     <a class="yd-b" href="{{ '/assets/img/beyond/yogaday-dog.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-dog.jpg' | relative_url }}" alt="Adho Mukha Svanasana, downward-facing dog" loading="lazy" width="1400" height="1050"></a>
     <a class="yd-c" href="{{ '/assets/img/beyond/yogaday-wheel.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-wheel.jpg' | relative_url }}" alt="A supported backbend over a yoga wheel" loading="lazy" width="1024" height="768"></a>
-    <div class="yd-d"><img src="{{ '/assets/img/beyond/yogaday-catcow.gif' | relative_url }}" alt="Cat–cow, Marjaryasana–Bitilasana, flowing between the two poses" loading="lazy" width="600" height="432"><span class="od-tag">Cat ↔ cow</span></div>
+    <div class="yd-anim">
+      <div class="yd-d"><img src="{{ '/assets/img/beyond/yogaday-crow.gif' | relative_url }}" alt="Bakasana, crow pose: lifting from a crouch into the balance and back" loading="lazy" width="480" height="360"><span class="od-tag">Crow</span></div>
+      <div class="yd-e"><img src="{{ '/assets/img/beyond/yogaday-catcow.gif' | relative_url }}" alt="Cat–cow, Marjaryasana–Bitilasana: cat, neutral and cow in a slow flow" loading="lazy" width="540" height="405"><span class="od-tag">Cat ↔ cow</span></div>
+    </div>
   </div>
-  <figcaption><b>International Day of Yoga</b> · 21 June 2026. Celebrated at home, on the mat, ending with a slow cat–cow flow.</figcaption>
+  <figcaption><b>International Day of Yoga</b> · 21 June 2026. Celebrated at home, on the mat: a lift into crow and a slow cat–cow flow.</figcaption>
 </figure>
 </div>
 </section>
