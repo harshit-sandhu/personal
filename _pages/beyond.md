@@ -117,6 +117,28 @@ nav_order: 5
 </figure>
 </div>
 </section>
+<section class="jr">
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024-04-20">20 Apr 2024</time><span class="jr-k">Trip</span><span class="jr-p">Kodaikanal, Tamil Nadu</span></div>
+<div class="jr-body">
+<figure class="trek mosaic" id="kodaikanal" data-toc="Kodaikanal, 2024">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/kodai-lake-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-lake-group.jpg' | relative_url }}" alt="Friends by a lake in the Kodaikanal hills" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-lake-view.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-lake-view.jpg' | relative_url }}" alt="The group looking out over the lake" loading="lazy" width="1400" height="788"></a>
+    <a href="{{ '/assets/img/beyond/kodai-circle.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-circle.jpg' | relative_url }}" alt="A circle of friends, photographed from below" loading="lazy" width="1400" height="1049"></a>
+    <a href="{{ '/assets/img/beyond/kodai-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-selfie.jpg' | relative_url }}" alt="Selfie on a meadow trail" loading="lazy" width="768" height="1024"></a>
+    <a href="{{ '/assets/img/beyond/kodai-pines-trio.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-pines-trio.jpg' | relative_url }}" alt="Dancer pose among the pines" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-pines-trio-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-pines-trio-2.jpg' | relative_url }}" alt="Balancing in the pine forest" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-pines-pair.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-pines-pair.jpg' | relative_url }}" alt="A paired dancer pose in the pine forest" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-roots.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-roots.jpg' | relative_url }}" alt="The group on a trail of tangled tree roots" loading="lazy" width="788" height="1400"></a>
+    <a href="{{ '/assets/img/beyond/kodai-pillars.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-pillars.jpg' | relative_url }}" alt="Rock pillars rising out of the cloud" loading="lazy" width="664" height="1182"></a>
+    <a href="{{ '/assets/img/beyond/kodai-valley.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-valley.jpg' | relative_url }}" alt="Green ridges falling away to the plains" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-valley-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-valley-2.jpg' | relative_url }}" alt="A hazy valley view framed by trees" loading="lazy" width="1024" height="768"></a>
+    <a href="{{ '/assets/img/beyond/kodai-farm.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/kodai-farm.jpg' | relative_url }}" alt="A hillside farm under a big sky" loading="lazy" width="1024" height="768"></a>
+  </div>
+  <figcaption><b>Kodaikanal, Tamil Nadu</b> · 20 April 2024. A trip with friends: a lake in the hills, a pine forest, a root-covered trail and rock pillars in the clouds.</figcaption>
+</figure>
+</div>
+</section>
 <div class="jr-end" aria-hidden="true"><i class="jr-arrow"></i><span>Earlier</span></div>
 </div>
 
