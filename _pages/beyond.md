@@ -129,10 +129,7 @@ nav_order: 5
     <a href="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-group.jpg' | relative_url }}" alt="The whole group on the summit" loading="lazy" width="1024" height="768"></a>
     <a href="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-summit-sit.jpg' | relative_url }}" alt="Sitting on the rock edge above the valley" loading="lazy" width="1182" height="664"></a>
     <a href="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-panorama.jpg' | relative_url }}" alt="Panorama from the summit at dusk" loading="lazy" width="1600" height="474"></a>
-    <a href="{{ '/assets/img/beyond/munnar-peak.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak.jpg' | relative_url }}" alt="A sharp granite peak rising above the haze" loading="lazy" width="1182" height="664"></a>
     <a href="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-selfie.jpg' | relative_url }}" alt="Selfie with the peak behind" loading="lazy" width="1182" height="664"></a>
-    <a href="{{ '/assets/img/beyond/munnar-peak-2.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-2.jpg' | relative_url }}" alt="The peak at sunrise" loading="lazy" width="1182" height="664"></a>
-    <a href="{{ '/assets/img/beyond/munnar-peak-sun.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/munnar-peak-sun.jpg' | relative_url }}" alt="The sun coming up beside the peak" loading="lazy" width="1182" height="664"></a>
   </div>
   <figcaption><b>Around Munnar</b> · the same trip. Tea estates, a zipline, kayaking on the reservoir, a night in a tent, and a summit at dusk.</figcaption>
 </figure>
