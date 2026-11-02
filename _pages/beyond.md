@@ -39,7 +39,7 @@ nav_order: 6
     <a class="cw-b" href="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}" alt="Volunteers beside the workshop banner" loading="lazy" width="480" height="360"><span class="od-tag">Volunteers</span></a>
     <a class="cw-c" href="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}" alt="Speakers with the volunteer team in the auditorium" loading="lazy" width="1600" height="1067"><span class="od-tag">Speakers and team</span></a>
   </div>
-  <figcaption><b>CISM–IISc Joint Advanced Workshop</b> · 21–25 July 2025, Aerospace Engineering, IISc. Architectured and multiscale materials, soft robotics and data-driven model discovery. I was one of the volunteer organisers.</figcaption>
+  <figcaption><b>CISM–IISc Joint Advanced Workshop</b> · 21–25 July 2025, Aerospace Engineering Auditorium, IISc. <i>Emerging Topics in Architectured &amp; Multiscale Materials, Soft Robotics, and Data-Driven Model Discovery</i>, the first in a planned annual series between CISM (Udine, Italy) and IISc. I was one of the volunteer organisers.</figcaption>
 </figure>
 </div>
 </section>

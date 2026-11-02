@@ -454,7 +454,7 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
   <div>
     <ul class="news">
       {% assign news = site.news | sort: 'date' | reverse %}
-      {% for item in news limit: 9 %}
+      {% for item in news limit: 4 %}
       {% if item.paper %}
       <li class="hl"><time datetime="{{ item.date | date: '%Y-%m' }}">{{ item.date | date: '%b %Y' }}</time><span><em class="tag">Paper</em><a class="pt" href="{{ item.paper.url }}">{{ item.paper.title }}</a><span class="pa">{{ item.paper.authors }}</span><span class="pv">{{ item.paper.venue }}</span></span></li>
       {% else %}
@@ -462,7 +462,7 @@ footer{margin-top:40px;border-top:1px solid var(--rule);padding:22px 0 38px;colo
       {% endif %}
       {% endfor %}
     </ul>
-    <p class="small" style="margin:12px 0 0"><a href="{{ site.baseurl }}/news/">All news</a> · <a href="{{ site.baseurl }}/publications/">All publications</a> · <a href="{{ site.baseurl }}/research/">Research</a> · <a href="{{ site.baseurl }}/reflections/">Reflections</a></p>
+    <p class="small" style="margin:12px 0 0"><a href="{{ site.baseurl }}/news/">All news →</a> · <a href="{{ site.baseurl }}/publications/">All publications</a> · <a href="{{ site.baseurl }}/research/">Research</a> · <a href="{{ site.baseurl }}/reflections/">Reflections</a></p>
   </div>
 </section>
 
