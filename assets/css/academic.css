@@ -708,7 +708,7 @@ footer.sticky-bottom {
   margin: 0 auto 8px;
 }
 .pd-setup img,
-.post article figure img {
+.pd-fig img {
   display: block;
   width: 100%;
   height: auto;
@@ -956,4 +956,25 @@ footer.sticky-bottom {
   .bench .wl {
     display: none;
   }
+}
+
+/* Open Day feature */
+.openday { margin: 18px 0 26px; }
+.od-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.od-grid a { position: relative; display: block; overflow: hidden; border-radius: 4px; background: #f1f5f9; }
+.od-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.od-grid a:hover img { transform: scale(1.025); }
+.od-a { grid-column: 1; grid-row: 1 / span 2; }
+.od-a img { position: absolute; inset: 0; }
+.od-b, .od-c { aspect-ratio: 1 / 1; }
+.od-d { grid-column: 2 / span 2; aspect-ratio: 16 / 10; }
+.od-tag { position: absolute; left: 10px; bottom: 10px; padding: 3px 9px; border-radius: 999px; background: rgba(255, 255, 255, 0.92); color: #111827; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.openday figcaption { margin-top: 10px; font-size: 0.88rem; color: #6b7280; }
+.openday figcaption b { color: #111827; font-weight: 600; }
+@media (max-width: 700px) {
+  .od-grid { grid-template-columns: 1fr 1fr; }
+  .od-a { grid-column: 1; grid-row: 1 / span 2; }
+  .od-b { grid-column: 2; grid-row: 1; }
+  .od-c { grid-column: 2; grid-row: 2; }
+  .od-d { grid-column: 1 / span 2; grid-row: 3; }
 }

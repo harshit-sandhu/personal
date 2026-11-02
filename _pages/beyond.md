@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /beyond/
-title: Beyond Research
+title: Beyond Academics
 description: Interests outside the lab, and service and outreach.
 nav: true
 nav_order: 5
@@ -139,6 +139,16 @@ nav_order: 5
 <div class="bx one">
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.4 0 4 1.7 4 4.5"/></svg><div><h3>Community and outreach</h3><p>Volunteering and organising for the institute and the wider community.</p></div></div>
 </div>
+
+<figure class="openday" data-toc="IISc Open Day 2026">
+  <div class="od-grid">
+    <a class="od-a" href="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}" alt="Visitors watching a demonstration of folded origami structures that deploy and collapse" loading="lazy" width="695" height="1400"><span class="od-tag">Folded to deploy</span></a>
+    <a class="od-b" href="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}" alt="At the vibration demo: a plate on an electrodynamic shaker, with sand settling into a pattern" loading="lazy" width="1371" height="1370"><span class="od-tag">Shaken loose</span></a>
+    <a class="od-c" href="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}" alt="Lab volunteers handing visitors folded samples to try" loading="lazy" width="1371" height="1364"></a>
+    <a class="od-d" href="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}" alt="The lab team at the stall" loading="lazy" width="1280" height="960"></a>
+  </div>
+  <figcaption><b>IISc Open Day 2026</b> · Department of Aerospace Engineering. As a lab volunteer I showed visitors how a folded sheet can deploy into a large structure, and how vibration alone can loosen a tightened nut.</figcaption>
+</figure>
 
 - Lab volunteer, IISc Open Day 2026: demonstrated deployable structures and vibration-based nut loosening.
 - Volunteer organizer, CISM–IISc Workshop on Architectured and Multiscale Materials (July 2025).

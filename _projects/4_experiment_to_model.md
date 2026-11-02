@@ -45,7 +45,7 @@ importance: 4
 
 ## What is still left
 
-<figure>
+<figure class="pd-fig">
   <img src="{{ '/assets/img/pendulum/frequency-amplitude.png' | relative_url }}" alt="Frequency of each cycle against amplitude: the measured frequency rises about 1 percent as the swing dies, while linear and dry-friction simulations stay flat" width="1500" height="694" loading="lazy">
   <figcaption>As the swing dies the pendulum stiffens slightly. No damping term can do that.</figcaption>
 </figure>
