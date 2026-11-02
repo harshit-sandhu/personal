@@ -7,6 +7,69 @@ nav: true
 nav_order: 5
 ---
 
+## Service and outreach
+
+<div class="bx one">
+<div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.4 0 4 1.7 4 4.5"/></svg><div><h3>Community and outreach</h3><p>Volunteering and organising for the institute and the wider community.</p></div></div>
+</div>
+
+<div class="journey" aria-label="Service and outreach, most recent first">
+<div class="jr-start" aria-hidden="true">Most recent</div>
+<div class="jr-axis" aria-hidden="true"><span class="jr-fill"></span></div>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2026</span><i class="jr-dot"></i><time datetime="2026">2026</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
+<div class="jr-body">
+<figure class="openday" data-toc="IISc Open Day 2026">
+  <div class="od-grid">
+    <a class="od-a" href="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}" alt="Visitors watching a demonstration of folded origami structures that deploy and collapse" loading="lazy" width="695" height="1400"><span class="od-tag">Folded to deploy</span></a>
+    <a class="od-b" href="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}" alt="At the vibration demo: a plate on an electrodynamic shaker, with sand settling into a pattern" loading="lazy" width="1371" height="1370"><span class="od-tag">Shaken loose</span></a>
+    <a class="od-c" href="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}" alt="Lab volunteers handing visitors folded samples to try" loading="lazy" width="1371" height="1364"></a>
+    <a class="od-d" href="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}" alt="The lab team at the stall" loading="lazy" width="1280" height="960"></a>
+  </div>
+  <figcaption><b>IISc Open Day 2026</b> · Department of Aerospace Engineering. As a lab volunteer I showed visitors how a folded sheet can deploy into a large structure, and how vibration alone can loosen a tightened nut.</figcaption>
+</figure>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2025</span><i class="jr-dot"></i><time datetime="2025-07-21">21–25 Jul 2025</time><span class="jr-k">Organising</span><span class="jr-p">IISc Bengaluru</span></div>
+<div class="jr-body">
+<figure class="openday cism" data-toc="CISM–IISc Workshop 2025">
+  <div class="cw-grid">
+    <a class="cw-a" href="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}" alt="Participants, speakers and organisers of the CISM–IISc joint advanced workshop outside the Aerospace Engineering building" loading="lazy" width="1600" height="1067"><span class="od-tag">Participants</span></a>
+    <a class="cw-b" href="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}" alt="Volunteers beside the workshop banner" loading="lazy" width="480" height="360"><span class="od-tag">Volunteers</span></a>
+    <a class="cw-c" href="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}" alt="Speakers with the volunteer team in the auditorium" loading="lazy" width="1600" height="1067"><span class="od-tag">Speakers and team</span></a>
+  </div>
+  <figcaption><b>CISM–IISc Joint Advanced Workshop</b> · 21–25 July 2025, Aerospace Engineering, IISc. Architectured and multiscale materials, soft robotics and data-driven model discovery. I was one of the volunteer organisers.</figcaption>
+</figure>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-08">Aug 2024</time><span class="jr-k">Community</span></div>
+<div class="jr-body">
+<div class="jr-note"><h3>Blood donor</h3><p>Independence Day Blood Donation Camp, Tata Memorial Club and Indian Red Cross Society.</p></div>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024">2024 – 2026</time><span class="jr-k">Service</span><span class="jr-p">IISc Bengaluru</span></div>
+<div class="jr-body">
+<div class="jr-note"><h3>Student Council representative</h3><p>Department of Aerospace Engineering, IISc.</p></div>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024">2024</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
+<div class="jr-body">
+<div class="jr-note"><h3>Lab tour for Class 12 students</h3><p>IISc–Agastya Science Enrichment Program.</p></div>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2020</span><i class="jr-dot"></i><time datetime="2020">2020</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
+<div class="jr-body">
+<div class="jr-note"><h3>Lab volunteer, IISc Open Day 2020</h3><p>Demonstrated aeroservoelasticity and structural dynamics concepts.</p></div>
+</div>
+</section>
+<div class="jr-end" aria-hidden="true"><i class="jr-arrow"></i><span>Earlier</span></div>
+</div>
+
 ## Travel and exploration
 
 <div class="bx">
@@ -175,67 +238,4 @@ nav_order: 5
 <div class="bx">
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="5" r="2.2"/><path d="M12 8.2v6.3M4.5 11l7.5 2 7.5-2M8 21l4-6.5 4 6.5"/></svg><div><h3>Yoga</h3><p>A daily practice that keeps the body balanced and the mind steady through long research cycles.</p></div></div>
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16.5" cy="7" r="2"/><path d="M5 12.5l5-2.2 3.5 2.2 3-1.2"/><path d="M3 16.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3M3 20.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3"/></svg><div><h3>Swimming</h3><p>Regular laps, a good way to reset between experiments and writing.</p></div></div>
-</div>
-
-## Service and outreach
-
-<div class="bx one">
-<div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-5.5 6-5.5s6 2.2 6 5.5"/><circle cx="17" cy="9" r="2.3"/><path d="M17 14c2.4 0 4 1.7 4 4.5"/></svg><div><h3>Community and outreach</h3><p>Volunteering and organising for the institute and the wider community.</p></div></div>
-</div>
-
-<div class="journey" aria-label="Service and outreach, most recent first">
-<div class="jr-start" aria-hidden="true">Most recent</div>
-<div class="jr-axis" aria-hidden="true"><span class="jr-fill"></span></div>
-<section class="jr">
-<div class="jr-meta"><span class="jr-y">2026</span><i class="jr-dot"></i><time datetime="2026">2026</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
-<div class="jr-body">
-<figure class="openday" data-toc="IISc Open Day 2026">
-  <div class="od-grid">
-    <a class="od-a" href="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-origami.jpg' | relative_url }}" alt="Visitors watching a demonstration of folded origami structures that deploy and collapse" loading="lazy" width="695" height="1400"><span class="od-tag">Folded to deploy</span></a>
-    <a class="od-b" href="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-plate.jpg' | relative_url }}" alt="At the vibration demo: a plate on an electrodynamic shaker, with sand settling into a pattern" loading="lazy" width="1371" height="1370"><span class="od-tag">Shaken loose</span></a>
-    <a class="od-c" href="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-team.jpg' | relative_url }}" alt="Lab volunteers handing visitors folded samples to try" loading="lazy" width="1371" height="1364"></a>
-    <a class="od-d" href="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/openday-selfie.jpg' | relative_url }}" alt="The lab team at the stall" loading="lazy" width="1280" height="960"></a>
-  </div>
-  <figcaption><b>IISc Open Day 2026</b> · Department of Aerospace Engineering. As a lab volunteer I showed visitors how a folded sheet can deploy into a large structure, and how vibration alone can loosen a tightened nut.</figcaption>
-</figure>
-</div>
-</section>
-<section class="jr">
-<div class="jr-meta"><span class="jr-y">2025</span><i class="jr-dot"></i><time datetime="2025-07-21">21–25 Jul 2025</time><span class="jr-k">Organising</span><span class="jr-p">IISc Bengaluru</span></div>
-<div class="jr-body">
-<figure class="openday cism" data-toc="CISM–IISc Workshop 2025">
-  <div class="cw-grid">
-    <a class="cw-a" href="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-group.jpg' | relative_url }}" alt="Participants, speakers and organisers of the CISM–IISc joint advanced workshop outside the Aerospace Engineering building" loading="lazy" width="1600" height="1067"><span class="od-tag">Participants</span></a>
-    <a class="cw-b" href="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-volunteers.jpg' | relative_url }}" alt="Volunteers beside the workshop banner" loading="lazy" width="480" height="360"><span class="od-tag">Volunteers</span></a>
-    <a class="cw-c" href="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/cism-team.jpg' | relative_url }}" alt="Speakers with the volunteer team in the auditorium" loading="lazy" width="1600" height="1067"><span class="od-tag">Speakers and team</span></a>
-  </div>
-  <figcaption><b>CISM–IISc Joint Advanced Workshop</b> · 21–25 July 2025, Aerospace Engineering, IISc. Architectured and multiscale materials, soft robotics and data-driven model discovery. I was one of the volunteer organisers.</figcaption>
-</figure>
-</div>
-</section>
-<section class="jr">
-<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-08">Aug 2024</time><span class="jr-k">Community</span></div>
-<div class="jr-body">
-<div class="jr-note"><h3>Blood donor</h3><p>Independence Day Blood Donation Camp, Tata Memorial Club and Indian Red Cross Society.</p></div>
-</div>
-</section>
-<section class="jr">
-<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024">2024 – 2026</time><span class="jr-k">Service</span><span class="jr-p">IISc Bengaluru</span></div>
-<div class="jr-body">
-<div class="jr-note"><h3>Student Council representative</h3><p>Department of Aerospace Engineering, IISc.</p></div>
-</div>
-</section>
-<section class="jr">
-<div class="jr-meta"><i class="jr-dot"></i><time datetime="2024">2024</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
-<div class="jr-body">
-<div class="jr-note"><h3>Lab tour for Class 12 students</h3><p>IISc–Agastya Science Enrichment Program.</p></div>
-</div>
-</section>
-<section class="jr">
-<div class="jr-meta"><span class="jr-y">2020</span><i class="jr-dot"></i><time datetime="2020">2020</time><span class="jr-k">Outreach</span><span class="jr-p">IISc Bengaluru</span></div>
-<div class="jr-body">
-<div class="jr-note"><h3>Lab volunteer, IISc Open Day 2020</h3><p>Demonstrated aeroservoelasticity and structural dynamics concepts.</p></div>
-</div>
-</section>
-<div class="jr-end" aria-hidden="true"><i class="jr-arrow"></i><span>Earlier</span></div>
 </div>
