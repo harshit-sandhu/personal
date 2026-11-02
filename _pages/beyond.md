@@ -282,6 +282,25 @@ nav_order: 5
 <div class="item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="16.5" cy="7" r="2"/><path d="M5 12.5l5-2.2 3.5 2.2 3-1.2"/><path d="M3 16.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3M3 20.5c1.8 0 1.8-1.3 3.6-1.3s1.8 1.3 3.7 1.3 1.8-1.3 3.7-1.3 1.8 1.3 3.7 1.3 1.8-1.3 3.5-1.3"/></svg><div><h3>Swimming</h3><p>Regular laps, a good way to reset between experiments and writing.</p></div></div>
 </div>
 
+<div class="journey" aria-label="Body and mind, most recent first">
+<div class="jr-start" aria-hidden="true">Most recent</div>
+<div class="jr-axis" aria-hidden="true"><span class="jr-fill"></span></div>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2026</span><i class="jr-dot"></i><time datetime="2026-06-21">21 Jun 2026</time><span class="jr-k">Yoga Day</span><span class="jr-p">At home</span></div>
+<div class="jr-body">
+<figure class="trek yd" id="yoga-day" data-toc="Yoga Day, 2026">
+  <div class="yd-grid">
+    <a class="yd-a" href="{{ '/assets/img/beyond/yogaday-dancer.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-dancer.jpg' | relative_url }}" alt="Natarajasana, the dancer pose" loading="lazy" width="768" height="1024"></a>
+    <a class="yd-b" href="{{ '/assets/img/beyond/yogaday-dog.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-dog.jpg' | relative_url }}" alt="Adho Mukha Svanasana, downward-facing dog" loading="lazy" width="1400" height="1050"></a>
+    <a class="yd-c" href="{{ '/assets/img/beyond/yogaday-wheel.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yogaday-wheel.jpg' | relative_url }}" alt="A supported backbend over a yoga wheel" loading="lazy" width="1024" height="768"></a>
+  </div>
+  <figcaption><b>International Day of Yoga</b> · 21 June 2026. Celebrated at home, on the mat.</figcaption>
+</figure>
+</div>
+</section>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2025</span><i class="jr-dot"></i><time datetime="2025-06-19">19–22 Jun 2025</time><span class="jr-k">Retreat</span><span class="jr-p">Bengaluru</span></div>
+<div class="jr-body">
 <figure class="trek mosaic" id="happiness-program" data-toc="Happiness Program, 2025">
   <div class="mosaic-cols">
     <a href="{{ '/assets/img/beyond/aol-temple.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/aol-temple.jpg' | relative_url }}" alt="With friends in front of the Vishalakshi Mantap" loading="lazy" width="1050" height="1400"></a>
@@ -295,3 +314,7 @@ nav_order: 5
   </div>
   <figcaption><b>Happiness Program, The Art of Living International Center, Bengaluru</b> · 19–22 June 2025. A three-day residential course of breathing practice, meditation and yoga, from Thursday evening to Sunday evening.</figcaption>
 </figure>
+</div>
+</section>
+<div class="jr-end" aria-hidden="true"><i class="jr-arrow"></i><span>Earlier</span></div>
+</div>

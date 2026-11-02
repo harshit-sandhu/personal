@@ -1027,3 +1027,17 @@ footer.sticky-bottom {
 .pano a { display: block; overflow: hidden; border-radius: 4px; background: #f1f5f9; }
 .pano img { display: block; width: 100%; height: auto; transition: transform 0.6s ease; }
 .pano a:hover img { transform: scale(1.015); }
+
+/* Yoga Day set: tall pose beside two wide ones */
+.yd-grid { display: grid; grid-template-columns: 3fr 4fr; gap: 8px; }
+.yd-grid a { position: relative; display: block; overflow: hidden; border-radius: 4px; background: #f1f5f9; }
+.yd-grid img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease; }
+.yd-grid a:hover img { transform: scale(1.025); }
+.yd-a { grid-row: 1 / span 2; aspect-ratio: 3 / 4; }
+.yd-b, .yd-c { position: relative; }
+.yd-b img, .yd-c img { position: absolute; inset: 0; }
+@media (max-width: 700px) {
+  .yd-grid { grid-template-columns: 1fr 1fr; }
+  .yd-a { grid-row: auto; grid-column: 1 / span 2; aspect-ratio: 3 / 4; }
+  .yd-b, .yd-c { aspect-ratio: 4 / 3; }
+}
