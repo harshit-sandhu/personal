@@ -320,5 +320,21 @@ nav_order: 5
 </figure>
 </div>
 </section>
+<section class="jr">
+<div class="jr-meta"><span class="jr-y">2024</span><i class="jr-dot"></i><time datetime="2024-06-21">21 Jun 2024</time><span class="jr-k">Yoga Day</span><span class="jr-p">On the rooftop</span></div>
+<div class="jr-body">
+<figure class="trek mosaic" id="yoga-day-2024" data-toc="Yoga Day, 2024">
+  <div class="mosaic-cols">
+    <a href="{{ '/assets/img/beyond/yoga24-dog.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-dog.jpg' | relative_url }}" alt="Adho Mukha Svanasana, downward-facing dog, on the rooftop" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/yoga24-updog.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-updog.jpg' | relative_url }}" alt="Urdhva Mukha Svanasana, upward-facing dog" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/yoga24-eka-pada.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-eka-pada.jpg' | relative_url }}" alt="Eka Pada Koundinyasana, an arm balance with one leg extended" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/yoga24-headstand-tuck.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-headstand-tuck.jpg' | relative_url }}" alt="Entering a headstand, legs tucked" loading="lazy" width="1182" height="664"></a>
+    <a href="{{ '/assets/img/beyond/yoga24-headstand-lotus.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-headstand-lotus.jpg' | relative_url }}" alt="Headstand with legs folded" loading="lazy" width="664" height="1182"></a>
+    <a href="{{ '/assets/img/beyond/yoga24-headstand-split.jpg' | relative_url }}"><img src="{{ '/assets/img/beyond/yoga24-headstand-split.jpg' | relative_url }}" alt="Headstand with the legs opening" loading="lazy" width="664" height="1182"></a>
+  </div>
+  <figcaption><b>International Day of Yoga</b> · 21 June 2024. Practice on the rooftop under a monsoon sky: the dog poses, an arm balance and headstand variations.</figcaption>
+</figure>
+</div>
+</section>
 <div class="jr-end" aria-hidden="true"><i class="jr-arrow"></i><span>Earlier</span></div>
 </div>
