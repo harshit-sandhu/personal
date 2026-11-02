@@ -297,8 +297,12 @@ nav_order: 5
       <div class="yd-d"><img src="{{ '/assets/img/beyond/yogaday-crow.gif' | relative_url }}" alt="Bakasana, crow pose: lifting from a crouch into the balance and back" loading="lazy" width="480" height="360"><span class="od-tag">Crow</span></div>
       <div class="yd-e"><img src="{{ '/assets/img/beyond/yogaday-catcow.gif' | relative_url }}" alt="Cat–cow, Marjaryasana–Bitilasana: cat, neutral and cow in a slow flow" loading="lazy" width="540" height="405"><span class="od-tag">Cat ↔ cow</span></div>
     </div>
+    <div class="yd-vid">
+      <video src="{{ '/assets/img/beyond/yogaday-headstand.mp4' | relative_url }}" poster="{{ '/assets/img/beyond/yogaday-headstand-poster.jpg' | relative_url }}" width="478" height="850" muted autoplay loop playsinline controls preload="metadata" aria-label="Headstand practice on Yoga Day 2026: from child’s pose up into Sirsasana and back down"></video>
+      <p><b>Sirsasana</b>, the headstand: from child’s pose, up through the tuck to a full headstand, and back down.</p>
+    </div>
   </div>
-  <figcaption><b>International Day of Yoga</b> · 21 June 2026. Celebrated at home, on the mat: a lift into crow and a slow cat–cow flow.</figcaption>
+  <figcaption><b>International Day of Yoga</b> · 21 June 2026. Celebrated at home, on the mat: a headstand, a lift into crow and a slow cat–cow flow.</figcaption>
 </figure>
 </div>
 </section>

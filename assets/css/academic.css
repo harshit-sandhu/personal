@@ -1046,3 +1046,7 @@ footer.sticky-bottom {
 .yd-anim { grid-column: 1 / span 2; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
 @media (max-width: 700px) { .yd-anim { grid-template-columns: 1fr; } }
 @media (prefers-reduced-motion: reduce) { .yd-anim { display: none; } }
+.yd-vid { grid-column: 1 / span 2; display: grid; grid-template-columns: minmax(0, 260px) 1fr; gap: 16px; align-items: end; }
+.yd-vid video { display: block; width: 100%; height: auto; border-radius: 4px; background: #111827; }
+.yd-vid p { margin: 0; font-size: 0.88rem; color: #4b5563; }
+@media (max-width: 700px) { .yd-vid { grid-template-columns: 1fr; } .yd-vid video { max-width: 320px; } }

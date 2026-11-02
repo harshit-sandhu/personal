@@ -94,3 +94,12 @@
   window.addEventListener("resize", update);
   update();
 })();
+
+/* Respect reduced motion for autoplaying clips. */
+(function () {
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  [].forEach.call(document.querySelectorAll("video[autoplay]"), function (v) {
+    v.removeAttribute("autoplay");
+    v.pause();
+  });
+})();
