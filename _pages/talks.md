@@ -14,6 +14,9 @@ Meetings I plan to attend in 2027, in date order. Plans may change.
 - **IUTAM Symposium on New Horizons in Solid Mechanics: Multiscale Mechanics for Emerging Materials and Structures**<br>
   IIT Madras, Chennai, India — _11–14 January 2027_ · [website](https://iutam.org/events/iutam-symposium-new-horizons-in-solid-mechanics-multiscale-mechanics-for-emerging-materials-and-structures)
 
+- **MSYIM 2027**, 4th Mechanical Sciences Young Investigators' Meet<br>
+  Department of Mechanical Engineering, IIT Kanpur, India — _12–14 March 2027_ · [IIT Kanpur events](https://www.iitk.ac.in/ooa/events-2026-27.php)
+
 - **Phononics 2027**, 8th International Conference on Phononic Crystals/Metamaterials, Phonon Transport and Topological Phononics<br>
   Vancouver, Canada — _June 2027 (expected 7–11 June)_
 
