@@ -85,4 +85,4 @@ nav_order: 3
   <p>A newer direction, pursued with students in the LEMS lab: using the dynamics of active mechanical oscillators and lattices as physical reservoirs and mechanical neural networks.</p>
 </section>
 
-<p class="r-foot">Full list: <a href="{{ '/publications/' | relative_url }}">publications</a>. Worked examples and things learnt along the way: <a href="{{ '/notes/' | relative_url }}">notes</a>.</p>
+<p class="r-foot">Full list: <a href="{{ '/publications/' | relative_url }}">publications</a>. What experiments and models have taught me: <a href="{{ '/reflections/' | relative_url }}">reflections</a>.</p>
