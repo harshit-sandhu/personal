@@ -992,3 +992,10 @@ footer.sticky-bottom {
   .cw-a { grid-column: 1 / span 2; grid-row: 1; }
   .cw-b, .cw-c { aspect-ratio: 4 / 3; }
 }
+
+/* Timeline entries without photos */
+.jr:has(.jr-note) { padding-bottom: 30px; }
+.jr-note h3 { font-size: 1.02rem; margin: 0 0 3px; }
+.jr-note p { margin: 0; font-size: 0.93rem; color: #4b5563; }
+.jr-body .openday { margin: 0; }
+@media (min-width: 701px) { .jr:has(.jr-y) .jr-note { padding-top: 42px; } }

@@ -65,23 +65,24 @@
   update();
 })();
 
-/* Beyond Research: fill the time axis as the reader moves down through the sets. */
+/* Beyond Academics: fill each time axis as the reader moves down through it. */
 (function () {
-  var j = document.querySelector(".journey");
-  if (!j) return;
-  var secs = [].slice.call(j.querySelectorAll(".jr")),
-    t = 0;
+  var js = [].slice.call(document.querySelectorAll(".journey"));
+  if (!js.length) return;
+  var t = 0;
   function update() {
     t = 0;
-    var line = window.innerHeight * 0.45,
-      r = j.getBoundingClientRect(),
-      h = r.height - 40;
-    var p = Math.max(0, Math.min(1, (line - r.top) / h));
-    j.style.setProperty("--p", p.toFixed(4));
-    secs.forEach(function (s) {
-      s.classList.toggle("on", s.querySelector(".jr-dot").getBoundingClientRect().top < line);
+    var line = window.innerHeight * 0.45;
+    js.forEach(function (j) {
+      var r = j.getBoundingClientRect(),
+        h = r.height - 40,
+        p = Math.max(0, Math.min(1, (line - r.top) / h));
+      j.style.setProperty("--p", p.toFixed(4));
+      [].forEach.call(j.querySelectorAll(".jr"), function (s) {
+        s.classList.toggle("on", s.querySelector(".jr-dot").getBoundingClientRect().top < line);
+      });
+      j.classList.toggle("done", p >= 0.999);
     });
-    j.classList.toggle("done", p >= 0.999);
   }
   window.addEventListener(
     "scroll",
